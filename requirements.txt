@@ -1,0 +1,8 @@
+# PyTorch with CUDA 12.4:
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0
+numpy==2.2.6
+pytest==9.2.0
+PyYAML==6.0.3
+# needs Microsoft C++ Build Tools on Windows
+kociemba

@@ -1,0 +1,15 @@
+# environment
+.venv/
+.pip-cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.tmp/
+
+# large local artifacts (kept on D: only, not on GitHub)
+data/
+checkpoints/
+runs/
+*.pt
+*.npy
+*.npz
