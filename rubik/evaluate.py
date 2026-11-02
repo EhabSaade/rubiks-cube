@@ -141,9 +141,12 @@ def random_policy(generator=None):
     return f
 
 
-def shallow_search_policy(depth=2, heuristic=wrong_pieces):
+def shallow_search_policy(depth=2, heuristic=wrong_pieces, generator=None):
     """Score each move by the best heuristic value reachable within `depth`
-    moves after it (lower heuristic is better, so the score is its negative)."""
+    moves (the move itself plus depth-1 more); lower heuristic is better, so
+    the score is its negative. Ties are broken randomly with `generator`."""
+    g = generator if generator is not None else torch.Generator().manual_seed(0)
+
     def f(states):
         nb = neighbors(states)  # (k, 18, 40)
         k = len(states)
@@ -153,7 +156,8 @@ def shallow_search_policy(depth=2, heuristic=wrong_pieces):
             level = neighbors(level).view(-1, STATE_DIM)
             h = heuristic(level).view(k, N_MOVES, -1).float().min(2).values
             best = torch.minimum(best, h)  # level grows 18x per depth; keep depth small
-        return -best + 1e-3 * torch.rand_like(best)  # random tie-breaking
+        noise = torch.rand(best.shape, generator=g).to(best.device)
+        return -best + 1e-3 * noise  # seeded random tie-breaking
     return f
 
 

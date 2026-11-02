@@ -41,7 +41,12 @@ def test_heuristics_on_solved_and_scrambled():
     assert (wrong_pieces(x) > 0).all() and (correct_stickers(x) < 48).all()
 
 
-def test_shallow_search_runs():
-    states, _ = scramble(20, 3, torch.Generator().manual_seed(4), DEV)
+def test_shallow_search_solves_within_its_horizon_and_is_reproducible():
+    # solved is visible within a 2-move horizon, so every 2-move scramble is solved
+    states, _ = scramble(50, 2, torch.Generator().manual_seed(4), DEV)
     g = greedy_rollout(shallow_search_policy(2), states, max_moves=20)
-    assert g["solved"].float().mean() > 0.3
+    assert g["solved"].all()
+    deeper, _ = scramble(50, 5, torch.Generator().manual_seed(5), DEV)
+    a = greedy_rollout(shallow_search_policy(2), deeper, max_moves=30)
+    b = greedy_rollout(shallow_search_policy(2), deeper, max_moves=30)
+    assert torch.equal(a["moves"], b["moves"])

@@ -1,32 +1,18 @@
 """Kociemba two-phase solver wrapper: solution, first move and length.
 
 Lengths are upper bounds on true distance. max_depth is the two-phase search
-limit: lower values give shorter solutions but take longer.
+limit: lower values give shorter solutions but take longer, and a limit below
+what the cube needs makes the solver search forever, so keep the default.
+Worker processes run rubik.koc_worker, which does not import torch.
 """
 from concurrent.futures import ProcessPoolExecutor
 
-import kociemba
-
-from .cube import parse_moves
-from .facelet import SOLVED_FACELETS, to_facelets
+from .facelet import to_facelets
+from .koc_worker import solve_facelets, solve_many
 
 DEFAULT_MAX_DEPTH = 24
 
-
-def solve_facelets(facelets, max_depth=DEFAULT_MAX_DEPTH):
-    """Facelet string -> list of move indices, or None if not found within max_depth."""
-    if facelets == SOLVED_FACELETS:
-        return []
-    try:
-        out = kociemba.solve(facelets, max_depth=max_depth)
-    except ValueError:
-        return None
-    return parse_moves(out)
-
-
-def _solve_many(args):
-    facelets, max_depth = args
-    return [solve_facelets(f, max_depth) for f in facelets]
+_solve_many = solve_many  # kept for older scripts
 
 
 def solve_states(states, max_depth=DEFAULT_MAX_DEPTH, workers=1, chunk=64):
@@ -36,7 +22,7 @@ def solve_states(states, max_depth=DEFAULT_MAX_DEPTH, workers=1, chunk=64):
         return [solve_facelets(f, max_depth) for f in facelets]
     jobs = [(facelets[i:i + chunk], max_depth) for i in range(0, len(facelets), chunk)]
     with ProcessPoolExecutor(workers) as ex:
-        return [sol for part in ex.map(_solve_many, jobs) for sol in part]
+        return [sol for part in ex.map(solve_many, jobs) for sol in part]
 
 
 def first_move_and_length(solutions):
