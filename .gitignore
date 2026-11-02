@@ -13,3 +13,6 @@ runs/
 *.pt
 *.npy
 *.npz
+
+# editor (machine-specific interpreter path)
+.vscode/
