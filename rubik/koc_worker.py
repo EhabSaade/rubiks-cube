@@ -1,8 +1,16 @@
 """Kociemba solving for worker processes, without importing torch.
 
 On Windows every process that imports torch reserves several GB for the CUDA
-libraries, so solver workers must stay torch-free.
+libraries. multiprocessing workers re-import the main script (which imports
+torch), so workers are started as plain subprocesses running this module:
+
+    python -m rubik.koc_worker <max_depth>   # facelet strings on stdin, one per line
+
+Each output line is the solution as space-separated move indices, "" for an
+already solved cube, or "None" if no solution was found within max_depth.
 """
+import sys
+
 import kociemba
 
 SOLVED_FACELETS = "".join(c * 9 for c in "URFDLB")
@@ -23,3 +31,26 @@ def solve_facelets(facelets, max_depth=24):
 def solve_many(args):
     facelets, max_depth = args
     return [solve_facelets(f, max_depth) for f in facelets]
+
+
+def encode_solution(sol):
+    return "None" if sol is None else " ".join(map(str, sol))
+
+
+def decode_solution(line):
+    line = line.strip()
+    if line == "None":
+        return None
+    return [int(x) for x in line.split()] if line else []
+
+
+def main():
+    max_depth = int(sys.argv[1]) if len(sys.argv) > 1 else 24
+    out = sys.stdout
+    for line in sys.stdin:
+        out.write(encode_solution(solve_facelets(line.strip(), max_depth)) + "\n")
+    out.flush()
+
+
+if __name__ == "__main__":
+    main()

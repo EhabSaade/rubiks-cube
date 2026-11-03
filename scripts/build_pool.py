@@ -161,17 +161,72 @@ def run_exact(table, blocked):
         print(f"saved exact d{d}: {len(s):,} cubes", flush=True)
 
 
+SHALLOW_CHUNK = 500_000
+N_D7 = 2_000_000
+
+
+def _save_shallow_chunk(out, name, s, d, m):
+    sols = solve_states(s, workers=WORKERS)
+    data = {"states": s.cpu(), "exact_dist": d.long().cpu(), "exact_mask": m.int().cpu(),
+            "koc_move": torch.tensor([x[0] if x else -1 for x in sols]),
+            "koc_len": torch.tensor([len(x) for x in sols])}
+    tmp = out / f"{name}.tmp"
+    torch.save(data, tmp)
+    tmp.rename(out / f"{name}.pt")
+
+
+def run_shallow(table, blocked):
+    """Depth 1 to 6 table cubes (hold-out excluded) and a depth-7 pool, with
+    exact labels and Kociemba lengths, so every arm can order them."""
+    out = POOL_DIR / "shallow"
+    out.mkdir(parents=True, exist_ok=True)
+    t0 = time.time()
+    in_blocked = torch.cat([blocked.contains(table.states[i:i + SHALLOW_CHUNK])
+                            for i in range(0, len(table), SHALLOW_CHUNK)])
+    sel = (table.dist >= 1) & ~in_blocked
+    idx = torch.nonzero(sel).squeeze(1)
+    for c, i in enumerate(range(0, len(idx), SHALLOW_CHUNK)):
+        name = f"table_{c:03d}"
+        if (out / f"{name}.pt").exists():
+            continue
+        j = idx[i:i + SHALLOW_CHUNK]
+        _save_shallow_chunk(out, name, table.states[j], table.dist[j], table.mask[j])
+        print(f"{name}: {len(j):,} cubes  ({time.time() - t0:.0f}s)", flush=True)
+    g = torch.Generator().manual_seed(30_007)
+    n_chunks = N_D7 // SHALLOW_CHUNK
+    seen = set()
+    for c in range(n_chunks):
+        name = f"d7_{c:03d}"
+        rows, ms = [], []
+        while sum(len(r) for r in rows) < SHALLOW_CHUNK:
+            s, _ = scramble(200_000, 7, g, DEV)  # generator advances even for skipped chunks
+            d, m = table.label(s)
+            keep = (d == 7) & ~blocked.contains(s)
+            s, m = s[keep], m[keep]
+            h = state_hash(s).tolist()
+            new = torch.tensor([x not in seen for x in h], device=DEV)
+            seen.update(x for x, n in zip(h, new.tolist()) if n)
+            rows.append(s[new]); ms.append(m[new])
+        s, m = torch.cat(rows)[:SHALLOW_CHUNK], torch.cat(ms)[:SHALLOW_CHUNK]
+        if (out / f"{name}.pt").exists():
+            continue
+        _save_shallow_chunk(out, name, s, torch.full((len(s),), 7), m)
+        print(f"{name}: {len(s):,} cubes  ({time.time() - t0:.0f}s)", flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--part", choices=["path", "exact"], required=True)
+    ap.add_argument("--part", choices=["path", "exact", "shallow"], required=True)
     ap.add_argument("--target", type=int, default=20_000_000)
     args = ap.parse_args()
     table = DistanceTable.load(DATA_DIR / "table_d6.pt")
     blocked = blocked_filter(DEV)
     if args.part == "path":
         run_path(table, blocked, args.target)
-    else:
+    elif args.part == "exact":
         run_exact(table, blocked)
+    else:
+        run_shallow(table, blocked)
 
 
 if __name__ == "__main__":

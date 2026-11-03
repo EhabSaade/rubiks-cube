@@ -40,3 +40,9 @@ Decisions:
 - Correction: exact labels at distance 10 for the whole path pool would take about a day (233 cubes/s), so distance 10 to 12 come from the dedicated exact pools instead.
 
 **True-distance arm ordering:** exact distance up to 12; beyond that, Kociemba estimate. Tests stay exact up to 13.
+
+**Kociemba lengths for depth 1 to 7 training cubes are precomputed.** Kociemba length differs from true distance for 6% of depth-3 cubes, rising to 24% at depth 6 and 31% at depth 7 (up to 10 moves off), so the Kociemba arm must order shallow cubes by their own Kociemba length. All depth 1 to 6 table cubes (hold-out excluded) and a 2M-cube depth-7 pool (depth-7 test cubes excluded) get Kociemba labels. All training data is therefore one precomputed pool where every cube has its exact label (where known), target and Kociemba length.
+
+**Equal-share stages.** All arms get the same number of stages, the same steps per stage and the same total steps. Each stage adds the same share of the pool, cut at the arm's own difficulty quantiles (true distance or Kociemba length); the mixed control samples the whole pool from the start. Only the order of cubes differs between arms. The number of stages is set at Gate C.
+
+**Engineering:** Kociemba workers run as plain subprocesses (`python -m rubik.koc_worker`). With `multiprocessing` on Windows, each worker re-runs the main script and imports torch (1 to 2 GB each), which exhausted memory twice.
