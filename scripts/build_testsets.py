@@ -5,6 +5,7 @@ deep sets resume from a .partial file if interrupted.
 """
 import hashlib
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -22,8 +23,9 @@ from rubik.testsets import DEEP_DEPTHS, SET_NAMES, TESTSET_DIR  # noqa: E402
 
 N_D7, N_DEEP, N_RANDOM, N_CUBE20 = 2000, 1000, 1000, 10
 SUPERFLIP = "U R2 F B R B2 R U2 L B2 R U' D' R2 F R' L B2 U2 F2"
-CUBE20_FILE = DATA_DIR / "external" / "cube20" / "random100.txt"
-WORKERS = 6
+# 100 random distance-20 positions from cube20.org (Rokicki, Kociemba, Davidson, Dethridge)
+CUBE20_FILE = Path(__file__).resolve().parents[1] / "resources" / "cube20_random100.txt"
+WORKERS = int(os.environ.get("RUBIK_WORKERS", 6))
 
 
 def finish(name, states, dist, dist_exact, mask, mask_known):

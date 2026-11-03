@@ -15,16 +15,30 @@ Read [CONTEXT.md](CONTEXT.md) first (project state and open decisions), then [do
 - **When a long job finishes and the user is away, notify them with a question** (for example AskUserQuestion), not only a chat message.
 
 ## Setting up the GPU machine
+The user chose to **build all data freshly on the GPU machine**; nothing is copied from the laptop.
 1. Clone https://github.com/EhabSaade/rubiks-cube.
-2. Copy `rubik_data.tar` and `rubik_data.tar.sha256` from the laptop (`D:\rubiks-cube\`, 2.55 GB). They are not in git.
-3. **Linux:** `bash scripts/cloud_setup.sh /path/to/rubik_data.tar`. This checks the checksum, extracts to `$RUBIK_STORAGE` (default `~/rubiks-cube`), creates a venv with PyTorch 2.6 (CUDA 12.4), and checks the GPU, the pool and the tests. Then:
+2. **Linux:** `bash scripts/cloud_setup.sh`, with no argument. It needs Python 3.10+, gcc and Python headers (for example `python3-dev`) to build kociemba. It does the following:
+   - Creates a venv under `$RUBIK_STORAGE` (default `~/rubiks-cube`).
+   - Installs PyTorch 2.6 (CUDA 12.4), the requirements and kociemba.
+   - Checks the GPUs and runs the tests.
+
+   Then:
    ```
    export RUBIK_STORAGE=~/rubiks-cube
    source $RUBIK_STORAGE/.venv/bin/activate
    ```
-   **Windows:** follow the README setup, extract the tar into the storage folder, and set `RUBIK_STORAGE`.
+   **Windows:** follow the README setup and set `RUBIK_STORAGE`.
+3. Check: `python -m pytest -q tests` should report 35 passed on a GPU machine.
 4. `nvidia-smi` shows the GPUs and whether they are busy. Use only GPUs the user says are free.
-5. Check: `python -m pytest -q tests` should report 35 passed (on a GPU machine). `test_koc_worker` needs kociemba, which is not needed for training.
+5. Build the data: `RUBIK_WORKERS=<CPU cores> bash scripts/build_all.sh`. Run it in the background (`nohup`, `tmux` or the scheduler).
+   - It builds the table, hold-out, test sets and pool.
+   - It stops if `scripts/check_data.py` finds that the rebuilt table, hold-out or test sets differ from the checksums recorded in `results/`.
+     - Everything is seeded, so they should match.
+     - If they match, the baselines and pilot results in `results/` stay valid.
+     - If they don't match, stop and tell the user. The baselines would then need rerunning on the new sets.
+   - Rerunning the script resumes where it stopped.
+   - Laptop times with 6 workers: test sets about 2 hours, pool about 6 hours. More CPU cores speed up the Kociemba parts, and a faster GPU speeds up the exact search.
+   - Keep the pool build on one machine. The pool is not checksummed, and only the test sets must match.
 
 ## Commands
 - One run: `python scripts/train.py --config configs/base.yaml --arm mixed --seed 0 --set prefix=final total_steps=100000`

@@ -1,0 +1,10 @@
+{
+  "file": "D:\\rubiks-cube\\data\\holdout_d5_d6.pt",
+  "share": 0.05,
+  "seed": 5,
+  "counts": {
+    "5": 28745,
+    "6": 380922
+  },
+  "states_sha256": "54c4602a46e130ff8b03465a4421be12f73a80860c60176026bc6098238076e8"
+}

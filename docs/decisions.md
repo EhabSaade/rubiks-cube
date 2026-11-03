@@ -62,3 +62,5 @@ Decisions:
 - One seed; differences of about 1 point are within noise.
 
 **Wide model check** (2048x8, 68M parameters, mixed arm, same 40,000-step schedule, stopped at step 10,000; 4.6 steps/s on the laptop, 5.5 times slower than the default). Validation share at step 10,000, wide vs default: optimal move on exact cubes 84.2% vs 81.4%, depth 8-9 61.6% vs 56.8%, depth 10-12 64.6% vs 64.2%, depth 13+ 53.1% vs 51.7%, train hit 70.9% vs 68.5%. The wide model is ahead by 1 to 5 points and still underfits. A full-length comparison is left for the GPU machine, where the wide model is cheap. Pilot logs are in `results/pilot/`.
+
+**Data on the GPU machine is rebuilt from scratch** (user decision), with `scripts/build_all.sh`; `scripts/check_data.py` confirms the table, hold-out and test sets match the recorded checksums (all match on the laptop). The cube20.org positions file moved into the repo (`resources/`).

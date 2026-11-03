@@ -15,6 +15,7 @@ each also labeled by Kociemba.
     python scripts/build_pool.py --part exact
 """
 import argparse
+import os
 import sys
 import time
 from pathlib import Path
@@ -33,7 +34,7 @@ from rubik.testsets import blocked_filter  # noqa: E402
 
 POOL_DIR = DATA_DIR / "pool"
 DEV = "cuda"
-WORKERS = 6
+WORKERS = int(os.environ.get("RUBIK_WORKERS", 6))  # Kociemba subprocesses
 STARTS_PER_CHUNK = 20_000
 EXACT_TARGETS = {10: 300_000, 11: 30_000, 12: 10_000}
 

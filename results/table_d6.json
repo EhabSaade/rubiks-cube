@@ -1,0 +1,15 @@
+{
+  "depth": 6,
+  "counts": [
+    1,
+    18,
+    243,
+    3240,
+    43239,
+    574908,
+    7618438
+  ],
+  "keys_sha256": "0a9cb04011933323fdba8584ea7f60199062fc017bdfae0aef19874740f5d713",
+  "build_seconds": 12.5,
+  "file": "D:\\rubiks-cube\\data\\table_d6.pt"
+}

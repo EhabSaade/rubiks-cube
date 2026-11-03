@@ -46,6 +46,8 @@ Solo project, planned for 4 to 8 weeks (about 6), first code commit 2026-11-02. 
 
 ## Data (not in git)
 All large files live under the storage folder: `D:\rubiks-cube` on the laptop, or the `RUBIK_STORAGE` environment variable.
+
+**On the GPU machine, all data is rebuilt from scratch** with `scripts/build_all.sh` (the user's choice). Every build is seeded, and `scripts/check_data.py` compares the rebuilt table, hold-out and test sets with the checksums recorded in `results/` (`table_d6.json`, `holdout_d5_d6.json`, `testsets_manifest.json`). On the laptop, all of them match. The 100 cube20.org distance-20 positions are in `resources/cube20_random100.txt`. The list below describes the laptop build; a fresh build should give the same.
 - `data/table_d6.pt` (417 MB): every state to depth 6 (8,240,067) with distance and an 18-bit mask of all optimal moves. It gives exact labels to depth 7.
 - `data/holdout_d5_d6.pt`: 28,745 depth-5 and 380,922 depth-6 cubes, blocked from training.
 - `data/testsets/*.pt` (465,418 cubes, frozen). Checksums are in `results/testsets_manifest.json`.
@@ -61,8 +63,7 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
   - `path/`: 20.2M cubes from Kociemba solution paths, exact labels to distance 9.
   - `exact/`: 300k cubes at distance 10, 30k at 11 and 10k at 12.
   - `shallow/`: 9.8M depth 1 to 7 cubes with Kociemba lengths.
-- **Transfer bundle:** `D:\rubiks-cube\rubik_data.tar` (2.55 GB), with sha256 `8058f915fa05acc42e4a72fc39be85a35a538dedd7dd8fe22f8a0850fb027565` in `rubik_data.tar.sha256`. It contains all of the above.
-  - Rebuilding from scratch is possible (see README) but takes about 8 hours and needs kociemba. Copy the tar instead.
+- A packed copy of the laptop data also exists (`D:\rubiks-cube\rubik_data.tar`, 2.55 GB; `scripts/pack_data.sh`). The user chose not to use it and to rebuild instead.
 
 ## Key results so far
 - **Baselines** (`results/baselines.json`):
@@ -101,7 +102,7 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
    - Heuristic progress on unsolved cubes: misplaced or misoriented cubies, with correct stickers as a secondary measure.
 
 ## Next steps
-1. Set up the GPU machine (see AGENTS.md) and verify the data checksum and the tests.
+1. Set up the GPU machine and build the data freshly (see AGENTS.md). `check_data.py` must report that everything matches.
 2. Run a speed test there for both model sizes, a few hundred steps each.
 3. Bring the Gate C decision to the user and log it in `docs/decisions.md`.
 4. Run the 9 final runs with `scripts/run_arms.sh`.

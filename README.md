@@ -28,6 +28,10 @@ python scripts/build_pool.py --part exact      # exact pools at distances 10 to 
 python scripts/build_pool.py --part shallow    # Kociemba lengths for depth 1 to 7 cubes
 python scripts/run_baselines.py                # random, shallow search, Kociemba baselines
 ```
+Or all data steps at once, with a check against the recorded checksums (`scripts/check_data.py`):
+```
+RUBIK_WORKERS=32 bash scripts/build_all.sh       # RUBIK_WORKERS: Kociemba subprocesses, about the CPU core count
+```
 
 ## Training
 ```
