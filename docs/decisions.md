@@ -25,3 +25,18 @@ Decisions:
 - Mean Kociemba length minus true distance: 1.9 (length 7) rising to 6.5 (length 12); Kociemba is exactly right in 71% of cubes at length 7 and 15% at length 13.
 - Spearman rank correlation between true distance and Kociemba length: 0.72. A Kociemba length of 14 to 17 covers true distances 7 to 13.
 - **Outcome: the arms differ strongly; both kept.** "Kociemba length" means the `kociemba` package output with default settings (first solution of 24 moves or fewer), a weak two-phase estimate. The report states this.
+
+## 2026-11-03
+
+**Baselines** (`results/baselines.json`): random moves pick an optimal move at chance (about 6%) and solve nothing; the 2-move lookahead solves 13% of the depth 1 to 4 set and almost nothing deeper; Kociemba's first move is optimal for about 90% of cubes up to depth 9, 77% at 10 and 27% at 13.
+
+**Batched exact labeler** (`rubik/batch_label.py`): exact labels to distance 8 at about 50,000 cubes/s, to 9 at about 4,300/s, to 10 at about 233/s.
+
+**Training targets: the same for all arms.** Every cube has one target: its exact optimal moves where known, otherwise the Kociemba move. Arms differ only in stage order (true distance, Kociemba length, or none). With a cumulative curriculum all arms have seen the same full pool by the last stage.
+
+**Training pool**:
+- Path pool, about 20M cubes: start cubes are half uniformly random, half scrambles of length 8 to 20; every cube along each Kociemba solution is labeled with the next move and the remaining length. Cubes at distance 7 or less (labeled exactly on the fly from the table) and all blocked test cubes are excluded. Exact labels up to distance 9 for every cube; the rest are flagged as distance 10 or more.
+- Exact pools: about 300,000 cubes at distance 10, 30,000 at 11 and 10,000 at 12.
+- Correction: exact labels at distance 10 for the whole path pool would take about a day (233 cubes/s), so distance 10 to 12 come from the dedicated exact pools instead.
+
+**True-distance arm ordering:** exact distance up to 12; beyond that, Kociemba estimate. Tests stay exact up to 13.
