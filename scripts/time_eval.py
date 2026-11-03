@@ -86,6 +86,11 @@ def main():
         if out.exists():
             print(f"{run}: already timed ({out})")
             continue
+        if args.checkpoint == "best_val":
+            cfg = json.loads((RUNS_DIR / run / "config.json").read_text())
+            if best_val_step(run, cfg)[0] == cfg["total_steps"]:
+                print(f"{run}: best validation checkpoint is the final one; not timed again")
+                continue
         t0 = time.time()
         res = time_run(run, args.checkpoint, args.width, args.cubes_per_batch, args.stride)
         res["seconds"] = round(time.time() - t0)
