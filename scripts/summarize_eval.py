@@ -1,6 +1,9 @@
 """Summarize results/final_eval/*.json by arm (mean and range over seeds), per
 test set, next to the baselines; for the primary (step 100,000) and the
-secondary (best-validation) checkpoints.
+secondary (best-validation) checkpoints. Solve times come from the clean
+re-timing (scripts/time_eval.py, one process per GPU, results/final_eval/timing/);
+the seconds-per-cube in the per-run evaluation files were measured with GPUs
+shared and are not used.
 
     python scripts/summarize_eval.py      # writes results/final_eval/summary.md
 """
@@ -18,9 +21,7 @@ METRICS = [("optimal_move_rate", None, "Optimal-move rate"),
            ("mean_excess_over_exact", "beam", "Beam mean excess over exact distance (solved)"),
            ("mean_excess_over_kociemba", "beam", "Beam mean excess over Kociemba length (solved)"),
            ("mean_length_solved", "greedy", "Greedy mean solution length (solved)"),
-           ("unsolved_wrong_pieces", "greedy", "Greedy unsolved: wrong pieces (of 20)"),
-           ("seconds_per_cube", "beam", "Beam seconds per cube"),
-           ("seconds_per_cube", "greedy", "Greedy seconds per cube")]
+           ("unsolved_wrong_pieces", "greedy", "Greedy unsolved: wrong pieces (of 20)")]
 PCT = {"optimal_move_rate", "solve_rate"}
 
 
@@ -85,6 +86,46 @@ def table(res, metric, part, title, base):
     return lines + [""]
 
 
+def timing_tables(res, kind):
+    """Clean solve times per set and arm (seconds per cube), if timed."""
+    tdir = EVAL / "timing"
+    times = {a: [] for a in ARMS}
+    for arm in ARMS:
+        for s, r in res[arm].items():
+            run = f"final_{arm}_s{s}"
+            p = tdir / f"{run}_bestval.json" if kind == "bestval" else tdir / f"{run}.json"
+            if kind == "bestval" and (not p.exists() or r.get("checkpoint") == "best_val (= final)"):
+                p = tdir / f"{run}.json"  # best-validation checkpoint is the final one
+            if p.exists():
+                times[arm].append(json.loads(p.read_text()))
+    if not any(times.values()):
+        return []
+    lines = []
+    for key, title, digits in (("beam_seconds_per_cube", "Beam (4096) seconds per cube, clean timing", 3),
+                               ("greedy_seconds_per_cube", "Greedy seconds per cube, clean timing", 4)):
+        head = ["Set", "cubes timed"] + [f"{a} (n={len(times[a])})" for a in ARMS]
+        lines += [f"### {title}", "",
+                  "One process per GPU (H200), same batching as the evaluation "
+                  "(greedy: the whole subsample at once; beam: 32 cubes at a time); wall time / cubes.", "",
+                  "| " + " | ".join(head) + " |", "|" + "---|" * len(head)]
+        for name in SETS:
+            n = next((t["sets"][name]["n"] for a in ARMS for t in times[a] if name in t["sets"]), "-")
+            cells = [name, str(n)]
+            for a in ARMS:
+                v = [t["sets"][name][key] for t in times[a] if name in t["sets"]]
+                if not v:
+                    cells.append("-")
+                    continue
+                m = sum(v) / len(v)
+                c = f"{m:.{digits}f}"
+                if len(v) > 1 and round(max(v), digits) != round(min(v), digits):
+                    c += f" ({min(v):.{digits}f}-{max(v):.{digits}f})"
+                cells.append(c)
+            lines.append("| " + " | ".join(cells) + " |")
+        lines.append("")
+    return lines
+
+
 def main():
     base = baseline_rows()
     md = ["# Final evaluation on the frozen test sets", "",
@@ -98,6 +139,7 @@ def main():
         md += [f"## {title}", "", f"Checkpoint steps by arm and seed: {json.dumps(steps)}", ""]
         for metric, part, t in METRICS:
             md += table(res, metric, part, t, base)
+        md += timing_tables(res, kind)
     (EVAL / "summary.md").write_text("\n".join(md))
     print("\n".join(md))
 

@@ -1,0 +1,96 @@
+{
+ "run": "final_true_distance_s2",
+ "checkpoint": "final",
+ "step": 100000,
+ "beam_width": 4096,
+ "cubes_per_batch": 32,
+ "stride": 5,
+ "gpu": "NVIDIA H200 NVL",
+ "sets": {
+  "d1_4_all": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00012,
+   "beam_seconds_per_cube": 0.01107,
+   "greedy_solve_rate": 1.0,
+   "beam_solve_rate": 1.0
+  },
+  "holdout_d5": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.0001,
+   "beam_seconds_per_cube": 0.02508,
+   "greedy_solve_rate": 1.0,
+   "beam_solve_rate": 1.0
+  },
+  "holdout_d6": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00086,
+   "beam_seconds_per_cube": 0.03819,
+   "greedy_solve_rate": 1.0,
+   "beam_solve_rate": 1.0
+  },
+  "d7": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00175,
+   "beam_seconds_per_cube": 0.0513,
+   "greedy_solve_rate": 0.95,
+   "beam_solve_rate": 1.0
+  },
+  "d8": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00187,
+   "beam_seconds_per_cube": 0.06449,
+   "greedy_solve_rate": 0.88,
+   "beam_solve_rate": 1.0
+  },
+  "d9": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00191,
+   "beam_seconds_per_cube": 0.0777,
+   "greedy_solve_rate": 0.625,
+   "beam_solve_rate": 1.0
+  },
+  "d10": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.0019,
+   "beam_seconds_per_cube": 0.09398,
+   "greedy_solve_rate": 0.48,
+   "beam_solve_rate": 1.0
+  },
+  "d11": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00189,
+   "beam_seconds_per_cube": 0.12408,
+   "greedy_solve_rate": 0.33,
+   "beam_solve_rate": 1.0
+  },
+  "d12": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.0019,
+   "beam_seconds_per_cube": 0.15087,
+   "greedy_solve_rate": 0.325,
+   "beam_solve_rate": 1.0
+  },
+  "d13": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00188,
+   "beam_seconds_per_cube": 0.19001,
+   "greedy_solve_rate": 0.325,
+   "beam_solve_rate": 1.0
+  },
+  "random": {
+   "n": 200,
+   "greedy_seconds_per_cube": 0.00189,
+   "beam_seconds_per_cube": 0.24855,
+   "greedy_solve_rate": 0.27,
+   "beam_solve_rate": 1.0
+  },
+  "d20_known": {
+   "n": 11,
+   "greedy_seconds_per_cube": 0.03134,
+   "beam_seconds_per_cube": 0.27062,
+   "greedy_solve_rate": 0.2727,
+   "beam_solve_rate": 1.0
+  }
+ },
+ "seconds": 227
+}

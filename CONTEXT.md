@@ -88,15 +88,15 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
   - On the laptop it runs at 4.6 steps/s, against 25 for the default model.
 - Logs for all pilot runs are in `results/pilot/`. The format is one JSON line per 200 steps; validation every 2,000 steps.
 - **Final runs** (9, wide model; logs in `results/final/`): validation hit at step 100,000 is 67.2 to 67.8% for both curricula and 71.1 to 71.9% for mixed; mixed overfits (training hit 96%, validation best about 73% at steps 40,000 to 50,000).
-- **Final evaluation** (`results/final_eval/summary.md`): beam 4096 solves every test cube for every run, including random and distance-20 cubes. Greedy: mixed solves far more deep cubes (d13 about 79% against 30 to 36%). Curricula have slightly higher optimal-move rates on deep exact cubes than step-100,000 mixed and give shorter beam solutions at d10 to d13; best-validation mixed is close to them there and shortest on random cubes. Seconds-per-cube figures are not clean (GPUs were shared). Full table in `docs/decisions.md`.
+- **Final evaluation** (`results/final_eval/summary.md`): beam 4096 solves every test cube for every run, including random and distance-20 cubes. Greedy: mixed solves far more deep cubes (d13 about 79% against 30 to 36%). Curricula have slightly higher optimal-move rates on deep exact cubes than step-100,000 mixed and give shorter beam solutions at d10 to d13; best-validation mixed is close to them there and shortest on random cubes. Clean solve times: beam 4096 about 0.01 s per cube at depth 1 to 4 up to about 0.25 s on random cubes; greedy about 0.002 s per cube in batches of 200. Full tables in `docs/decisions.md` and `results/final_eval/summary.md`.
 
 ## Open decisions (the user decides; bring evidence and a recommendation)
 1. **Gate C** and **the metric list**: decided on 2026-11-03 (see "Gates and decisions so far" and `docs/decisions.md`).
 2. **The mixed arm beats both curricula** in the pilot and in the final runs (greedy solve rate, validation hit). That is a legitimate result for the research question. Any change to the curriculum design (for example, mixing in some deep cubes in early stages) is a method change and needs the user's approval and a log entry.
-3. **Solve time:** the recorded seconds per cube were measured with 2 to 4 evaluations sharing a GPU; a clean re-timing would be a separate, small job.
+3. **Solve time:** re-measured cleanly (one process per GPU, `scripts/time_eval.py`, `results/final_eval/timing/`); the seconds per cube in the per-run evaluation files were measured with GPUs shared and are superseded.
 
 ## Next steps
-Steps 1 to 5 are done (setup, data, Gate C, 9 final runs, final evaluation). Next is Step 6: charts by depth per arm with all seeds, the written report and a single rerun command. Open questions for the user: whether to re-time solve speed cleanly (one evaluation per GPU), and how to present the primary and secondary checkpoints in the report.
+Steps 1 to 5 are done (setup, data, Gate C, 9 final runs, final evaluation). Next is Step 6: charts by depth per arm with all seeds, the written report and a single rerun command. Open question for the user: how to present the primary and secondary checkpoints in the report.
 
 ## Known engineering lessons
 - **Kociemba workers run as plain subprocesses** (`python -m rubik.koc_worker`), never `multiprocessing`. On Windows, spawn re-imports torch in every worker and exhausted memory twice.
