@@ -16,3 +16,7 @@ runs/
 
 # editor (machine-specific interpreter path)
 .vscode/
+
+# local documents, not published
+AI proposal.pdf
+Implementation plan.md
