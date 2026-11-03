@@ -2,6 +2,7 @@
 
     python scripts/train.py --config configs/base.yaml --arm true_distance --seed 0
     python scripts/train.py --config configs/base.yaml --arm mixed --seed 0 --set total_steps=2000
+    python scripts/train.py ... --set stop_at=10000   # pause early; rerun later to continue
 
 Logs to RUNS_DIR/<run>/log.jsonl, checkpoints to CHECKPOINT_DIR/<run>/.
 Monitoring uses the pool's validation share only; the frozen test sets are
@@ -106,7 +107,8 @@ def main():
     bs = cfg["batch_size"]
     t_last, loss_acc, hit_acc, n_acc = time.time(), 0.0, 0.0, 0
     model.train()
-    while step < total:
+    end = min(cfg.get("stop_at") or total, total)
+    while step < end:
         idx = sampler.sample(step, bs)
         x = encode(train.states[idx])
         y = soft_targets(train.mask[idx])
@@ -122,16 +124,16 @@ def main():
         loss_acc += loss.item(); n_acc += 1
         hit_acc += ((train.mask[idx].long() >> logits.argmax(1)) & 1).float().mean().item()
 
-        if step % cfg["log_every"] == 0 or step == total:
+        if step % cfg["log_every"] == 0 or step in (total, end):
             rec = {"step": step, "stage": sampler.stage(step - 1), "loss": loss_acc / n_acc,
                    "train_hit": hit_acc / n_acc, "lr": sched.get_last_lr()[0],
                    "steps_per_s": n_acc / (time.time() - t_last)}
-            if step % cfg["val_every"] == 0 or step == total:
+            if step % cfg["val_every"] == 0 or step in (total, end):
                 rec.update(validate(model, val))
             log.write(json.dumps(rec) + "\n"); log.flush()
             print(json.dumps(rec), flush=True)
             t_last, loss_acc, hit_acc, n_acc = time.time(), 0.0, 0.0, 0
-        if step % cfg["ckpt_every"] == 0 or step == total:
+        if step % cfg["ckpt_every"] == 0 or step in (total, end):
             ck = {"model": model.state_dict(), "opt": opt.state_dict(), "sched": sched.state_dict(),
                   "sampler": sampler.state_dict(), "rng_cpu": torch.get_rng_state(),
                   "rng_cuda": torch.cuda.get_rng_state(), "step": step, "config": cfg}
