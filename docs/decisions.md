@@ -46,3 +46,17 @@ Decisions:
 **Equal-share stages.** All arms get the same number of stages, the same steps per stage and the same total steps. Each stage adds the same share of the pool, cut at the arm's own difficulty quantiles (true distance or Kociemba length); the mixed control samples the whole pool from the start. Only the order of cubes differs between arms. The number of stages is set at Gate C.
 
 **Engineering:** Kociemba workers run as plain subprocesses (`python -m rubik.koc_worker`). With `multiprocessing` on Windows, each worker re-runs the main script and imports torch (1 to 2 GB each), which exhausted memory twice.
+
+**Pool built:** 30.4M cubes in total (20.2M path, 340,000 exact at distance 10 to 12, 9.8M depth 1 to 7 with Kociemba lengths); 0.5% held back for validation. Build time about 6 hours on the laptop.
+
+**Gate C pilot** (default model 1024x4, 8.9M parameters; 40,000 steps, 10 stages, batch 4096, one seed; 26 minutes per arm at about 25 steps/s on the laptop GPU). Validation share, final step:
+
+| Arm | Optimal move, exact cubes | Depth 8-9 | Depth 10-12 | Depth 13+ (Kociemba target) | Train hit / val hit |
+|---|---|---|---|---|---|
+| True distance | 87.3% | 70.0% | 65.7% | 45.5% | 70.8% / 67.6% |
+| Kociemba | 87.1% | 71.1% | 66.3% | 47.2% | 72.0% / 68.3% |
+| Mixed | 87.9% | 71.6% | 68.0% | 54.7% | 75.2% / 71.9% |
+
+- Mixed is ahead throughout, most at depth 13+, where curriculum arms meet those cubes only in the last stages.
+- Train and validation hit rates are close, so the model underfits rather than overfits: more capacity or more steps may help. To be tested with the wide model before the final runs.
+- One seed; differences of about 1 point are within noise.
