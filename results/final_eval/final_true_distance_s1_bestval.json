@@ -1,0 +1,7 @@
+{
+ "run": "final_true_distance_s1",
+ "checkpoint": "best_val",
+ "step": 100000,
+ "val_target_hit": 0.6724500060081482,
+ "same_as_final": "final_true_distance_s1.json"
+}

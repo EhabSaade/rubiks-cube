@@ -24,9 +24,9 @@ Solo project, planned for 4 to 8 weeks (about 6), first code commit 2026-11-02. 
 | 1 | Setup, batched simulator, scrambles, encoding | Done |
 | 2 | Exact table to depth 6, hold-out, Kociemba wrapper, speed test; Gates A and B | Done |
 | 3 | Frozen test sets, rollouts, progress measures, baselines | Done |
-| 4 | Model, training loop, pool, pilot; Gate C | Pilot done; **Gate C decisions open** |
-| 5 | 9 full runs, then evaluate all on the frozen test sets | **Next** |
-| 6 | Charts by depth per arm with all seeds, report, single rerun command | Later |
+| 4 | Model, training loop, pool, pilot; Gate C | Done (GPU machine, 2026-11-03) |
+| 5 | 9 full runs, then evaluate all on the frozen test sets | Done (2026-11-03) |
+| 6 | Charts by depth per arm with all seeds, report, single rerun command | **Next** |
 
 ## Gates and decisions so far
 - **Gate A (speed test):**
@@ -43,11 +43,13 @@ Solo project, planned for 4 to 8 weeks (about 6), first code commit 2026-11-02. 
   - Each stage adds the same share of the pool, cut at the arm's own difficulty quantiles.
   - The mixed arm samples the whole pool from step 0.
 - **GitHub:** public repo https://github.com/EhabSaade/rubiks-cube, owned and pushed by the user.
+- **Gate C (2026-11-03):** wide model 2048x8 (68M parameters, `configs/wide.yaml`), 100,000 steps, 20 stages, beam width 4096.
+- **Final evaluation:** metrics as in `scripts/evaluate_runs.py` (distance-reduction rate dropped: it equals the optimal-move rate); batched beam search (`beam_rollout_batched`, verified identical to `beam_rollout`). Checkpoints: primary step 100,000; secondary the best-validation kept checkpoint (mixed overfits after about 40,000 steps).
 
 ## Data (not in git)
 All large files live under the storage folder: `D:\rubiks-cube` on the laptop, or the `RUBIK_STORAGE` environment variable.
 
-**On the GPU machine, all data is rebuilt from scratch** with `scripts/build_all.sh` (the user's choice). Every build is seeded, and `scripts/check_data.py` compares the rebuilt table, hold-out and test sets with the checksums recorded in `results/` (`table_d6.json`, `holdout_d5_d6.json`, `testsets_manifest.json`). On the laptop, all of them match. The 100 cube20.org distance-20 positions are in `resources/cube20_random100.txt`. The list below describes the laptop build; a fresh build should give the same.
+**On the GPU machine (Slurm node galileo4, 4x H200, storage `~/rubiks-cube`), all data was rebuilt from scratch on 2026-11-03 and every checksum matched.** The build uses `scripts/build_all.sh` (the user's choice). Every build is seeded, and `scripts/check_data.py` compares the rebuilt table, hold-out and test sets with the checksums recorded in `results/` (`table_d6.json`, `holdout_d5_d6.json`, `testsets_manifest.json`). On the laptop, all of them match. The 100 cube20.org distance-20 positions are in `resources/cube20_random100.txt`. The list below describes the laptop build; a fresh build should give the same.
 - `data/table_d6.pt` (417 MB): every state to depth 6 (8,240,067) with distance and an 18-bit mask of all optimal moves. It gives exact labels to depth 7.
 - `data/holdout_d5_d6.pt`: 28,745 depth-5 and 380,922 depth-6 cubes, blocked from training.
 - `data/testsets/*.pt` (465,418 cubes, frozen). Checksums are in `results/testsets_manifest.json`.
@@ -85,34 +87,16 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
   - It still underfits.
   - On the laptop it runs at 4.6 steps/s, against 25 for the default model.
 - Logs for all pilot runs are in `results/pilot/`. The format is one JSON line per 200 steps; validation every 2,000 steps.
+- **Final runs** (9, wide model; logs in `results/final/`): validation hit at step 100,000 is 67.2 to 67.8% for both curricula and 71.1 to 71.9% for mixed; mixed overfits (training hit 96%, validation best about 73% at steps 40,000 to 50,000).
+- **Final evaluation** (`results/final_eval/summary.md`): beam 4096 solves every test cube for every run, including random and distance-20 cubes. Greedy: mixed solves far more deep cubes (d13 about 79% against 30 to 36%). Curricula have slightly higher optimal-move rates on deep exact cubes than step-100,000 mixed and give shorter beam solutions at d10 to d13; best-validation mixed is close to them there and shortest on random cubes. Seconds-per-cube figures are not clean (GPUs were shared). Full table in `docs/decisions.md`.
 
 ## Open decisions (the user decides; bring evidence and a recommendation)
-1. **Gate C:**
-   - Model size: default 1024x4 or wide 2048x8 (`configs/wide.yaml`).
-   - Total steps and number of stages; the pilot used 40k steps and 10 stages, the config default is 100k steps.
-   - Beam width.
-   - Suggested first job on the GPU machine: a short speed test, then a full-length wide vs default comparison on one arm.
-2. **The pilot finding:** the mixed arm beats both curricula. That is a legitimate result for the research question. Any change to the curriculum design (for example, mixing in some deep cubes in early stages) is a method change and needs the user's approval and a log entry.
-3. **Metric list, before final testing.** Suggested:
-   - Optimal-move rate.
-   - Distance-reduction rate.
-   - Solve rate by depth (greedy and beam).
-   - Solution length.
-   - Solve time.
-   - Heuristic progress on unsolved cubes: misplaced or misoriented cubies, with correct stickers as a secondary measure.
+1. **Gate C** and **the metric list**: decided on 2026-11-03 (see "Gates and decisions so far" and `docs/decisions.md`).
+2. **The mixed arm beats both curricula** in the pilot and in the final runs (greedy solve rate, validation hit). That is a legitimate result for the research question. Any change to the curriculum design (for example, mixing in some deep cubes in early stages) is a method change and needs the user's approval and a log entry.
+3. **Solve time:** the recorded seconds per cube were measured with 2 to 4 evaluations sharing a GPU; a clean re-timing would be a separate, small job.
 
 ## Next steps
-1. Set up the GPU machine and build the data freshly (see AGENTS.md). `check_data.py` must report that everything matches.
-2. Run a speed test there for both model sizes, a few hundred steps each.
-3. Bring the Gate C decision to the user and log it in `docs/decisions.md`.
-4. Run the 9 final runs with `scripts/run_arms.sh`.
-5. Write the final evaluation script, once the user has confirmed the metrics:
-   - It loads each run's final checkpoint and evaluates on every frozen test set.
-   - Use greedy and beam rollouts (`rubik/evaluate.py`: `greedy_rollout`, `beam_rollout`, `model_policy`) and progress measures.
-   - Report per depth.
-   - Save summaries in `results/`.
-   - Baselines must use the same sets: see `scripts/run_baselines.py`, which subsamples 1,000 cubes per set for rollouts.
-6. Charts and report (Step 6).
+Steps 1 to 5 are done (setup, data, Gate C, 9 final runs, final evaluation). Next is Step 6: charts by depth per arm with all seeds, the written report and a single rerun command. Open questions for the user: whether to re-time solve speed cleanly (one evaluation per GPU), and how to present the primary and secondary checkpoints in the report.
 
 ## Known engineering lessons
 - **Kociemba workers run as plain subprocesses** (`python -m rubik.koc_worker`), never `multiprocessing`. On Windows, spawn re-imports torch in every worker and exhausted memory twice.

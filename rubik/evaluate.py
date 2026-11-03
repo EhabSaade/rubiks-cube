@@ -124,6 +124,112 @@ def beam_rollout(policy, states, width=16, max_moves=MAX_MOVES):
     return {"solved": solved_flag, "length": length, "final": best_final}
 
 
+def beam_rollout_batched(policy, states, width=16, max_moves=MAX_MOVES, cubes_per_batch=32):
+    """Same search as beam_rollout, run for many cubes at once (faster on a GPU).
+
+    Per cube: beams ranked by cumulative log-probability, states already in that
+    cube's beam history forbidden, one copy per distinct state (its best score),
+    the top `width` kept, stop at the first solved state or after max_moves.
+    History and duplicates are matched on exact (cube, hash) pairs, so cubes
+    never interact. Returns solved (N,) bool, length (N,) long, final (N, 40)."""
+    n, dev = len(states), states.device
+    solved_flag = is_solved(states)
+    length = torch.where(solved_flag, 0, -1)
+    best_final = states.clone()
+    todo = torch.nonzero(~solved_flag).squeeze(1)
+    for i in range(0, len(todo), cubes_per_batch):
+        ids = todo[i:i + cubes_per_batch]
+        k = len(ids)
+        beam, bc = states[ids], torch.arange(k, device=dev)  # beam states and their cube (0..k-1)
+        logp = torch.zeros(k, device=dev)
+        hist_c, hist_h = bc.clone(), state_hash(beam)
+        live = torch.ones(k, dtype=torch.bool, device=dev)
+        for step in range(max_moves):
+            lp = torch.log_softmax(policy(beam).float(), dim=1)  # (B, 18)
+            nb = neighbors(beam).view(-1, STATE_DIM)
+            cc = bc.repeat_interleave(N_MOVES)
+            score = (logp.unsqueeze(1) + lp).view(-1)
+            h = state_hash(nb)
+            score = score.masked_fill(_pair_isin(cc, h, hist_c, hist_h), NEG)
+            # group by cube, best score first within each cube
+            order = torch.argsort(score, descending=True, stable=True)
+            order = order[torch.argsort(cc[order], stable=True)]
+            oc, oh = cc[order], h[order]
+            first = _first_in_run(oc, oh)  # first (best) copy of each state within its cube
+            valid = first & ~torch.isinf(score[order])
+            counts = torch.bincount(oc[valid], minlength=k)
+            base = torch.cumsum(counts, 0) - counts
+            rank = torch.cumsum(valid.long(), 0) - 1 - base[oc]
+            keep = order[valid & (rank < width)]
+            # cubes with no move left fail; their final state is their current best beam state
+            dead = live & (counts == 0)
+            if dead.any():
+                head = _first_per_cube(bc, k)
+                for c in torch.nonzero(dead).squeeze(1).tolist():
+                    best_final[ids[c]] = beam[head[c]]
+                live &= ~dead
+            beam, bc, logp = nb[keep], cc[keep], score[keep]
+            hist_c, hist_h = torch.cat([hist_c, bc]), torch.cat([hist_h, h[keep]])
+            hit = is_solved(beam)
+            if hit.any():
+                hit_cubes = torch.unique(bc[hit])
+                first_hit = _first_per_cube(bc[hit], k)
+                hit_states = beam[hit]
+                for c in hit_cubes.tolist():
+                    solved_flag[ids[c]] = True
+                    length[ids[c]] = step + 1
+                    best_final[ids[c]] = hit_states[first_hit[c]]
+                live[hit_cubes] = False
+            if not live.any():
+                break
+            stay = live[bc]
+            beam, bc, logp = beam[stay], bc[stay], logp[stay]
+        if live.any():
+            head = _first_per_cube(bc, k)
+            for c in torch.nonzero(live).squeeze(1).tolist():
+                best_final[ids[c]] = beam[head[c]]
+    return {"solved": solved_flag, "length": length, "final": best_final}
+
+
+def _first_in_run(c, h):
+    """For entries grouped by c (any order inside a group): True at the first
+    entry of each distinct (c, h) pair, in the given order."""
+    o = torch.argsort(h, stable=True)
+    o = o[torch.argsort(c[o], stable=True)]
+    cs, hs = c[o], h[o]
+    new = torch.ones(len(o), dtype=torch.bool, device=c.device)
+    new[1:] = (cs[1:] != cs[:-1]) | (hs[1:] != hs[:-1])
+    out = torch.zeros(len(o), dtype=torch.bool, device=c.device)
+    out[o[new]] = True  # stable sorts keep the earliest entry first in each run
+    return out
+
+
+def _pair_isin(qc, qh, rc, rh):
+    """True where the (cube, hash) pair (qc, qh) occurs among the pairs (rc, rh)."""
+    c, h = torch.cat([rc, qc]), torch.cat([rh, qh])
+    is_ref = torch.zeros(len(c), dtype=torch.bool, device=c.device)
+    is_ref[:len(rc)] = True
+    o = torch.argsort(h, stable=True)
+    o = o[torch.argsort(c[o], stable=True)]
+    cs, hs = c[o], h[o]
+    new = torch.ones(len(o), dtype=torch.bool, device=c.device)
+    new[1:] = (cs[1:] != cs[:-1]) | (hs[1:] != hs[:-1])
+    run = torch.cumsum(new.long(), 0) - 1
+    has_ref = torch.zeros(int(run[-1]) + 1, dtype=torch.bool, device=c.device)
+    has_ref[run[is_ref[o]]] = True
+    out = torch.empty(len(c), dtype=torch.bool, device=c.device)
+    out[o] = has_ref[run]
+    return out[len(rc):]
+
+
+def _first_per_cube(bc, k):
+    """Index of the first entry of each cube 0..k-1 in bc (-1 if absent)."""
+    pos = torch.arange(len(bc), device=bc.device)
+    out = torch.full((k,), len(bc), dtype=torch.long, device=bc.device)
+    out.scatter_reduce_(0, bc, pos, reduce="amin")
+    return torch.where(out == len(bc), -1, out)
+
+
 def _first_occurrence(sorted_by_score_hashes):
     """Positions of the first occurrence of each hash in the given order."""
     h = sorted_by_score_hashes

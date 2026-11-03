@@ -1,9 +1,9 @@
 import torch
 
 from rubik.cube import N_MOVES, solved
-from rubik.evaluate import (beam_rollout, correct_stickers, greedy_rollout, misoriented_cubies,
-                            misplaced_cubies, random_policy, shallow_search_policy, table_policy,
-                            wrong_pieces)
+from rubik.evaluate import (beam_rollout, beam_rollout_batched, correct_stickers, greedy_rollout,
+                            misoriented_cubies, misplaced_cubies, random_policy, shallow_search_policy,
+                            table_policy, wrong_pieces)
 from rubik.scramble import scramble
 from rubik.table import DistanceTable
 
@@ -19,6 +19,26 @@ def test_oracle_policy_solves_optimally():
     assert g["solved"].all() and torch.equal(g["length"], d)
     b = beam_rollout(pol, states[:30], width=4)
     assert b["solved"].all() and torch.equal(b["length"], d[:30])
+
+
+def test_batched_beam_matches_beam():
+    from rubik.encoding import encode
+    from rubik.model import ResidualMLP
+    torch.manual_seed(0)
+    model = ResidualMLP(64, 1).to(DEV).eval()
+    pol = lambda s: model(encode(s)).detach()  # untrained: continuous scores, no ties
+    g = torch.Generator().manual_seed(6)
+    states = torch.cat([scramble(12, d, g, DEV)[0] for d in (1, 2, 3, 8)])
+    for width in (1, 8):
+        a = beam_rollout(pol, states, width=width, max_moves=25)
+        b = beam_rollout_batched(pol, states, width=width, max_moves=25, cubes_per_batch=5)
+        assert torch.equal(a["solved"], b["solved"]) and torch.equal(a["length"], b["length"])
+        assert torch.equal(a["final"], b["final"])
+    t = DistanceTable.build(3, DEV, verbose=False)
+    s4, _ = scramble(40, 4, torch.Generator().manual_seed(7), DEV)
+    d, _ = t.label(s4)
+    b = beam_rollout_batched(table_policy(t), s4, width=4, cubes_per_batch=16)
+    assert b["solved"].all() and torch.equal(b["length"], d)
 
 
 def test_rollout_cap_and_no_revisits():
