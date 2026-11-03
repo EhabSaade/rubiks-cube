@@ -124,12 +124,14 @@ def main():
     ap.add_argument("--cubes_per_batch", type=int, default=32)
     ap.add_argument("--sets", nargs="*", default=list(SET_NAMES))
     ap.add_argument("--checkpoint", choices=["final", "best_val"], default="final")
+    ap.add_argument("--out_dir", default=str(OUT_DIR), help="default results/final_eval")
     args = ap.parse_args()
+    out_dir = Path(args.out_dir)
     runs = args.runs or sorted(p.name for p in CHECKPOINT_DIR.glob("final_*")
                                if (RUNS_DIR / p.name / "config.json").exists())
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     for run in runs:
-        out = OUT_DIR / (f"{run}.json" if args.checkpoint == "final" else f"{run}_bestval.json")
+        out = out_dir / (f"{run}.json" if args.checkpoint == "final" else f"{run}_bestval.json")
         if out.exists():
             print(f"{run}: already evaluated ({out})")
             continue
