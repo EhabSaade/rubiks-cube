@@ -60,3 +60,5 @@ Decisions:
 - Mixed is ahead throughout, most at depth 13+, where curriculum arms meet those cubes only in the last stages.
 - Train and validation hit rates are close, so the model underfits rather than overfits: more capacity or more steps may help. To be tested with the wide model before the final runs.
 - One seed; differences of about 1 point are within noise.
+
+**Wide model check** (2048x8, 68M parameters, mixed arm, same 40,000-step schedule, stopped at step 10,000; 4.6 steps/s on the laptop, 5.5 times slower than the default). Validation share at step 10,000, wide vs default: optimal move on exact cubes 84.2% vs 81.4%, depth 8-9 61.6% vs 56.8%, depth 10-12 64.6% vs 64.2%, depth 13+ 53.1% vs 51.7%, train hit 70.9% vs 68.5%. The wide model is ahead by 1 to 5 points and still underfits. A full-length comparison is left for the GPU machine, where the wide model is cheap. Pilot logs are in `results/pilot/`.

@@ -1,0 +1,19 @@
+{
+  "prefix": "pilot",
+  "width": 1024,
+  "blocks": 4,
+  "batch_size": 4096,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "warmup_steps": 500,
+  "grad_clip": 1.0,
+  "total_steps": 40000,
+  "n_stages": 10,
+  "log_every": 200,
+  "val_every": 2000,
+  "ckpt_every": 2000,
+  "keep_every": 10000,
+  "arm": "mixed",
+  "seed": 0,
+  "run_name": "pilot_mixed_s0"
+}

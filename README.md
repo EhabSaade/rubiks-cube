@@ -35,6 +35,13 @@ python scripts/train.py --config configs/base.yaml --arm true_distance --seed 0
 ```
 Arms: `true_distance`, `kociemba`, `mixed`. Runs resume from their last checkpoint.
 
+All arms and seeds on several GPUs (Linux; setup with `scripts/pack_data.sh` and `scripts/cloud_setup.sh`):
+```
+GPUS="0 1 2" bash scripts/run_arms.sh prefix=final
+```
+
+Project state and open decisions: [CONTEXT.md](CONTEXT.md). Instructions for AI agents: [AGENTS.md](AGENTS.md).
+
 ## Tests
 ```
 python -m pytest -q tests
