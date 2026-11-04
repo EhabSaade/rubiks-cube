@@ -427,6 +427,438 @@ true_distance (20 stages),2,final,100000,d20_known,beam,4096,solve_rate,1.0
 true_distance (20 stages),2,final,100000,d20_known,beam,4096,mean_length_solved,23.0
 true_distance (20 stages),2,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.0
 true_distance (20 stages),2,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.4545
+true_distance (20 stages),3,final,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+true_distance (20 stages),3,final,100000,d1_4_all,greedy,,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+true_distance (20 stages),3,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),3,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),3,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+true_distance (20 stages),3,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),3,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9998608453644112
+true_distance (20 stages),3,final,100000,holdout_d5,greedy,,solve_rate,1.0
+true_distance (20 stages),3,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+true_distance (20 stages),3,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),3,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),3,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+true_distance (20 stages),3,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),3,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9895831692577483
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,solve_rate,0.999
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,mean_length_solved,6.1772
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.1772
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.4615
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_misplaced,13.0
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_misoriented,4.0
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,14.0
+true_distance (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,18.0
+true_distance (20 stages),3,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+true_distance (20 stages),3,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+true_distance (20 stages),3,final,100000,d7,one_move,,optimal_move_rate,0.9065
+true_distance (20 stages),3,final,100000,d7,greedy,,solve_rate,0.961
+true_distance (20 stages),3,final,100000,d7,greedy,,mean_length_solved,7.9802
+true_distance (20 stages),3,final,100000,d7,greedy,,mean_excess_over_exact,0.9802
+true_distance (20 stages),3,final,100000,d7,greedy,,mean_excess_over_kociemba,-1.205
+true_distance (20 stages),3,final,100000,d7,greedy,,unsolved_misplaced,15.1026
+true_distance (20 stages),3,final,100000,d7,greedy,,unsolved_misoriented,3.0769
+true_distance (20 stages),3,final,100000,d7,greedy,,unsolved_wrong_pieces,15.3077
+true_distance (20 stages),3,final,100000,d7,greedy,,unsolved_correct_stickers,20.7949
+true_distance (20 stages),3,final,100000,d7,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d7,beam,4096,mean_length_solved,7.0
+true_distance (20 stages),3,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+true_distance (20 stages),3,final,100000,d8,one_move,,optimal_move_rate,0.722
+true_distance (20 stages),3,final,100000,d8,greedy,,solve_rate,0.847
+true_distance (20 stages),3,final,100000,d8,greedy,,mean_length_solved,13.2704
+true_distance (20 stages),3,final,100000,d8,greedy,,mean_excess_over_exact,5.2704
+true_distance (20 stages),3,final,100000,d8,greedy,,mean_excess_over_kociemba,2.6588
+true_distance (20 stages),3,final,100000,d8,greedy,,unsolved_misplaced,15.1961
+true_distance (20 stages),3,final,100000,d8,greedy,,unsolved_misoriented,3.0523
+true_distance (20 stages),3,final,100000,d8,greedy,,unsolved_wrong_pieces,15.4379
+true_distance (20 stages),3,final,100000,d8,greedy,,unsolved_correct_stickers,20.634
+true_distance (20 stages),3,final,100000,d8,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d8,beam,4096,mean_length_solved,8.0
+true_distance (20 stages),3,final,100000,d8,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+true_distance (20 stages),3,final,100000,d9,one_move,,optimal_move_rate,0.553
+true_distance (20 stages),3,final,100000,d9,greedy,,solve_rate,0.656
+true_distance (20 stages),3,final,100000,d9,greedy,,mean_length_solved,22.7729
+true_distance (20 stages),3,final,100000,d9,greedy,,mean_excess_over_exact,13.7729
+true_distance (20 stages),3,final,100000,d9,greedy,,mean_excess_over_kociemba,10.9558
+true_distance (20 stages),3,final,100000,d9,greedy,,unsolved_misplaced,15.0552
+true_distance (20 stages),3,final,100000,d9,greedy,,unsolved_misoriented,3.718
+true_distance (20 stages),3,final,100000,d9,greedy,,unsolved_wrong_pieces,15.3081
+true_distance (20 stages),3,final,100000,d9,greedy,,unsolved_correct_stickers,20.6163
+true_distance (20 stages),3,final,100000,d9,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d9,beam,4096,mean_length_solved,9.069
+true_distance (20 stages),3,final,100000,d9,beam,4096,mean_excess_over_exact,0.069
+true_distance (20 stages),3,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.714
+true_distance (20 stages),3,final,100000,d10,one_move,,optimal_move_rate,0.411
+true_distance (20 stages),3,final,100000,d10,greedy,,solve_rate,0.497
+true_distance (20 stages),3,final,100000,d10,greedy,,mean_length_solved,34.4125
+true_distance (20 stages),3,final,100000,d10,greedy,,mean_excess_over_exact,24.4125
+true_distance (20 stages),3,final,100000,d10,greedy,,mean_excess_over_kociemba,20.7203
+true_distance (20 stages),3,final,100000,d10,greedy,,unsolved_misplaced,15.3082
+true_distance (20 stages),3,final,100000,d10,greedy,,unsolved_misoriented,3.3996
+true_distance (20 stages),3,final,100000,d10,greedy,,unsolved_wrong_pieces,15.501
+true_distance (20 stages),3,final,100000,d10,greedy,,unsolved_correct_stickers,20.5229
+true_distance (20 stages),3,final,100000,d10,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d10,beam,4096,mean_length_solved,10.291
+true_distance (20 stages),3,final,100000,d10,beam,4096,mean_excess_over_exact,0.291
+true_distance (20 stages),3,final,100000,d10,beam,4096,mean_excess_over_kociemba,-3.42
+true_distance (20 stages),3,final,100000,d11,one_move,,optimal_move_rate,0.275
+true_distance (20 stages),3,final,100000,d11,greedy,,solve_rate,0.376
+true_distance (20 stages),3,final,100000,d11,greedy,,mean_length_solved,47.5106
+true_distance (20 stages),3,final,100000,d11,greedy,,mean_excess_over_exact,36.5106
+true_distance (20 stages),3,final,100000,d11,greedy,,mean_excess_over_kociemba,31.4176
+true_distance (20 stages),3,final,100000,d11,greedy,,unsolved_misplaced,15.141
+true_distance (20 stages),3,final,100000,d11,greedy,,unsolved_misoriented,3.2372
+true_distance (20 stages),3,final,100000,d11,greedy,,unsolved_wrong_pieces,15.3317
+true_distance (20 stages),3,final,100000,d11,greedy,,unsolved_correct_stickers,20.9022
+true_distance (20 stages),3,final,100000,d11,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d11,beam,4096,mean_length_solved,12.129
+true_distance (20 stages),3,final,100000,d11,beam,4096,mean_excess_over_exact,1.129
+true_distance (20 stages),3,final,100000,d11,beam,4096,mean_excess_over_kociemba,-4.245
+true_distance (20 stages),3,final,100000,d12,one_move,,optimal_move_rate,0.265
+true_distance (20 stages),3,final,100000,d12,greedy,,solve_rate,0.341
+true_distance (20 stages),3,final,100000,d12,greedy,,mean_length_solved,51.8475
+true_distance (20 stages),3,final,100000,d12,greedy,,mean_excess_over_exact,39.8475
+true_distance (20 stages),3,final,100000,d12,greedy,,mean_excess_over_kociemba,33.8094
+true_distance (20 stages),3,final,100000,d12,greedy,,unsolved_misplaced,15.1077
+true_distance (20 stages),3,final,100000,d12,greedy,,unsolved_misoriented,3.5296
+true_distance (20 stages),3,final,100000,d12,greedy,,unsolved_wrong_pieces,15.3445
+true_distance (20 stages),3,final,100000,d12,greedy,,unsolved_correct_stickers,20.7511
+true_distance (20 stages),3,final,100000,d12,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d12,beam,4096,mean_length_solved,14.661
+true_distance (20 stages),3,final,100000,d12,beam,4096,mean_excess_over_exact,2.661
+true_distance (20 stages),3,final,100000,d12,beam,4096,mean_excess_over_kociemba,-3.622
+true_distance (20 stages),3,final,100000,d13,one_move,,optimal_move_rate,0.183
+true_distance (20 stages),3,final,100000,d13,greedy,,solve_rate,0.295
+true_distance (20 stages),3,final,100000,d13,greedy,,mean_length_solved,57.8508
+true_distance (20 stages),3,final,100000,d13,greedy,,mean_excess_over_exact,44.8508
+true_distance (20 stages),3,final,100000,d13,greedy,,mean_excess_over_kociemba,38.5593
+true_distance (20 stages),3,final,100000,d13,greedy,,unsolved_misplaced,15.1702
+true_distance (20 stages),3,final,100000,d13,greedy,,unsolved_misoriented,3.3305
+true_distance (20 stages),3,final,100000,d13,greedy,,unsolved_wrong_pieces,15.3787
+true_distance (20 stages),3,final,100000,d13,greedy,,unsolved_correct_stickers,20.5986
+true_distance (20 stages),3,final,100000,d13,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d13,beam,4096,mean_length_solved,17.592
+true_distance (20 stages),3,final,100000,d13,beam,4096,mean_excess_over_exact,4.592
+true_distance (20 stages),3,final,100000,d13,beam,4096,mean_excess_over_kociemba,-1.803
+true_distance (20 stages),3,final,100000,random,greedy,,solve_rate,0.3
+true_distance (20 stages),3,final,100000,random,greedy,,mean_length_solved,62.48
+true_distance (20 stages),3,final,100000,random,greedy,,mean_excess_over_kociemba,41.7133
+true_distance (20 stages),3,final,100000,random,greedy,,unsolved_misplaced,15.2743
+true_distance (20 stages),3,final,100000,random,greedy,,unsolved_misoriented,3.6614
+true_distance (20 stages),3,final,100000,random,greedy,,unsolved_wrong_pieces,15.4871
+true_distance (20 stages),3,final,100000,random,greedy,,unsolved_correct_stickers,20.3829
+true_distance (20 stages),3,final,100000,random,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,random,beam,4096,mean_length_solved,21.92
+true_distance (20 stages),3,final,100000,random,beam,4096,mean_excess_over_kociemba,1.133
+true_distance (20 stages),3,final,100000,d20_known,greedy,,solve_rate,0.3636
+true_distance (20 stages),3,final,100000,d20_known,greedy,,mean_length_solved,68.0
+true_distance (20 stages),3,final,100000,d20_known,greedy,,mean_excess_over_exact,48.0
+true_distance (20 stages),3,final,100000,d20_known,greedy,,mean_excess_over_kociemba,46.75
+true_distance (20 stages),3,final,100000,d20_known,greedy,,unsolved_misplaced,15.2857
+true_distance (20 stages),3,final,100000,d20_known,greedy,,unsolved_misoriented,5.5714
+true_distance (20 stages),3,final,100000,d20_known,greedy,,unsolved_wrong_pieces,15.7143
+true_distance (20 stages),3,final,100000,d20_known,greedy,,unsolved_correct_stickers,18.8571
+true_distance (20 stages),3,final,100000,d20_known,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,final,100000,d20_known,beam,4096,mean_length_solved,23.1818
+true_distance (20 stages),3,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.1818
+true_distance (20 stages),3,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.6364
+true_distance (20 stages),4,final,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+true_distance (20 stages),4,final,100000,d1_4_all,greedy,,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+true_distance (20 stages),4,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),4,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),4,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+true_distance (20 stages),4,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),4,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9998956340233084
+true_distance (20 stages),4,final,100000,holdout_d5,greedy,,solve_rate,1.0
+true_distance (20 stages),4,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+true_distance (20 stages),4,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),4,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),4,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+true_distance (20 stages),4,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),4,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9897249305632124
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,solve_rate,0.996
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,mean_length_solved,6.0793
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.0793
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.5572
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_misplaced,17.25
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_misoriented,5.75
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,17.25
+true_distance (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,18.0
+true_distance (20 stages),4,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+true_distance (20 stages),4,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+true_distance (20 stages),4,final,100000,d7,one_move,,optimal_move_rate,0.9075
+true_distance (20 stages),4,final,100000,d7,greedy,,solve_rate,0.967
+true_distance (20 stages),4,final,100000,d7,greedy,,mean_length_solved,7.7539
+true_distance (20 stages),4,final,100000,d7,greedy,,mean_excess_over_exact,0.7539
+true_distance (20 stages),4,final,100000,d7,greedy,,mean_excess_over_kociemba,-1.393
+true_distance (20 stages),4,final,100000,d7,greedy,,unsolved_misplaced,15.2424
+true_distance (20 stages),4,final,100000,d7,greedy,,unsolved_misoriented,3.7576
+true_distance (20 stages),4,final,100000,d7,greedy,,unsolved_wrong_pieces,15.4848
+true_distance (20 stages),4,final,100000,d7,greedy,,unsolved_correct_stickers,20.6667
+true_distance (20 stages),4,final,100000,d7,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d7,beam,4096,mean_length_solved,7.0
+true_distance (20 stages),4,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+true_distance (20 stages),4,final,100000,d8,one_move,,optimal_move_rate,0.724
+true_distance (20 stages),4,final,100000,d8,greedy,,solve_rate,0.831
+true_distance (20 stages),4,final,100000,d8,greedy,,mean_length_solved,13.2864
+true_distance (20 stages),4,final,100000,d8,greedy,,mean_excess_over_exact,5.2864
+true_distance (20 stages),4,final,100000,d8,greedy,,mean_excess_over_kociemba,2.7076
+true_distance (20 stages),4,final,100000,d8,greedy,,unsolved_misplaced,15.2959
+true_distance (20 stages),4,final,100000,d8,greedy,,unsolved_misoriented,4.1243
+true_distance (20 stages),4,final,100000,d8,greedy,,unsolved_wrong_pieces,15.503
+true_distance (20 stages),4,final,100000,d8,greedy,,unsolved_correct_stickers,20.1124
+true_distance (20 stages),4,final,100000,d8,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d8,beam,4096,mean_length_solved,8.0
+true_distance (20 stages),4,final,100000,d8,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+true_distance (20 stages),4,final,100000,d9,one_move,,optimal_move_rate,0.542
+true_distance (20 stages),4,final,100000,d9,greedy,,solve_rate,0.646
+true_distance (20 stages),4,final,100000,d9,greedy,,mean_length_solved,22.322
+true_distance (20 stages),4,final,100000,d9,greedy,,mean_excess_over_exact,13.322
+true_distance (20 stages),4,final,100000,d9,greedy,,mean_excess_over_kociemba,10.4164
+true_distance (20 stages),4,final,100000,d9,greedy,,unsolved_misplaced,15.7486
+true_distance (20 stages),4,final,100000,d9,greedy,,unsolved_misoriented,3.7175
+true_distance (20 stages),4,final,100000,d9,greedy,,unsolved_wrong_pieces,15.9718
+true_distance (20 stages),4,final,100000,d9,greedy,,unsolved_correct_stickers,19.7288
+true_distance (20 stages),4,final,100000,d9,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d9,beam,4096,mean_length_solved,9.072
+true_distance (20 stages),4,final,100000,d9,beam,4096,mean_excess_over_exact,0.072
+true_distance (20 stages),4,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.711
+true_distance (20 stages),4,final,100000,d10,one_move,,optimal_move_rate,0.389
+true_distance (20 stages),4,final,100000,d10,greedy,,solve_rate,0.481
+true_distance (20 stages),4,final,100000,d10,greedy,,mean_length_solved,35.6944
+true_distance (20 stages),4,final,100000,d10,greedy,,mean_excess_over_exact,25.6944
+true_distance (20 stages),4,final,100000,d10,greedy,,mean_excess_over_kociemba,22.0104
+true_distance (20 stages),4,final,100000,d10,greedy,,unsolved_misplaced,15.237
+true_distance (20 stages),4,final,100000,d10,greedy,,unsolved_misoriented,3.4008
+true_distance (20 stages),4,final,100000,d10,greedy,,unsolved_wrong_pieces,15.4894
+true_distance (20 stages),4,final,100000,d10,greedy,,unsolved_correct_stickers,20.5877
+true_distance (20 stages),4,final,100000,d10,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d10,beam,4096,mean_length_solved,10.286
+true_distance (20 stages),4,final,100000,d10,beam,4096,mean_excess_over_exact,0.286
+true_distance (20 stages),4,final,100000,d10,beam,4096,mean_excess_over_kociemba,-3.425
+true_distance (20 stages),4,final,100000,d11,one_move,,optimal_move_rate,0.304
+true_distance (20 stages),4,final,100000,d11,greedy,,solve_rate,0.398
+true_distance (20 stages),4,final,100000,d11,greedy,,mean_length_solved,46.2739
+true_distance (20 stages),4,final,100000,d11,greedy,,mean_excess_over_exact,35.2739
+true_distance (20 stages),4,final,100000,d11,greedy,,mean_excess_over_kociemba,30.196
+true_distance (20 stages),4,final,100000,d11,greedy,,unsolved_misplaced,15.4352
+true_distance (20 stages),4,final,100000,d11,greedy,,unsolved_misoriented,3.495
+true_distance (20 stages),4,final,100000,d11,greedy,,unsolved_wrong_pieces,15.6395
+true_distance (20 stages),4,final,100000,d11,greedy,,unsolved_correct_stickers,20.1711
+true_distance (20 stages),4,final,100000,d11,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d11,beam,4096,mean_length_solved,12.108
+true_distance (20 stages),4,final,100000,d11,beam,4096,mean_excess_over_exact,1.108
+true_distance (20 stages),4,final,100000,d11,beam,4096,mean_excess_over_kociemba,-4.266
+true_distance (20 stages),4,final,100000,d12,one_move,,optimal_move_rate,0.269
+true_distance (20 stages),4,final,100000,d12,greedy,,solve_rate,0.359
+true_distance (20 stages),4,final,100000,d12,greedy,,mean_length_solved,54.0084
+true_distance (20 stages),4,final,100000,d12,greedy,,mean_excess_over_exact,42.0084
+true_distance (20 stages),4,final,100000,d12,greedy,,mean_excess_over_kociemba,36.0139
+true_distance (20 stages),4,final,100000,d12,greedy,,unsolved_misplaced,15.3541
+true_distance (20 stages),4,final,100000,d12,greedy,,unsolved_misoriented,3.2949
+true_distance (20 stages),4,final,100000,d12,greedy,,unsolved_wrong_pieces,15.5538
+true_distance (20 stages),4,final,100000,d12,greedy,,unsolved_correct_stickers,20.3994
+true_distance (20 stages),4,final,100000,d12,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d12,beam,4096,mean_length_solved,14.678
+true_distance (20 stages),4,final,100000,d12,beam,4096,mean_excess_over_exact,2.678
+true_distance (20 stages),4,final,100000,d12,beam,4096,mean_excess_over_kociemba,-3.605
+true_distance (20 stages),4,final,100000,d13,one_move,,optimal_move_rate,0.2
+true_distance (20 stages),4,final,100000,d13,greedy,,solve_rate,0.339
+true_distance (20 stages),4,final,100000,d13,greedy,,mean_length_solved,56.6401
+true_distance (20 stages),4,final,100000,d13,greedy,,mean_excess_over_exact,43.6401
+true_distance (20 stages),4,final,100000,d13,greedy,,mean_excess_over_kociemba,37.472
+true_distance (20 stages),4,final,100000,d13,greedy,,unsolved_misplaced,15.4584
+true_distance (20 stages),4,final,100000,d13,greedy,,unsolved_misoriented,3.5522
+true_distance (20 stages),4,final,100000,d13,greedy,,unsolved_wrong_pieces,15.6762
+true_distance (20 stages),4,final,100000,d13,greedy,,unsolved_correct_stickers,20.1573
+true_distance (20 stages),4,final,100000,d13,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d13,beam,4096,mean_length_solved,17.59
+true_distance (20 stages),4,final,100000,d13,beam,4096,mean_excess_over_exact,4.59
+true_distance (20 stages),4,final,100000,d13,beam,4096,mean_excess_over_kociemba,-1.805
+true_distance (20 stages),4,final,100000,random,greedy,,solve_rate,0.33
+true_distance (20 stages),4,final,100000,random,greedy,,mean_length_solved,61.0303
+true_distance (20 stages),4,final,100000,random,greedy,,mean_excess_over_kociemba,40.2182
+true_distance (20 stages),4,final,100000,random,greedy,,unsolved_misplaced,15.2313
+true_distance (20 stages),4,final,100000,random,greedy,,unsolved_misoriented,3.3567
+true_distance (20 stages),4,final,100000,random,greedy,,unsolved_wrong_pieces,15.4552
+true_distance (20 stages),4,final,100000,random,greedy,,unsolved_correct_stickers,20.5358
+true_distance (20 stages),4,final,100000,random,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,random,beam,4096,mean_length_solved,21.845
+true_distance (20 stages),4,final,100000,random,beam,4096,mean_excess_over_kociemba,1.058
+true_distance (20 stages),4,final,100000,d20_known,greedy,,solve_rate,0.1818
+true_distance (20 stages),4,final,100000,d20_known,greedy,,mean_length_solved,61.0
+true_distance (20 stages),4,final,100000,d20_known,greedy,,mean_excess_over_exact,41.0
+true_distance (20 stages),4,final,100000,d20_known,greedy,,mean_excess_over_kociemba,40.0
+true_distance (20 stages),4,final,100000,d20_known,greedy,,unsolved_misplaced,13.7778
+true_distance (20 stages),4,final,100000,d20_known,greedy,,unsolved_misoriented,3.3333
+true_distance (20 stages),4,final,100000,d20_known,greedy,,unsolved_wrong_pieces,14.1111
+true_distance (20 stages),4,final,100000,d20_known,greedy,,unsolved_correct_stickers,21.6667
+true_distance (20 stages),4,final,100000,d20_known,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,final,100000,d20_known,beam,4096,mean_length_solved,22.8182
+true_distance (20 stages),4,final,100000,d20_known,beam,4096,mean_excess_over_exact,2.8182
+true_distance (20 stages),4,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.2727
+true_distance (20 stages),5,final,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+true_distance (20 stages),5,final,100000,d1_4_all,greedy,,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+true_distance (20 stages),5,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),5,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),5,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+true_distance (20 stages),5,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),5,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9999652113411028
+true_distance (20 stages),5,final,100000,holdout_d5,greedy,,solve_rate,1.0
+true_distance (20 stages),5,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+true_distance (20 stages),5,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),5,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),5,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+true_distance (20 stages),5,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),5,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9903969841594867
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,solve_rate,0.998
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,mean_length_solved,6.0251
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.0251
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.6152
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_misplaced,10.5
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_misoriented,1.0
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,10.5
+true_distance (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,31.5
+true_distance (20 stages),5,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+true_distance (20 stages),5,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+true_distance (20 stages),5,final,100000,d7,one_move,,optimal_move_rate,0.916
+true_distance (20 stages),5,final,100000,d7,greedy,,solve_rate,0.965
+true_distance (20 stages),5,final,100000,d7,greedy,,mean_length_solved,7.7689
+true_distance (20 stages),5,final,100000,d7,greedy,,mean_excess_over_exact,0.7689
+true_distance (20 stages),5,final,100000,d7,greedy,,mean_excess_over_kociemba,-1.4549
+true_distance (20 stages),5,final,100000,d7,greedy,,unsolved_misplaced,14.9714
+true_distance (20 stages),5,final,100000,d7,greedy,,unsolved_misoriented,2.7714
+true_distance (20 stages),5,final,100000,d7,greedy,,unsolved_wrong_pieces,15.0571
+true_distance (20 stages),5,final,100000,d7,greedy,,unsolved_correct_stickers,21.6286
+true_distance (20 stages),5,final,100000,d7,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d7,beam,4096,mean_length_solved,7.0
+true_distance (20 stages),5,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+true_distance (20 stages),5,final,100000,d8,one_move,,optimal_move_rate,0.72
+true_distance (20 stages),5,final,100000,d8,greedy,,solve_rate,0.833
+true_distance (20 stages),5,final,100000,d8,greedy,,mean_length_solved,13.3061
+true_distance (20 stages),5,final,100000,d8,greedy,,mean_excess_over_exact,5.3061
+true_distance (20 stages),5,final,100000,d8,greedy,,mean_excess_over_kociemba,2.7791
+true_distance (20 stages),5,final,100000,d8,greedy,,unsolved_misplaced,14.7186
+true_distance (20 stages),5,final,100000,d8,greedy,,unsolved_misoriented,3.485
+true_distance (20 stages),5,final,100000,d8,greedy,,unsolved_wrong_pieces,14.9281
+true_distance (20 stages),5,final,100000,d8,greedy,,unsolved_correct_stickers,21.5569
+true_distance (20 stages),5,final,100000,d8,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d8,beam,4096,mean_length_solved,8.0
+true_distance (20 stages),5,final,100000,d8,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+true_distance (20 stages),5,final,100000,d9,one_move,,optimal_move_rate,0.566
+true_distance (20 stages),5,final,100000,d9,greedy,,solve_rate,0.647
+true_distance (20 stages),5,final,100000,d9,greedy,,mean_length_solved,21.6151
+true_distance (20 stages),5,final,100000,d9,greedy,,mean_excess_over_exact,12.6151
+true_distance (20 stages),5,final,100000,d9,greedy,,mean_excess_over_kociemba,9.694
+true_distance (20 stages),5,final,100000,d9,greedy,,unsolved_misplaced,15.153
+true_distance (20 stages),5,final,100000,d9,greedy,,unsolved_misoriented,3.5694
+true_distance (20 stages),5,final,100000,d9,greedy,,unsolved_wrong_pieces,15.3881
+true_distance (20 stages),5,final,100000,d9,greedy,,unsolved_correct_stickers,20.5694
+true_distance (20 stages),5,final,100000,d9,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d9,beam,4096,mean_length_solved,9.061
+true_distance (20 stages),5,final,100000,d9,beam,4096,mean_excess_over_exact,0.061
+true_distance (20 stages),5,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.722
+true_distance (20 stages),5,final,100000,d10,one_move,,optimal_move_rate,0.384
+true_distance (20 stages),5,final,100000,d10,greedy,,solve_rate,0.47
+true_distance (20 stages),5,final,100000,d10,greedy,,mean_length_solved,33.6085
+true_distance (20 stages),5,final,100000,d10,greedy,,mean_excess_over_exact,23.6085
+true_distance (20 stages),5,final,100000,d10,greedy,,mean_excess_over_kociemba,19.8362
+true_distance (20 stages),5,final,100000,d10,greedy,,unsolved_misplaced,15.1226
+true_distance (20 stages),5,final,100000,d10,greedy,,unsolved_misoriented,3.3396
+true_distance (20 stages),5,final,100000,d10,greedy,,unsolved_wrong_pieces,15.3321
+true_distance (20 stages),5,final,100000,d10,greedy,,unsolved_correct_stickers,20.8113
+true_distance (20 stages),5,final,100000,d10,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d10,beam,4096,mean_length_solved,10.195
+true_distance (20 stages),5,final,100000,d10,beam,4096,mean_excess_over_exact,0.195
+true_distance (20 stages),5,final,100000,d10,beam,4096,mean_excess_over_kociemba,-3.516
+true_distance (20 stages),5,final,100000,d11,one_move,,optimal_move_rate,0.264
+true_distance (20 stages),5,final,100000,d11,greedy,,solve_rate,0.35
+true_distance (20 stages),5,final,100000,d11,greedy,,mean_length_solved,47.1771
+true_distance (20 stages),5,final,100000,d11,greedy,,mean_excess_over_exact,36.1771
+true_distance (20 stages),5,final,100000,d11,greedy,,mean_excess_over_kociemba,31.2257
+true_distance (20 stages),5,final,100000,d11,greedy,,unsolved_misplaced,15.1369
+true_distance (20 stages),5,final,100000,d11,greedy,,unsolved_misoriented,3.7723
+true_distance (20 stages),5,final,100000,d11,greedy,,unsolved_wrong_pieces,15.3938
+true_distance (20 stages),5,final,100000,d11,greedy,,unsolved_correct_stickers,20.4708
+true_distance (20 stages),5,final,100000,d11,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d11,beam,4096,mean_length_solved,11.965
+true_distance (20 stages),5,final,100000,d11,beam,4096,mean_excess_over_exact,0.965
+true_distance (20 stages),5,final,100000,d11,beam,4096,mean_excess_over_kociemba,-4.409
+true_distance (20 stages),5,final,100000,d12,one_move,,optimal_move_rate,0.249
+true_distance (20 stages),5,final,100000,d12,greedy,,solve_rate,0.329
+true_distance (20 stages),5,final,100000,d12,greedy,,mean_length_solved,53.9574
+true_distance (20 stages),5,final,100000,d12,greedy,,mean_excess_over_exact,41.9574
+true_distance (20 stages),5,final,100000,d12,greedy,,mean_excess_over_kociemba,36.1641
+true_distance (20 stages),5,final,100000,d12,greedy,,unsolved_misplaced,15.1446
+true_distance (20 stages),5,final,100000,d12,greedy,,unsolved_misoriented,3.5335
+true_distance (20 stages),5,final,100000,d12,greedy,,unsolved_wrong_pieces,15.3383
+true_distance (20 stages),5,final,100000,d12,greedy,,unsolved_correct_stickers,20.7004
+true_distance (20 stages),5,final,100000,d12,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d12,beam,4096,mean_length_solved,14.656
+true_distance (20 stages),5,final,100000,d12,beam,4096,mean_excess_over_exact,2.656
+true_distance (20 stages),5,final,100000,d12,beam,4096,mean_excess_over_kociemba,-3.627
+true_distance (20 stages),5,final,100000,d13,one_move,,optimal_move_rate,0.188
+true_distance (20 stages),5,final,100000,d13,greedy,,solve_rate,0.299
+true_distance (20 stages),5,final,100000,d13,greedy,,mean_length_solved,61.4114
+true_distance (20 stages),5,final,100000,d13,greedy,,mean_excess_over_exact,48.4114
+true_distance (20 stages),5,final,100000,d13,greedy,,mean_excess_over_kociemba,42.4013
+true_distance (20 stages),5,final,100000,d13,greedy,,unsolved_misplaced,15.0656
+true_distance (20 stages),5,final,100000,d13,greedy,,unsolved_misoriented,3.4964
+true_distance (20 stages),5,final,100000,d13,greedy,,unsolved_wrong_pieces,15.2767
+true_distance (20 stages),5,final,100000,d13,greedy,,unsolved_correct_stickers,20.9044
+true_distance (20 stages),5,final,100000,d13,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d13,beam,4096,mean_length_solved,17.594
+true_distance (20 stages),5,final,100000,d13,beam,4096,mean_excess_over_exact,4.594
+true_distance (20 stages),5,final,100000,d13,beam,4096,mean_excess_over_kociemba,-1.801
+true_distance (20 stages),5,final,100000,random,greedy,,solve_rate,0.299
+true_distance (20 stages),5,final,100000,random,greedy,,mean_length_solved,61.8662
+true_distance (20 stages),5,final,100000,random,greedy,,mean_excess_over_kociemba,41.0301
+true_distance (20 stages),5,final,100000,random,greedy,,unsolved_misplaced,15.0927
+true_distance (20 stages),5,final,100000,random,greedy,,unsolved_misoriented,3.3167
+true_distance (20 stages),5,final,100000,random,greedy,,unsolved_wrong_pieces,15.3153
+true_distance (20 stages),5,final,100000,random,greedy,,unsolved_correct_stickers,20.6505
+true_distance (20 stages),5,final,100000,random,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,random,beam,4096,mean_length_solved,21.904
+true_distance (20 stages),5,final,100000,random,beam,4096,mean_excess_over_kociemba,1.117
+true_distance (20 stages),5,final,100000,d20_known,greedy,,solve_rate,0.2727
+true_distance (20 stages),5,final,100000,d20_known,greedy,,mean_length_solved,58.3333
+true_distance (20 stages),5,final,100000,d20_known,greedy,,mean_excess_over_exact,38.3333
+true_distance (20 stages),5,final,100000,d20_known,greedy,,mean_excess_over_kociemba,36.0
+true_distance (20 stages),5,final,100000,d20_known,greedy,,unsolved_misplaced,15.0
+true_distance (20 stages),5,final,100000,d20_known,greedy,,unsolved_misoriented,3.0
+true_distance (20 stages),5,final,100000,d20_known,greedy,,unsolved_wrong_pieces,15.25
+true_distance (20 stages),5,final,100000,d20_known,greedy,,unsolved_correct_stickers,19.375
+true_distance (20 stages),5,final,100000,d20_known,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,final,100000,d20_known,beam,4096,mean_length_solved,23.0909
+true_distance (20 stages),5,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.0909
+true_distance (20 stages),5,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.5455
 kociemba (20 stages),0,final,100000,d1_4_all,one_move,,optimal_move_rate,1.0
 kociemba (20 stages),0,final,100000,d1_4_all,greedy,,solve_rate,1.0
 kociemba (20 stages),0,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
@@ -859,6 +1291,438 @@ kociemba (20 stages),2,final,100000,d20_known,beam,4096,solve_rate,1.0
 kociemba (20 stages),2,final,100000,d20_known,beam,4096,mean_length_solved,23.2727
 kociemba (20 stages),2,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.2727
 kociemba (20 stages),2,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.7273
+kociemba (20 stages),3,final,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+kociemba (20 stages),3,final,100000,d1_4_all,greedy,,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+kociemba (20 stages),3,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),3,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),3,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+kociemba (20 stages),3,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),3,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9992346495042617
+kociemba (20 stages),3,final,100000,holdout_d5,greedy,,solve_rate,1.0
+kociemba (20 stages),3,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+kociemba (20 stages),3,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),3,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),3,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+kociemba (20 stages),3,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),3,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9853198292563832
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,solve_rate,0.993
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,mean_length_solved,6.1057
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.1057
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.5267
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_misplaced,14.8571
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_misoriented,4.4286
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,15.2857
+kociemba (20 stages),3,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,21.0
+kociemba (20 stages),3,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+kociemba (20 stages),3,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+kociemba (20 stages),3,final,100000,d7,one_move,,optimal_move_rate,0.9035
+kociemba (20 stages),3,final,100000,d7,greedy,,solve_rate,0.971
+kociemba (20 stages),3,final,100000,d7,greedy,,mean_length_solved,8.2008
+kociemba (20 stages),3,final,100000,d7,greedy,,mean_excess_over_exact,1.2008
+kociemba (20 stages),3,final,100000,d7,greedy,,mean_excess_over_kociemba,-0.9588
+kociemba (20 stages),3,final,100000,d7,greedy,,unsolved_misplaced,14.5862
+kociemba (20 stages),3,final,100000,d7,greedy,,unsolved_misoriented,3.8276
+kociemba (20 stages),3,final,100000,d7,greedy,,unsolved_wrong_pieces,14.8276
+kociemba (20 stages),3,final,100000,d7,greedy,,unsolved_correct_stickers,22.1379
+kociemba (20 stages),3,final,100000,d7,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d7,beam,4096,mean_length_solved,7.0
+kociemba (20 stages),3,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+kociemba (20 stages),3,final,100000,d8,one_move,,optimal_move_rate,0.719
+kociemba (20 stages),3,final,100000,d8,greedy,,solve_rate,0.83
+kociemba (20 stages),3,final,100000,d8,greedy,,mean_length_solved,14.0
+kociemba (20 stages),3,final,100000,d8,greedy,,mean_excess_over_exact,6.0
+kociemba (20 stages),3,final,100000,d8,greedy,,mean_excess_over_kociemba,3.553
+kociemba (20 stages),3,final,100000,d8,greedy,,unsolved_misplaced,15.3941
+kociemba (20 stages),3,final,100000,d8,greedy,,unsolved_misoriented,4.3882
+kociemba (20 stages),3,final,100000,d8,greedy,,unsolved_wrong_pieces,15.6353
+kociemba (20 stages),3,final,100000,d8,greedy,,unsolved_correct_stickers,20.2059
+kociemba (20 stages),3,final,100000,d8,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d8,beam,4096,mean_length_solved,8.0
+kociemba (20 stages),3,final,100000,d8,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+kociemba (20 stages),3,final,100000,d9,one_move,,optimal_move_rate,0.526
+kociemba (20 stages),3,final,100000,d9,greedy,,solve_rate,0.65
+kociemba (20 stages),3,final,100000,d9,greedy,,mean_length_solved,23.6
+kociemba (20 stages),3,final,100000,d9,greedy,,mean_excess_over_exact,14.6
+kociemba (20 stages),3,final,100000,d9,greedy,,mean_excess_over_kociemba,11.6677
+kociemba (20 stages),3,final,100000,d9,greedy,,unsolved_misplaced,15.1143
+kociemba (20 stages),3,final,100000,d9,greedy,,unsolved_misoriented,3.5343
+kociemba (20 stages),3,final,100000,d9,greedy,,unsolved_wrong_pieces,15.3314
+kociemba (20 stages),3,final,100000,d9,greedy,,unsolved_correct_stickers,20.5971
+kociemba (20 stages),3,final,100000,d9,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d9,beam,4096,mean_length_solved,9.034
+kociemba (20 stages),3,final,100000,d9,beam,4096,mean_excess_over_exact,0.034
+kociemba (20 stages),3,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.749
+kociemba (20 stages),3,final,100000,d10,one_move,,optimal_move_rate,0.4
+kociemba (20 stages),3,final,100000,d10,greedy,,solve_rate,0.493
+kociemba (20 stages),3,final,100000,d10,greedy,,mean_length_solved,34.5335
+kociemba (20 stages),3,final,100000,d10,greedy,,mean_excess_over_exact,24.5335
+kociemba (20 stages),3,final,100000,d10,greedy,,mean_excess_over_kociemba,20.9026
+kociemba (20 stages),3,final,100000,d10,greedy,,unsolved_misplaced,14.8521
+kociemba (20 stages),3,final,100000,d10,greedy,,unsolved_misoriented,3.6114
+kociemba (20 stages),3,final,100000,d10,greedy,,unsolved_wrong_pieces,15.071
+kociemba (20 stages),3,final,100000,d10,greedy,,unsolved_correct_stickers,21.2939
+kociemba (20 stages),3,final,100000,d10,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d10,beam,4096,mean_length_solved,10.227
+kociemba (20 stages),3,final,100000,d10,beam,4096,mean_excess_over_exact,0.227
+kociemba (20 stages),3,final,100000,d10,beam,4096,mean_excess_over_kociemba,-3.484
+kociemba (20 stages),3,final,100000,d11,one_move,,optimal_move_rate,0.294
+kociemba (20 stages),3,final,100000,d11,greedy,,solve_rate,0.393
+kociemba (20 stages),3,final,100000,d11,greedy,,mean_length_solved,47.1654
+kociemba (20 stages),3,final,100000,d11,greedy,,mean_excess_over_exact,36.1654
+kociemba (20 stages),3,final,100000,d11,greedy,,mean_excess_over_kociemba,31.112
+kociemba (20 stages),3,final,100000,d11,greedy,,unsolved_misplaced,14.8023
+kociemba (20 stages),3,final,100000,d11,greedy,,unsolved_misoriented,3.7974
+kociemba (20 stages),3,final,100000,d11,greedy,,unsolved_wrong_pieces,14.9918
+kociemba (20 stages),3,final,100000,d11,greedy,,unsolved_correct_stickers,21.5321
+kociemba (20 stages),3,final,100000,d11,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d11,beam,4096,mean_length_solved,12.143
+kociemba (20 stages),3,final,100000,d11,beam,4096,mean_excess_over_exact,1.143
+kociemba (20 stages),3,final,100000,d11,beam,4096,mean_excess_over_kociemba,-4.231
+kociemba (20 stages),3,final,100000,d12,one_move,,optimal_move_rate,0.252
+kociemba (20 stages),3,final,100000,d12,greedy,,solve_rate,0.369
+kociemba (20 stages),3,final,100000,d12,greedy,,mean_length_solved,51.2439
+kociemba (20 stages),3,final,100000,d12,greedy,,mean_excess_over_exact,39.2439
+kociemba (20 stages),3,final,100000,d12,greedy,,mean_excess_over_kociemba,33.3089
+kociemba (20 stages),3,final,100000,d12,greedy,,unsolved_misplaced,15.0095
+kociemba (20 stages),3,final,100000,d12,greedy,,unsolved_misoriented,3.5689
+kociemba (20 stages),3,final,100000,d12,greedy,,unsolved_wrong_pieces,15.1981
+kociemba (20 stages),3,final,100000,d12,greedy,,unsolved_correct_stickers,20.9683
+kociemba (20 stages),3,final,100000,d12,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d12,beam,4096,mean_length_solved,14.723
+kociemba (20 stages),3,final,100000,d12,beam,4096,mean_excess_over_exact,2.723
+kociemba (20 stages),3,final,100000,d12,beam,4096,mean_excess_over_kociemba,-3.56
+kociemba (20 stages),3,final,100000,d13,one_move,,optimal_move_rate,0.171
+kociemba (20 stages),3,final,100000,d13,greedy,,solve_rate,0.335
+kociemba (20 stages),3,final,100000,d13,greedy,,mean_length_solved,56.3313
+kociemba (20 stages),3,final,100000,d13,greedy,,mean_excess_over_exact,43.3313
+kociemba (20 stages),3,final,100000,d13,greedy,,mean_excess_over_kociemba,37.2507
+kociemba (20 stages),3,final,100000,d13,greedy,,unsolved_misplaced,15.018
+kociemba (20 stages),3,final,100000,d13,greedy,,unsolved_misoriented,3.8962
+kociemba (20 stages),3,final,100000,d13,greedy,,unsolved_wrong_pieces,15.2526
+kociemba (20 stages),3,final,100000,d13,greedy,,unsolved_correct_stickers,20.7684
+kociemba (20 stages),3,final,100000,d13,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d13,beam,4096,mean_length_solved,17.599
+kociemba (20 stages),3,final,100000,d13,beam,4096,mean_excess_over_exact,4.599
+kociemba (20 stages),3,final,100000,d13,beam,4096,mean_excess_over_kociemba,-1.796
+kociemba (20 stages),3,final,100000,random,greedy,,solve_rate,0.314
+kociemba (20 stages),3,final,100000,random,greedy,,mean_length_solved,60.5255
+kociemba (20 stages),3,final,100000,random,greedy,,mean_excess_over_kociemba,39.6911
+kociemba (20 stages),3,final,100000,random,greedy,,unsolved_misplaced,14.9373
+kociemba (20 stages),3,final,100000,random,greedy,,unsolved_misoriented,3.6603
+kociemba (20 stages),3,final,100000,random,greedy,,unsolved_wrong_pieces,15.191
+kociemba (20 stages),3,final,100000,random,greedy,,unsolved_correct_stickers,20.9621
+kociemba (20 stages),3,final,100000,random,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,random,beam,4096,mean_length_solved,21.927
+kociemba (20 stages),3,final,100000,random,beam,4096,mean_excess_over_kociemba,1.14
+kociemba (20 stages),3,final,100000,d20_known,greedy,,solve_rate,0.3636
+kociemba (20 stages),3,final,100000,d20_known,greedy,,mean_length_solved,58.0
+kociemba (20 stages),3,final,100000,d20_known,greedy,,mean_excess_over_exact,38.0
+kociemba (20 stages),3,final,100000,d20_known,greedy,,mean_excess_over_kociemba,36.5
+kociemba (20 stages),3,final,100000,d20_known,greedy,,unsolved_misplaced,12.8571
+kociemba (20 stages),3,final,100000,d20_known,greedy,,unsolved_misoriented,3.4286
+kociemba (20 stages),3,final,100000,d20_known,greedy,,unsolved_wrong_pieces,12.8571
+kociemba (20 stages),3,final,100000,d20_known,greedy,,unsolved_correct_stickers,24.5714
+kociemba (20 stages),3,final,100000,d20_known,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,final,100000,d20_known,beam,4096,mean_length_solved,22.7273
+kociemba (20 stages),3,final,100000,d20_known,beam,4096,mean_excess_over_exact,2.7273
+kociemba (20 stages),3,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.1818
+kociemba (20 stages),4,final,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+kociemba (20 stages),4,final,100000,d1_4_all,greedy,,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+kociemba (20 stages),4,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),4,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),4,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+kociemba (20 stages),4,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),4,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9994433814576448
+kociemba (20 stages),4,final,100000,holdout_d5,greedy,,solve_rate,1.0
+kociemba (20 stages),4,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+kociemba (20 stages),4,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),4,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),4,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+kociemba (20 stages),4,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),4,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9851255637637102
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,solve_rate,0.995
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,mean_length_solved,6.0382
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.0382
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.5899
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_misplaced,16.2
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_misoriented,4.2
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,16.2
+kociemba (20 stages),4,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,20.2
+kociemba (20 stages),4,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+kociemba (20 stages),4,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+kociemba (20 stages),4,final,100000,d7,one_move,,optimal_move_rate,0.901
+kociemba (20 stages),4,final,100000,d7,greedy,,solve_rate,0.965
+kociemba (20 stages),4,final,100000,d7,greedy,,mean_length_solved,8.0332
+kociemba (20 stages),4,final,100000,d7,greedy,,mean_excess_over_exact,1.0332
+kociemba (20 stages),4,final,100000,d7,greedy,,mean_excess_over_kociemba,-1.1596
+kociemba (20 stages),4,final,100000,d7,greedy,,unsolved_misplaced,15.7429
+kociemba (20 stages),4,final,100000,d7,greedy,,unsolved_misoriented,4.7429
+kociemba (20 stages),4,final,100000,d7,greedy,,unsolved_wrong_pieces,15.9429
+kociemba (20 stages),4,final,100000,d7,greedy,,unsolved_correct_stickers,20.1429
+kociemba (20 stages),4,final,100000,d7,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d7,beam,4096,mean_length_solved,7.0
+kociemba (20 stages),4,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+kociemba (20 stages),4,final,100000,d8,one_move,,optimal_move_rate,0.697
+kociemba (20 stages),4,final,100000,d8,greedy,,solve_rate,0.837
+kociemba (20 stages),4,final,100000,d8,greedy,,mean_length_solved,14.4624
+kociemba (20 stages),4,final,100000,d8,greedy,,mean_excess_over_exact,6.4624
+kociemba (20 stages),4,final,100000,d8,greedy,,mean_excess_over_kociemba,3.9092
+kociemba (20 stages),4,final,100000,d8,greedy,,unsolved_misplaced,14.8405
+kociemba (20 stages),4,final,100000,d8,greedy,,unsolved_misoriented,3.3497
+kociemba (20 stages),4,final,100000,d8,greedy,,unsolved_wrong_pieces,15.0123
+kociemba (20 stages),4,final,100000,d8,greedy,,unsolved_correct_stickers,21.319
+kociemba (20 stages),4,final,100000,d8,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d8,beam,4096,mean_length_solved,8.0
+kociemba (20 stages),4,final,100000,d8,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+kociemba (20 stages),4,final,100000,d9,one_move,,optimal_move_rate,0.53
+kociemba (20 stages),4,final,100000,d9,greedy,,solve_rate,0.668
+kociemba (20 stages),4,final,100000,d9,greedy,,mean_length_solved,24.1841
+kociemba (20 stages),4,final,100000,d9,greedy,,mean_excess_over_exact,15.1841
+kociemba (20 stages),4,final,100000,d9,greedy,,mean_excess_over_kociemba,12.2889
+kociemba (20 stages),4,final,100000,d9,greedy,,unsolved_misplaced,15.4337
+kociemba (20 stages),4,final,100000,d9,greedy,,unsolved_misoriented,3.744
+kociemba (20 stages),4,final,100000,d9,greedy,,unsolved_wrong_pieces,15.6054
+kociemba (20 stages),4,final,100000,d9,greedy,,unsolved_correct_stickers,20.1265
+kociemba (20 stages),4,final,100000,d9,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d9,beam,4096,mean_length_solved,9.047
+kociemba (20 stages),4,final,100000,d9,beam,4096,mean_excess_over_exact,0.047
+kociemba (20 stages),4,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.736
+kociemba (20 stages),4,final,100000,d10,one_move,,optimal_move_rate,0.401
+kociemba (20 stages),4,final,100000,d10,greedy,,solve_rate,0.533
+kociemba (20 stages),4,final,100000,d10,greedy,,mean_length_solved,36.9719
+kociemba (20 stages),4,final,100000,d10,greedy,,mean_excess_over_exact,26.9719
+kociemba (20 stages),4,final,100000,d10,greedy,,mean_excess_over_kociemba,23.1914
+kociemba (20 stages),4,final,100000,d10,greedy,,unsolved_misplaced,14.9615
+kociemba (20 stages),4,final,100000,d10,greedy,,unsolved_misoriented,3.4946
+kociemba (20 stages),4,final,100000,d10,greedy,,unsolved_wrong_pieces,15.1285
+kociemba (20 stages),4,final,100000,d10,greedy,,unsolved_correct_stickers,21.1478
+kociemba (20 stages),4,final,100000,d10,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d10,beam,4096,mean_length_solved,10.215
+kociemba (20 stages),4,final,100000,d10,beam,4096,mean_excess_over_exact,0.215
+kociemba (20 stages),4,final,100000,d10,beam,4096,mean_excess_over_kociemba,-3.496
+kociemba (20 stages),4,final,100000,d11,one_move,,optimal_move_rate,0.284
+kociemba (20 stages),4,final,100000,d11,greedy,,solve_rate,0.443
+kociemba (20 stages),4,final,100000,d11,greedy,,mean_length_solved,47.8036
+kociemba (20 stages),4,final,100000,d11,greedy,,mean_excess_over_exact,36.8036
+kociemba (20 stages),4,final,100000,d11,greedy,,mean_excess_over_kociemba,31.5305
+kociemba (20 stages),4,final,100000,d11,greedy,,unsolved_misplaced,15.3034
+kociemba (20 stages),4,final,100000,d11,greedy,,unsolved_misoriented,3.4704
+kociemba (20 stages),4,final,100000,d11,greedy,,unsolved_wrong_pieces,15.4991
+kociemba (20 stages),4,final,100000,d11,greedy,,unsolved_correct_stickers,20.3178
+kociemba (20 stages),4,final,100000,d11,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d11,beam,4096,mean_length_solved,11.96
+kociemba (20 stages),4,final,100000,d11,beam,4096,mean_excess_over_exact,0.96
+kociemba (20 stages),4,final,100000,d11,beam,4096,mean_excess_over_kociemba,-4.414
+kociemba (20 stages),4,final,100000,d12,one_move,,optimal_move_rate,0.264
+kociemba (20 stages),4,final,100000,d12,greedy,,solve_rate,0.382
+kociemba (20 stages),4,final,100000,d12,greedy,,mean_length_solved,51.9267
+kociemba (20 stages),4,final,100000,d12,greedy,,mean_excess_over_exact,39.9267
+kociemba (20 stages),4,final,100000,d12,greedy,,mean_excess_over_kociemba,33.534
+kociemba (20 stages),4,final,100000,d12,greedy,,unsolved_misplaced,15.1294
+kociemba (20 stages),4,final,100000,d12,greedy,,unsolved_misoriented,3.4887
+kociemba (20 stages),4,final,100000,d12,greedy,,unsolved_wrong_pieces,15.3172
+kociemba (20 stages),4,final,100000,d12,greedy,,unsolved_correct_stickers,20.8366
+kociemba (20 stages),4,final,100000,d12,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d12,beam,4096,mean_length_solved,14.702
+kociemba (20 stages),4,final,100000,d12,beam,4096,mean_excess_over_exact,2.702
+kociemba (20 stages),4,final,100000,d12,beam,4096,mean_excess_over_kociemba,-3.581
+kociemba (20 stages),4,final,100000,d13,one_move,,optimal_move_rate,0.206
+kociemba (20 stages),4,final,100000,d13,greedy,,solve_rate,0.377
+kociemba (20 stages),4,final,100000,d13,greedy,,mean_length_solved,58.2679
+kociemba (20 stages),4,final,100000,d13,greedy,,mean_excess_over_exact,45.2679
+kociemba (20 stages),4,final,100000,d13,greedy,,mean_excess_over_kociemba,39.0027
+kociemba (20 stages),4,final,100000,d13,greedy,,unsolved_misplaced,15.2231
+kociemba (20 stages),4,final,100000,d13,greedy,,unsolved_misoriented,3.6324
+kociemba (20 stages),4,final,100000,d13,greedy,,unsolved_wrong_pieces,15.4639
+kociemba (20 stages),4,final,100000,d13,greedy,,unsolved_correct_stickers,20.4238
+kociemba (20 stages),4,final,100000,d13,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d13,beam,4096,mean_length_solved,17.816
+kociemba (20 stages),4,final,100000,d13,beam,4096,mean_excess_over_exact,4.816
+kociemba (20 stages),4,final,100000,d13,beam,4096,mean_excess_over_kociemba,-1.579
+kociemba (20 stages),4,final,100000,random,greedy,,solve_rate,0.355
+kociemba (20 stages),4,final,100000,random,greedy,,mean_length_solved,60.1099
+kociemba (20 stages),4,final,100000,random,greedy,,mean_excess_over_kociemba,39.4
+kociemba (20 stages),4,final,100000,random,greedy,,unsolved_misplaced,15.3798
+kociemba (20 stages),4,final,100000,random,greedy,,unsolved_misoriented,3.5612
+kociemba (20 stages),4,final,100000,random,greedy,,unsolved_wrong_pieces,15.5876
+kociemba (20 stages),4,final,100000,random,greedy,,unsolved_correct_stickers,20.2574
+kociemba (20 stages),4,final,100000,random,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,random,beam,4096,mean_length_solved,21.953
+kociemba (20 stages),4,final,100000,random,beam,4096,mean_excess_over_kociemba,1.166
+kociemba (20 stages),4,final,100000,d20_known,greedy,,solve_rate,0.1818
+kociemba (20 stages),4,final,100000,d20_known,greedy,,mean_length_solved,40.5
+kociemba (20 stages),4,final,100000,d20_known,greedy,,mean_excess_over_exact,20.5
+kociemba (20 stages),4,final,100000,d20_known,greedy,,mean_excess_over_kociemba,18.5
+kociemba (20 stages),4,final,100000,d20_known,greedy,,unsolved_misplaced,15.0
+kociemba (20 stages),4,final,100000,d20_known,greedy,,unsolved_misoriented,2.2222
+kociemba (20 stages),4,final,100000,d20_known,greedy,,unsolved_wrong_pieces,15.0
+kociemba (20 stages),4,final,100000,d20_known,greedy,,unsolved_correct_stickers,21.0
+kociemba (20 stages),4,final,100000,d20_known,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,final,100000,d20_known,beam,4096,mean_length_solved,23.0
+kociemba (20 stages),4,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.0
+kociemba (20 stages),4,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.4545
+kociemba (20 stages),5,final,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+kociemba (20 stages),5,final,100000,d1_4_all,greedy,,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+kociemba (20 stages),5,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),5,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),5,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+kociemba (20 stages),5,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),5,final,100000,holdout_d5,one_move,,optimal_move_rate,0.999652113411028
+kociemba (20 stages),5,final,100000,holdout_d5,greedy,,solve_rate,1.0
+kociemba (20 stages),5,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+kociemba (20 stages),5,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),5,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),5,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+kociemba (20 stages),5,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),5,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9853670830248712
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,solve_rate,0.996
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,mean_length_solved,6.0141
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.0141
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.6255
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_misplaced,13.0
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_misoriented,1.75
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,13.25
+kociemba (20 stages),5,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,23.25
+kociemba (20 stages),5,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+kociemba (20 stages),5,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+kociemba (20 stages),5,final,100000,d7,one_move,,optimal_move_rate,0.8965
+kociemba (20 stages),5,final,100000,d7,greedy,,solve_rate,0.965
+kociemba (20 stages),5,final,100000,d7,greedy,,mean_length_solved,8.1316
+kociemba (20 stages),5,final,100000,d7,greedy,,mean_excess_over_exact,1.1316
+kociemba (20 stages),5,final,100000,d7,greedy,,mean_excess_over_kociemba,-1.0435
+kociemba (20 stages),5,final,100000,d7,greedy,,unsolved_misplaced,14.7143
+kociemba (20 stages),5,final,100000,d7,greedy,,unsolved_misoriented,3.2
+kociemba (20 stages),5,final,100000,d7,greedy,,unsolved_wrong_pieces,14.8286
+kociemba (20 stages),5,final,100000,d7,greedy,,unsolved_correct_stickers,22.4571
+kociemba (20 stages),5,final,100000,d7,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d7,beam,4096,mean_length_solved,7.0
+kociemba (20 stages),5,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+kociemba (20 stages),5,final,100000,d8,one_move,,optimal_move_rate,0.715
+kociemba (20 stages),5,final,100000,d8,greedy,,solve_rate,0.835
+kociemba (20 stages),5,final,100000,d8,greedy,,mean_length_solved,13.8994
+kociemba (20 stages),5,final,100000,d8,greedy,,mean_excess_over_exact,5.8994
+kociemba (20 stages),5,final,100000,d8,greedy,,mean_excess_over_kociemba,3.3617
+kociemba (20 stages),5,final,100000,d8,greedy,,unsolved_misplaced,15.0364
+kociemba (20 stages),5,final,100000,d8,greedy,,unsolved_misoriented,3.4303
+kociemba (20 stages),5,final,100000,d8,greedy,,unsolved_wrong_pieces,15.2485
+kociemba (20 stages),5,final,100000,d8,greedy,,unsolved_correct_stickers,20.8
+kociemba (20 stages),5,final,100000,d8,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d8,beam,4096,mean_length_solved,8.0
+kociemba (20 stages),5,final,100000,d8,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+kociemba (20 stages),5,final,100000,d9,one_move,,optimal_move_rate,0.547
+kociemba (20 stages),5,final,100000,d9,greedy,,solve_rate,0.653
+kociemba (20 stages),5,final,100000,d9,greedy,,mean_length_solved,24.2251
+kociemba (20 stages),5,final,100000,d9,greedy,,mean_excess_over_exact,15.2251
+kociemba (20 stages),5,final,100000,d9,greedy,,mean_excess_over_kociemba,12.3476
+kociemba (20 stages),5,final,100000,d9,greedy,,unsolved_misplaced,15.147
+kociemba (20 stages),5,final,100000,d9,greedy,,unsolved_misoriented,3.7349
+kociemba (20 stages),5,final,100000,d9,greedy,,unsolved_wrong_pieces,15.3372
+kociemba (20 stages),5,final,100000,d9,greedy,,unsolved_correct_stickers,20.8818
+kociemba (20 stages),5,final,100000,d9,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d9,beam,4096,mean_length_solved,9.059
+kociemba (20 stages),5,final,100000,d9,beam,4096,mean_excess_over_exact,0.059
+kociemba (20 stages),5,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.724
+kociemba (20 stages),5,final,100000,d10,one_move,,optimal_move_rate,0.397
+kociemba (20 stages),5,final,100000,d10,greedy,,solve_rate,0.517
+kociemba (20 stages),5,final,100000,d10,greedy,,mean_length_solved,36.1934
+kociemba (20 stages),5,final,100000,d10,greedy,,mean_excess_over_exact,26.1934
+kociemba (20 stages),5,final,100000,d10,greedy,,mean_excess_over_kociemba,22.5822
+kociemba (20 stages),5,final,100000,d10,greedy,,unsolved_misplaced,14.9545
+kociemba (20 stages),5,final,100000,d10,greedy,,unsolved_misoriented,3.6398
+kociemba (20 stages),5,final,100000,d10,greedy,,unsolved_wrong_pieces,15.1491
+kociemba (20 stages),5,final,100000,d10,greedy,,unsolved_correct_stickers,21.354
+kociemba (20 stages),5,final,100000,d10,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d10,beam,4096,mean_length_solved,10.193
+kociemba (20 stages),5,final,100000,d10,beam,4096,mean_excess_over_exact,0.193
+kociemba (20 stages),5,final,100000,d10,beam,4096,mean_excess_over_kociemba,-3.518
+kociemba (20 stages),5,final,100000,d11,one_move,,optimal_move_rate,0.261
+kociemba (20 stages),5,final,100000,d11,greedy,,solve_rate,0.434
+kociemba (20 stages),5,final,100000,d11,greedy,,mean_length_solved,49.576
+kociemba (20 stages),5,final,100000,d11,greedy,,mean_excess_over_exact,38.576
+kociemba (20 stages),5,final,100000,d11,greedy,,mean_excess_over_kociemba,33.5968
+kociemba (20 stages),5,final,100000,d11,greedy,,unsolved_misplaced,15.1254
+kociemba (20 stages),5,final,100000,d11,greedy,,unsolved_misoriented,3.5018
+kociemba (20 stages),5,final,100000,d11,greedy,,unsolved_wrong_pieces,15.2845
+kociemba (20 stages),5,final,100000,d11,greedy,,unsolved_correct_stickers,21.0848
+kociemba (20 stages),5,final,100000,d11,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d11,beam,4096,mean_length_solved,12.019
+kociemba (20 stages),5,final,100000,d11,beam,4096,mean_excess_over_exact,1.019
+kociemba (20 stages),5,final,100000,d11,beam,4096,mean_excess_over_kociemba,-4.355
+kociemba (20 stages),5,final,100000,d12,one_move,,optimal_move_rate,0.255
+kociemba (20 stages),5,final,100000,d12,greedy,,solve_rate,0.386
+kociemba (20 stages),5,final,100000,d12,greedy,,mean_length_solved,54.5596
+kociemba (20 stages),5,final,100000,d12,greedy,,mean_excess_over_exact,42.5596
+kociemba (20 stages),5,final,100000,d12,greedy,,mean_excess_over_kociemba,36.3938
+kociemba (20 stages),5,final,100000,d12,greedy,,unsolved_misplaced,15.1743
+kociemba (20 stages),5,final,100000,d12,greedy,,unsolved_misoriented,3.7606
+kociemba (20 stages),5,final,100000,d12,greedy,,unsolved_wrong_pieces,15.3632
+kociemba (20 stages),5,final,100000,d12,greedy,,unsolved_correct_stickers,20.7541
+kociemba (20 stages),5,final,100000,d12,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d12,beam,4096,mean_length_solved,14.683
+kociemba (20 stages),5,final,100000,d12,beam,4096,mean_excess_over_exact,2.683
+kociemba (20 stages),5,final,100000,d12,beam,4096,mean_excess_over_kociemba,-3.6
+kociemba (20 stages),5,final,100000,d13,one_move,,optimal_move_rate,0.189
+kociemba (20 stages),5,final,100000,d13,greedy,,solve_rate,0.373
+kociemba (20 stages),5,final,100000,d13,greedy,,mean_length_solved,57.8472
+kociemba (20 stages),5,final,100000,d13,greedy,,mean_excess_over_exact,44.8472
+kociemba (20 stages),5,final,100000,d13,greedy,,mean_excess_over_kociemba,38.63
+kociemba (20 stages),5,final,100000,d13,greedy,,unsolved_misplaced,15.2823
+kociemba (20 stages),5,final,100000,d13,greedy,,unsolved_misoriented,3.9888
+kociemba (20 stages),5,final,100000,d13,greedy,,unsolved_wrong_pieces,15.4641
+kociemba (20 stages),5,final,100000,d13,greedy,,unsolved_correct_stickers,20.6539
+kociemba (20 stages),5,final,100000,d13,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d13,beam,4096,mean_length_solved,17.822
+kociemba (20 stages),5,final,100000,d13,beam,4096,mean_excess_over_exact,4.822
+kociemba (20 stages),5,final,100000,d13,beam,4096,mean_excess_over_kociemba,-1.573
+kociemba (20 stages),5,final,100000,random,greedy,,solve_rate,0.366
+kociemba (20 stages),5,final,100000,random,greedy,,mean_length_solved,62.7814
+kociemba (20 stages),5,final,100000,random,greedy,,mean_excess_over_kociemba,42.0219
+kociemba (20 stages),5,final,100000,random,greedy,,unsolved_misplaced,14.7508
+kociemba (20 stages),5,final,100000,random,greedy,,unsolved_misoriented,3.7208
+kociemba (20 stages),5,final,100000,random,greedy,,unsolved_wrong_pieces,14.9464
+kociemba (20 stages),5,final,100000,random,greedy,,unsolved_correct_stickers,21.6751
+kociemba (20 stages),5,final,100000,random,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,random,beam,4096,mean_length_solved,21.937
+kociemba (20 stages),5,final,100000,random,beam,4096,mean_excess_over_kociemba,1.15
+kociemba (20 stages),5,final,100000,d20_known,greedy,,solve_rate,0.2727
+kociemba (20 stages),5,final,100000,d20_known,greedy,,mean_length_solved,68.0
+kociemba (20 stages),5,final,100000,d20_known,greedy,,mean_excess_over_exact,48.0
+kociemba (20 stages),5,final,100000,d20_known,greedy,,mean_excess_over_kociemba,46.3333
+kociemba (20 stages),5,final,100000,d20_known,greedy,,unsolved_misplaced,14.625
+kociemba (20 stages),5,final,100000,d20_known,greedy,,unsolved_misoriented,4.0
+kociemba (20 stages),5,final,100000,d20_known,greedy,,unsolved_wrong_pieces,14.75
+kociemba (20 stages),5,final,100000,d20_known,greedy,,unsolved_correct_stickers,20.875
+kociemba (20 stages),5,final,100000,d20_known,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,final,100000,d20_known,beam,4096,mean_length_solved,23.2727
+kociemba (20 stages),5,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.2727
+kociemba (20 stages),5,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.7273
 mixed,0,final,100000,d1_4_all,one_move,,optimal_move_rate,0.9999786050492084
 mixed,0,final,100000,d1_4_all,greedy,,solve_rate,1.0
 mixed,0,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
@@ -1283,6 +2147,434 @@ mixed,2,final,100000,d20_known,beam,4096,solve_rate,1.0
 mixed,2,final,100000,d20_known,beam,4096,mean_length_solved,23.6364
 mixed,2,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.6364
 mixed,2,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,2.0909
+mixed,3,final,100000,d1_4_all,one_move,,optimal_move_rate,0.9999786050492084
+mixed,3,final,100000,d1_4_all,greedy,,solve_rate,1.0
+mixed,3,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+mixed,3,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+mixed,3,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+mixed,3,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+mixed,3,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+mixed,3,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+mixed,3,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9988867629152897
+mixed,3,final,100000,holdout_d5,greedy,,solve_rate,1.0
+mixed,3,final,100000,holdout_d5,greedy,,mean_length_solved,5.002
+mixed,3,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.002
+mixed,3,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.193
+mixed,3,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+mixed,3,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+mixed,3,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+mixed,3,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+mixed,3,final,100000,holdout_d6,one_move,,optimal_move_rate,0.98841757630171
+mixed,3,final,100000,holdout_d6,greedy,,solve_rate,0.999
+mixed,3,final,100000,holdout_d6,greedy,,mean_length_solved,6.1512
+mixed,3,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.1512
+mixed,3,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.4875
+mixed,3,final,100000,holdout_d6,greedy,,unsolved_misplaced,17.0
+mixed,3,final,100000,holdout_d6,greedy,,unsolved_misoriented,10.0
+mixed,3,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,19.0
+mixed,3,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,6.0
+mixed,3,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+mixed,3,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+mixed,3,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+mixed,3,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+mixed,3,final,100000,d7,one_move,,optimal_move_rate,0.9045
+mixed,3,final,100000,d7,greedy,,solve_rate,0.989
+mixed,3,final,100000,d7,greedy,,mean_length_solved,8.4833
+mixed,3,final,100000,d7,greedy,,mean_excess_over_exact,1.4833
+mixed,3,final,100000,d7,greedy,,mean_excess_over_kociemba,-0.6855
+mixed,3,final,100000,d7,greedy,,unsolved_misplaced,15.1818
+mixed,3,final,100000,d7,greedy,,unsolved_misoriented,2.3636
+mixed,3,final,100000,d7,greedy,,unsolved_wrong_pieces,15.1818
+mixed,3,final,100000,d7,greedy,,unsolved_correct_stickers,22.4545
+mixed,3,final,100000,d7,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d7,beam,4096,mean_length_solved,7.0
+mixed,3,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+mixed,3,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+mixed,3,final,100000,d8,one_move,,optimal_move_rate,0.714
+mixed,3,final,100000,d8,greedy,,solve_rate,0.931
+mixed,3,final,100000,d8,greedy,,mean_length_solved,15.4597
+mixed,3,final,100000,d8,greedy,,mean_excess_over_exact,7.4597
+mixed,3,final,100000,d8,greedy,,mean_excess_over_kociemba,4.9656
+mixed,3,final,100000,d8,greedy,,unsolved_misplaced,15.5362
+mixed,3,final,100000,d8,greedy,,unsolved_misoriented,4.029
+mixed,3,final,100000,d8,greedy,,unsolved_wrong_pieces,15.6232
+mixed,3,final,100000,d8,greedy,,unsolved_correct_stickers,21.2609
+mixed,3,final,100000,d8,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d8,beam,4096,mean_length_solved,8.04
+mixed,3,final,100000,d8,beam,4096,mean_excess_over_exact,0.04
+mixed,3,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.449
+mixed,3,final,100000,d9,one_move,,optimal_move_rate,0.539
+mixed,3,final,100000,d9,greedy,,solve_rate,0.871
+mixed,3,final,100000,d9,greedy,,mean_length_solved,27.0034
+mixed,3,final,100000,d9,greedy,,mean_excess_over_exact,18.0034
+mixed,3,final,100000,d9,greedy,,mean_excess_over_kociemba,15.1975
+mixed,3,final,100000,d9,greedy,,unsolved_misplaced,14.7442
+mixed,3,final,100000,d9,greedy,,unsolved_misoriented,3.0698
+mixed,3,final,100000,d9,greedy,,unsolved_wrong_pieces,14.8992
+mixed,3,final,100000,d9,greedy,,unsolved_correct_stickers,22.1938
+mixed,3,final,100000,d9,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d9,beam,4096,mean_length_solved,9.389
+mixed,3,final,100000,d9,beam,4096,mean_excess_over_exact,0.389
+mixed,3,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.394
+mixed,3,final,100000,d10,one_move,,optimal_move_rate,0.362
+mixed,3,final,100000,d10,greedy,,solve_rate,0.809
+mixed,3,final,100000,d10,greedy,,mean_length_solved,35.1224
+mixed,3,final,100000,d10,greedy,,mean_excess_over_exact,25.1224
+mixed,3,final,100000,d10,greedy,,mean_excess_over_kociemba,21.4821
+mixed,3,final,100000,d10,greedy,,unsolved_misplaced,15.5445
+mixed,3,final,100000,d10,greedy,,unsolved_misoriented,3.555
+mixed,3,final,100000,d10,greedy,,unsolved_wrong_pieces,15.644
+mixed,3,final,100000,d10,greedy,,unsolved_correct_stickers,20.7225
+mixed,3,final,100000,d10,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d10,beam,4096,mean_length_solved,12.004
+mixed,3,final,100000,d10,beam,4096,mean_excess_over_exact,2.004
+mixed,3,final,100000,d10,beam,4096,mean_excess_over_kociemba,-1.707
+mixed,3,final,100000,d11,one_move,,optimal_move_rate,0.266
+mixed,3,final,100000,d11,greedy,,solve_rate,0.783
+mixed,3,final,100000,d11,greedy,,mean_length_solved,40.7816
+mixed,3,final,100000,d11,greedy,,mean_excess_over_exact,29.7816
+mixed,3,final,100000,d11,greedy,,mean_excess_over_kociemba,24.4623
+mixed,3,final,100000,d11,greedy,,unsolved_misplaced,15.5253
+mixed,3,final,100000,d11,greedy,,unsolved_misoriented,3.2488
+mixed,3,final,100000,d11,greedy,,unsolved_wrong_pieces,15.6636
+mixed,3,final,100000,d11,greedy,,unsolved_correct_stickers,20.9309
+mixed,3,final,100000,d11,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d11,beam,4096,mean_length_solved,15.606
+mixed,3,final,100000,d11,beam,4096,mean_excess_over_exact,4.606
+mixed,3,final,100000,d11,beam,4096,mean_excess_over_kociemba,-0.768
+mixed,3,final,100000,d12,one_move,,optimal_move_rate,0.213
+mixed,3,final,100000,d12,greedy,,solve_rate,0.766
+mixed,3,final,100000,d12,greedy,,mean_length_solved,42.453
+mixed,3,final,100000,d12,greedy,,mean_excess_over_exact,30.453
+mixed,3,final,100000,d12,greedy,,mean_excess_over_kociemba,24.2611
+mixed,3,final,100000,d12,greedy,,unsolved_misplaced,15.2479
+mixed,3,final,100000,d12,greedy,,unsolved_misoriented,3.1923
+mixed,3,final,100000,d12,greedy,,unsolved_wrong_pieces,15.3718
+mixed,3,final,100000,d12,greedy,,unsolved_correct_stickers,21.3333
+mixed,3,final,100000,d12,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d12,beam,4096,mean_length_solved,18.399
+mixed,3,final,100000,d12,beam,4096,mean_excess_over_exact,6.399
+mixed,3,final,100000,d12,beam,4096,mean_excess_over_kociemba,0.116
+mixed,3,final,100000,d13,one_move,,optimal_move_rate,0.157
+mixed,3,final,100000,d13,greedy,,solve_rate,0.756
+mixed,3,final,100000,d13,greedy,,mean_length_solved,43.6481
+mixed,3,final,100000,d13,greedy,,mean_excess_over_exact,30.6481
+mixed,3,final,100000,d13,greedy,,mean_excess_over_kociemba,24.3373
+mixed,3,final,100000,d13,greedy,,unsolved_misplaced,15.541
+mixed,3,final,100000,d13,greedy,,unsolved_misoriented,3.2459
+mixed,3,final,100000,d13,greedy,,unsolved_wrong_pieces,15.6311
+mixed,3,final,100000,d13,greedy,,unsolved_correct_stickers,21.0984
+mixed,3,final,100000,d13,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d13,beam,4096,mean_length_solved,20.345
+mixed,3,final,100000,d13,beam,4096,mean_excess_over_exact,7.345
+mixed,3,final,100000,d13,beam,4096,mean_excess_over_kociemba,0.95
+mixed,3,final,100000,random,greedy,,solve_rate,0.725
+mixed,3,final,100000,random,greedy,,mean_length_solved,46.4828
+mixed,3,final,100000,random,greedy,,mean_excess_over_kociemba,25.7076
+mixed,3,final,100000,random,greedy,,unsolved_misplaced,15.1927
+mixed,3,final,100000,random,greedy,,unsolved_misoriented,3.3527
+mixed,3,final,100000,random,greedy,,unsolved_wrong_pieces,15.2945
+mixed,3,final,100000,random,greedy,,unsolved_correct_stickers,21.8255
+mixed,3,final,100000,random,beam,4096,solve_rate,1.0
+mixed,3,final,100000,random,beam,4096,mean_length_solved,22.686
+mixed,3,final,100000,random,beam,4096,mean_excess_over_kociemba,1.899
+mixed,3,final,100000,d20_known,greedy,,solve_rate,0.8182
+mixed,3,final,100000,d20_known,greedy,,mean_length_solved,41.5556
+mixed,3,final,100000,d20_known,greedy,,mean_excess_over_exact,21.5556
+mixed,3,final,100000,d20_known,greedy,,mean_excess_over_kociemba,19.8889
+mixed,3,final,100000,d20_known,greedy,,unsolved_misplaced,19.0
+mixed,3,final,100000,d20_known,greedy,,unsolved_misoriented,0.0
+mixed,3,final,100000,d20_known,greedy,,unsolved_wrong_pieces,19.0
+mixed,3,final,100000,d20_known,greedy,,unsolved_correct_stickers,17.0
+mixed,3,final,100000,d20_known,beam,4096,solve_rate,1.0
+mixed,3,final,100000,d20_known,beam,4096,mean_length_solved,23.5455
+mixed,3,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.5455
+mixed,3,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,2.0
+mixed,4,final,100000,d1_4_all,one_move,,optimal_move_rate,0.9999786050492084
+mixed,4,final,100000,d1_4_all,greedy,,solve_rate,1.0
+mixed,4,final,100000,d1_4_all,greedy,,mean_length_solved,3.919
+mixed,4,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+mixed,4,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+mixed,4,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+mixed,4,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+mixed,4,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+mixed,4,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9992694381631588
+mixed,4,final,100000,holdout_d5,greedy,,solve_rate,1.0
+mixed,4,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+mixed,4,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+mixed,4,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+mixed,4,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+mixed,4,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+mixed,4,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+mixed,4,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+mixed,4,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9882574385307228
+mixed,4,final,100000,holdout_d6,greedy,,solve_rate,1.0
+mixed,4,final,100000,holdout_d6,greedy,,mean_length_solved,6.346
+mixed,4,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.346
+mixed,4,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.291
+mixed,4,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+mixed,4,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+mixed,4,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+mixed,4,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+mixed,4,final,100000,d7,one_move,,optimal_move_rate,0.905
+mixed,4,final,100000,d7,greedy,,solve_rate,0.985
+mixed,4,final,100000,d7,greedy,,mean_length_solved,8.5208
+mixed,4,final,100000,d7,greedy,,mean_excess_over_exact,1.5208
+mixed,4,final,100000,d7,greedy,,mean_excess_over_kociemba,-0.6497
+mixed,4,final,100000,d7,greedy,,unsolved_misplaced,15.5333
+mixed,4,final,100000,d7,greedy,,unsolved_misoriented,3.8
+mixed,4,final,100000,d7,greedy,,unsolved_wrong_pieces,15.8667
+mixed,4,final,100000,d7,greedy,,unsolved_correct_stickers,19.2667
+mixed,4,final,100000,d7,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d7,beam,4096,mean_length_solved,7.0
+mixed,4,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+mixed,4,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+mixed,4,final,100000,d8,one_move,,optimal_move_rate,0.721
+mixed,4,final,100000,d8,greedy,,solve_rate,0.944
+mixed,4,final,100000,d8,greedy,,mean_length_solved,15.6155
+mixed,4,final,100000,d8,greedy,,mean_excess_over_exact,7.6155
+mixed,4,final,100000,d8,greedy,,mean_excess_over_kociemba,5.1303
+mixed,4,final,100000,d8,greedy,,unsolved_misplaced,14.875
+mixed,4,final,100000,d8,greedy,,unsolved_misoriented,4.375
+mixed,4,final,100000,d8,greedy,,unsolved_wrong_pieces,15.1607
+mixed,4,final,100000,d8,greedy,,unsolved_correct_stickers,21.2679
+mixed,4,final,100000,d8,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d8,beam,4096,mean_length_solved,8.032
+mixed,4,final,100000,d8,beam,4096,mean_excess_over_exact,0.032
+mixed,4,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.457
+mixed,4,final,100000,d9,one_move,,optimal_move_rate,0.523
+mixed,4,final,100000,d9,greedy,,solve_rate,0.893
+mixed,4,final,100000,d9,greedy,,mean_length_solved,27.402
+mixed,4,final,100000,d9,greedy,,mean_excess_over_exact,18.402
+mixed,4,final,100000,d9,greedy,,mean_excess_over_kociemba,15.6529
+mixed,4,final,100000,d9,greedy,,unsolved_misplaced,14.729
+mixed,4,final,100000,d9,greedy,,unsolved_misoriented,5.0841
+mixed,4,final,100000,d9,greedy,,unsolved_wrong_pieces,14.9065
+mixed,4,final,100000,d9,greedy,,unsolved_correct_stickers,21.9065
+mixed,4,final,100000,d9,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d9,beam,4096,mean_length_solved,9.582
+mixed,4,final,100000,d9,beam,4096,mean_excess_over_exact,0.582
+mixed,4,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.201
+mixed,4,final,100000,d10,one_move,,optimal_move_rate,0.361
+mixed,4,final,100000,d10,greedy,,solve_rate,0.853
+mixed,4,final,100000,d10,greedy,,mean_length_solved,35.5791
+mixed,4,final,100000,d10,greedy,,mean_excess_over_exact,25.5791
+mixed,4,final,100000,d10,greedy,,mean_excess_over_kociemba,21.8417
+mixed,4,final,100000,d10,greedy,,unsolved_misplaced,15.4082
+mixed,4,final,100000,d10,greedy,,unsolved_misoriented,5.2313
+mixed,4,final,100000,d10,greedy,,unsolved_wrong_pieces,15.5646
+mixed,4,final,100000,d10,greedy,,unsolved_correct_stickers,20.7075
+mixed,4,final,100000,d10,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d10,beam,4096,mean_length_solved,11.981
+mixed,4,final,100000,d10,beam,4096,mean_excess_over_exact,1.981
+mixed,4,final,100000,d10,beam,4096,mean_excess_over_kociemba,-1.73
+mixed,4,final,100000,d11,one_move,,optimal_move_rate,0.256
+mixed,4,final,100000,d11,greedy,,solve_rate,0.809
+mixed,4,final,100000,d11,greedy,,mean_length_solved,41.2509
+mixed,4,final,100000,d11,greedy,,mean_excess_over_exact,30.2509
+mixed,4,final,100000,d11,greedy,,mean_excess_over_kociemba,24.8912
+mixed,4,final,100000,d11,greedy,,unsolved_misplaced,15.4921
+mixed,4,final,100000,d11,greedy,,unsolved_misoriented,4.9372
+mixed,4,final,100000,d11,greedy,,unsolved_wrong_pieces,15.6387
+mixed,4,final,100000,d11,greedy,,unsolved_correct_stickers,20.3717
+mixed,4,final,100000,d11,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d11,beam,4096,mean_length_solved,15.562
+mixed,4,final,100000,d11,beam,4096,mean_excess_over_exact,4.562
+mixed,4,final,100000,d11,beam,4096,mean_excess_over_kociemba,-0.812
+mixed,4,final,100000,d12,one_move,,optimal_move_rate,0.2
+mixed,4,final,100000,d12,greedy,,solve_rate,0.824
+mixed,4,final,100000,d12,greedy,,mean_length_solved,44.3277
+mixed,4,final,100000,d12,greedy,,mean_excess_over_exact,32.3277
+mixed,4,final,100000,d12,greedy,,mean_excess_over_kociemba,26.1214
+mixed,4,final,100000,d12,greedy,,unsolved_misplaced,15.0455
+mixed,4,final,100000,d12,greedy,,unsolved_misoriented,4.6818
+mixed,4,final,100000,d12,greedy,,unsolved_wrong_pieces,15.1875
+mixed,4,final,100000,d12,greedy,,unsolved_correct_stickers,21.7386
+mixed,4,final,100000,d12,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d12,beam,4096,mean_length_solved,18.318
+mixed,4,final,100000,d12,beam,4096,mean_excess_over_exact,6.318
+mixed,4,final,100000,d12,beam,4096,mean_excess_over_kociemba,0.035
+mixed,4,final,100000,d13,one_move,,optimal_move_rate,0.147
+mixed,4,final,100000,d13,greedy,,solve_rate,0.781
+mixed,4,final,100000,d13,greedy,,mean_length_solved,45.5634
+mixed,4,final,100000,d13,greedy,,mean_excess_over_exact,32.5634
+mixed,4,final,100000,d13,greedy,,mean_excess_over_kociemba,26.1972
+mixed,4,final,100000,d13,greedy,,unsolved_misplaced,14.8858
+mixed,4,final,100000,d13,greedy,,unsolved_misoriented,4.5251
+mixed,4,final,100000,d13,greedy,,unsolved_wrong_pieces,15.032
+mixed,4,final,100000,d13,greedy,,unsolved_correct_stickers,21.5845
+mixed,4,final,100000,d13,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d13,beam,4096,mean_length_solved,20.415
+mixed,4,final,100000,d13,beam,4096,mean_excess_over_exact,7.415
+mixed,4,final,100000,d13,beam,4096,mean_excess_over_kociemba,1.02
+mixed,4,final,100000,random,greedy,,solve_rate,0.775
+mixed,4,final,100000,random,greedy,,mean_length_solved,47.3884
+mixed,4,final,100000,random,greedy,,mean_excess_over_kociemba,26.6103
+mixed,4,final,100000,random,greedy,,unsolved_misplaced,14.7822
+mixed,4,final,100000,random,greedy,,unsolved_misoriented,5.0844
+mixed,4,final,100000,random,greedy,,unsolved_wrong_pieces,14.9689
+mixed,4,final,100000,random,greedy,,unsolved_correct_stickers,21.8622
+mixed,4,final,100000,random,beam,4096,solve_rate,1.0
+mixed,4,final,100000,random,beam,4096,mean_length_solved,22.701
+mixed,4,final,100000,random,beam,4096,mean_excess_over_kociemba,1.914
+mixed,4,final,100000,d20_known,greedy,,solve_rate,0.8182
+mixed,4,final,100000,d20_known,greedy,,mean_length_solved,47.3333
+mixed,4,final,100000,d20_known,greedy,,mean_excess_over_exact,27.3333
+mixed,4,final,100000,d20_known,greedy,,mean_excess_over_kociemba,26.0
+mixed,4,final,100000,d20_known,greedy,,unsolved_misplaced,13.0
+mixed,4,final,100000,d20_known,greedy,,unsolved_misoriented,1.0
+mixed,4,final,100000,d20_known,greedy,,unsolved_wrong_pieces,13.0
+mixed,4,final,100000,d20_known,greedy,,unsolved_correct_stickers,26.5
+mixed,4,final,100000,d20_known,beam,4096,solve_rate,1.0
+mixed,4,final,100000,d20_known,beam,4096,mean_length_solved,23.5455
+mixed,4,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.5455
+mixed,4,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,2.0
+mixed,5,final,100000,d1_4_all,one_move,,optimal_move_rate,0.9999786050492084
+mixed,5,final,100000,d1_4_all,greedy,,solve_rate,1.0
+mixed,5,final,100000,d1_4_all,greedy,,mean_length_solved,3.931
+mixed,5,final,100000,d1_4_all,greedy,,mean_excess_over_exact,0.012
+mixed,5,final,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.92
+mixed,5,final,100000,d1_4_all,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+mixed,5,final,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+mixed,5,final,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+mixed,5,final,100000,holdout_d5,one_move,,optimal_move_rate,0.9990607062097756
+mixed,5,final,100000,holdout_d5,greedy,,solve_rate,1.0
+mixed,5,final,100000,holdout_d5,greedy,,mean_length_solved,5.0
+mixed,5,final,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+mixed,5,final,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+mixed,5,final,100000,holdout_d5,beam,4096,solve_rate,1.0
+mixed,5,final,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+mixed,5,final,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+mixed,5,final,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+mixed,5,final,100000,holdout_d6,one_move,,optimal_move_rate,0.9881366789001423
+mixed,5,final,100000,holdout_d6,greedy,,solve_rate,0.999
+mixed,5,final,100000,holdout_d6,greedy,,mean_length_solved,6.0891
+mixed,5,final,100000,holdout_d6,greedy,,mean_excess_over_exact,0.0891
+mixed,5,final,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.5495
+mixed,5,final,100000,holdout_d6,greedy,,unsolved_misplaced,19.0
+mixed,5,final,100000,holdout_d6,greedy,,unsolved_misoriented,4.0
+mixed,5,final,100000,holdout_d6,greedy,,unsolved_wrong_pieces,19.0
+mixed,5,final,100000,holdout_d6,greedy,,unsolved_correct_stickers,16.0
+mixed,5,final,100000,holdout_d6,beam,4096,solve_rate,1.0
+mixed,5,final,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+mixed,5,final,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+mixed,5,final,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+mixed,5,final,100000,d7,one_move,,optimal_move_rate,0.9045
+mixed,5,final,100000,d7,greedy,,solve_rate,0.986
+mixed,5,final,100000,d7,greedy,,mean_length_solved,8.3844
+mixed,5,final,100000,d7,greedy,,mean_excess_over_exact,1.3844
+mixed,5,final,100000,d7,greedy,,mean_excess_over_kociemba,-0.783
+mixed,5,final,100000,d7,greedy,,unsolved_misplaced,16.3571
+mixed,5,final,100000,d7,greedy,,unsolved_misoriented,4.5
+mixed,5,final,100000,d7,greedy,,unsolved_wrong_pieces,16.5
+mixed,5,final,100000,d7,greedy,,unsolved_correct_stickers,18.4286
+mixed,5,final,100000,d7,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d7,beam,4096,mean_length_solved,7.0
+mixed,5,final,100000,d7,beam,4096,mean_excess_over_exact,0.0
+mixed,5,final,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+mixed,5,final,100000,d8,one_move,,optimal_move_rate,0.714
+mixed,5,final,100000,d8,greedy,,solve_rate,0.938
+mixed,5,final,100000,d8,greedy,,mean_length_solved,16.2697
+mixed,5,final,100000,d8,greedy,,mean_excess_over_exact,8.2697
+mixed,5,final,100000,d8,greedy,,mean_excess_over_kociemba,5.7377
+mixed,5,final,100000,d8,greedy,,unsolved_misplaced,16.371
+mixed,5,final,100000,d8,greedy,,unsolved_misoriented,4.7742
+mixed,5,final,100000,d8,greedy,,unsolved_wrong_pieces,16.4677
+mixed,5,final,100000,d8,greedy,,unsolved_correct_stickers,18.6774
+mixed,5,final,100000,d8,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d8,beam,4096,mean_length_solved,8.017
+mixed,5,final,100000,d8,beam,4096,mean_excess_over_exact,0.017
+mixed,5,final,100000,d8,beam,4096,mean_excess_over_kociemba,-2.472
+mixed,5,final,100000,d9,one_move,,optimal_move_rate,0.518
+mixed,5,final,100000,d9,greedy,,solve_rate,0.882
+mixed,5,final,100000,d9,greedy,,mean_length_solved,27.3923
+mixed,5,final,100000,d9,greedy,,mean_excess_over_exact,18.3923
+mixed,5,final,100000,d9,greedy,,mean_excess_over_kociemba,15.602
+mixed,5,final,100000,d9,greedy,,unsolved_misplaced,15.822
+mixed,5,final,100000,d9,greedy,,unsolved_misoriented,4.0763
+mixed,5,final,100000,d9,greedy,,unsolved_wrong_pieces,15.8814
+mixed,5,final,100000,d9,greedy,,unsolved_correct_stickers,19.9661
+mixed,5,final,100000,d9,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d9,beam,4096,mean_length_solved,9.428
+mixed,5,final,100000,d9,beam,4096,mean_excess_over_exact,0.428
+mixed,5,final,100000,d9,beam,4096,mean_excess_over_kociemba,-2.355
+mixed,5,final,100000,d10,one_move,,optimal_move_rate,0.356
+mixed,5,final,100000,d10,greedy,,solve_rate,0.835
+mixed,5,final,100000,d10,greedy,,mean_length_solved,36.6635
+mixed,5,final,100000,d10,greedy,,mean_excess_over_exact,26.6635
+mixed,5,final,100000,d10,greedy,,mean_excess_over_kociemba,23.1054
+mixed,5,final,100000,d10,greedy,,unsolved_misplaced,15.903
+mixed,5,final,100000,d10,greedy,,unsolved_misoriented,3.7394
+mixed,5,final,100000,d10,greedy,,unsolved_wrong_pieces,16.0061
+mixed,5,final,100000,d10,greedy,,unsolved_correct_stickers,20.0485
+mixed,5,final,100000,d10,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d10,beam,4096,mean_length_solved,11.977
+mixed,5,final,100000,d10,beam,4096,mean_excess_over_exact,1.977
+mixed,5,final,100000,d10,beam,4096,mean_excess_over_kociemba,-1.734
+mixed,5,final,100000,d11,one_move,,optimal_move_rate,0.266
+mixed,5,final,100000,d11,greedy,,solve_rate,0.799
+mixed,5,final,100000,d11,greedy,,mean_length_solved,42.1277
+mixed,5,final,100000,d11,greedy,,mean_excess_over_exact,31.1277
+mixed,5,final,100000,d11,greedy,,mean_excess_over_kociemba,25.8498
+mixed,5,final,100000,d11,greedy,,unsolved_misplaced,15.7264
+mixed,5,final,100000,d11,greedy,,unsolved_misoriented,4.1741
+mixed,5,final,100000,d11,greedy,,unsolved_wrong_pieces,15.8358
+mixed,5,final,100000,d11,greedy,,unsolved_correct_stickers,19.8358
+mixed,5,final,100000,d11,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d11,beam,4096,mean_length_solved,15.378
+mixed,5,final,100000,d11,beam,4096,mean_excess_over_exact,4.378
+mixed,5,final,100000,d11,beam,4096,mean_excess_over_kociemba,-0.996
+mixed,5,final,100000,d12,one_move,,optimal_move_rate,0.227
+mixed,5,final,100000,d12,greedy,,solve_rate,0.786
+mixed,5,final,100000,d12,greedy,,mean_length_solved,45.0611
+mixed,5,final,100000,d12,greedy,,mean_excess_over_exact,33.0611
+mixed,5,final,100000,d12,greedy,,mean_excess_over_kociemba,26.8244
+mixed,5,final,100000,d12,greedy,,unsolved_misplaced,15.0047
+mixed,5,final,100000,d12,greedy,,unsolved_misoriented,3.7243
+mixed,5,final,100000,d12,greedy,,unsolved_wrong_pieces,15.1308
+mixed,5,final,100000,d12,greedy,,unsolved_correct_stickers,21.5187
+mixed,5,final,100000,d12,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d12,beam,4096,mean_length_solved,18.305
+mixed,5,final,100000,d12,beam,4096,mean_excess_over_exact,6.305
+mixed,5,final,100000,d12,beam,4096,mean_excess_over_kociemba,0.022
+mixed,5,final,100000,d13,one_move,,optimal_move_rate,0.155
+mixed,5,final,100000,d13,greedy,,solve_rate,0.796
+mixed,5,final,100000,d13,greedy,,mean_length_solved,45.7701
+mixed,5,final,100000,d13,greedy,,mean_excess_over_exact,32.7701
+mixed,5,final,100000,d13,greedy,,mean_excess_over_kociemba,26.3656
+mixed,5,final,100000,d13,greedy,,unsolved_misplaced,15.598
+mixed,5,final,100000,d13,greedy,,unsolved_misoriented,4.2745
+mixed,5,final,100000,d13,greedy,,unsolved_wrong_pieces,15.7108
+mixed,5,final,100000,d13,greedy,,unsolved_correct_stickers,20.1716
+mixed,5,final,100000,d13,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d13,beam,4096,mean_length_solved,20.335
+mixed,5,final,100000,d13,beam,4096,mean_excess_over_exact,7.335
+mixed,5,final,100000,d13,beam,4096,mean_excess_over_kociemba,0.94
+mixed,5,final,100000,random,greedy,,solve_rate,0.766
+mixed,5,final,100000,random,greedy,,mean_length_solved,47.9504
+mixed,5,final,100000,random,greedy,,mean_excess_over_kociemba,27.1802
+mixed,5,final,100000,random,greedy,,unsolved_misplaced,15.4872
+mixed,5,final,100000,random,greedy,,unsolved_misoriented,4.0983
+mixed,5,final,100000,random,greedy,,unsolved_wrong_pieces,15.5769
+mixed,5,final,100000,random,greedy,,unsolved_correct_stickers,20.5812
+mixed,5,final,100000,random,beam,4096,solve_rate,1.0
+mixed,5,final,100000,random,beam,4096,mean_length_solved,22.743
+mixed,5,final,100000,random,beam,4096,mean_excess_over_kociemba,1.956
+mixed,5,final,100000,d20_known,greedy,,solve_rate,0.9091
+mixed,5,final,100000,d20_known,greedy,,mean_length_solved,44.7
+mixed,5,final,100000,d20_known,greedy,,mean_excess_over_exact,24.7
+mixed,5,final,100000,d20_known,greedy,,mean_excess_over_kociemba,23.1
+mixed,5,final,100000,d20_known,greedy,,unsolved_misplaced,18.0
+mixed,5,final,100000,d20_known,greedy,,unsolved_misoriented,0.0
+mixed,5,final,100000,d20_known,greedy,,unsolved_wrong_pieces,18.0
+mixed,5,final,100000,d20_known,greedy,,unsolved_correct_stickers,18.0
+mixed,5,final,100000,d20_known,beam,4096,solve_rate,1.0
+mixed,5,final,100000,d20_known,beam,4096,mean_length_solved,23.4545
+mixed,5,final,100000,d20_known,beam,4096,mean_excess_over_exact,3.4545
+mixed,5,final,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.9091
 true_distance (20 stages),0,bestval,100000,d1_4_all,one_move,,optimal_move_rate,1.0
 true_distance (20 stages),0,bestval,100000,d1_4_all,greedy,,solve_rate,1.0
 true_distance (20 stages),0,bestval,100000,d1_4_all,greedy,,mean_length_solved,3.919
@@ -1711,6 +3003,438 @@ true_distance (20 stages),2,bestval,100000,d20_known,beam,4096,solve_rate,1.0
 true_distance (20 stages),2,bestval,100000,d20_known,beam,4096,mean_length_solved,23.0
 true_distance (20 stages),2,bestval,100000,d20_known,beam,4096,mean_excess_over_exact,3.0
 true_distance (20 stages),2,bestval,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.4545
+true_distance (20 stages),3,bestval,90000,d1_4_all,one_move,,optimal_move_rate,1.0
+true_distance (20 stages),3,bestval,90000,d1_4_all,greedy,,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d1_4_all,greedy,,mean_length_solved,3.919
+true_distance (20 stages),3,bestval,90000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),3,bestval,90000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),3,bestval,90000,d1_4_all,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d1_4_all,beam,4096,mean_length_solved,3.919
+true_distance (20 stages),3,bestval,90000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,bestval,90000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),3,bestval,90000,holdout_d5,one_move,,optimal_move_rate,0.9998608453644112
+true_distance (20 stages),3,bestval,90000,holdout_d5,greedy,,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,holdout_d5,greedy,,mean_length_solved,5.0
+true_distance (20 stages),3,bestval,90000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),3,bestval,90000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),3,bestval,90000,holdout_d5,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,holdout_d5,beam,4096,mean_length_solved,5.0
+true_distance (20 stages),3,bestval,90000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,bestval,90000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),3,bestval,90000,holdout_d6,one_move,,optimal_move_rate,0.9895831692577483
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,solve_rate,0.999
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,mean_length_solved,6.0731
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,mean_excess_over_exact,0.0731
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.5576
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,unsolved_misplaced,18.0
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,unsolved_misoriented,12.0
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,unsolved_wrong_pieces,18.0
+true_distance (20 stages),3,bestval,90000,holdout_d6,greedy,,unsolved_correct_stickers,9.0
+true_distance (20 stages),3,bestval,90000,holdout_d6,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,holdout_d6,beam,4096,mean_length_solved,6.0
+true_distance (20 stages),3,bestval,90000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,bestval,90000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+true_distance (20 stages),3,bestval,90000,d7,one_move,,optimal_move_rate,0.908
+true_distance (20 stages),3,bestval,90000,d7,greedy,,solve_rate,0.962
+true_distance (20 stages),3,bestval,90000,d7,greedy,,mean_length_solved,7.7672
+true_distance (20 stages),3,bestval,90000,d7,greedy,,mean_excess_over_exact,0.7672
+true_distance (20 stages),3,bestval,90000,d7,greedy,,mean_excess_over_kociemba,-1.4252
+true_distance (20 stages),3,bestval,90000,d7,greedy,,unsolved_misplaced,14.7368
+true_distance (20 stages),3,bestval,90000,d7,greedy,,unsolved_misoriented,4.1842
+true_distance (20 stages),3,bestval,90000,d7,greedy,,unsolved_wrong_pieces,15.0526
+true_distance (20 stages),3,bestval,90000,d7,greedy,,unsolved_correct_stickers,21.2632
+true_distance (20 stages),3,bestval,90000,d7,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d7,beam,4096,mean_length_solved,7.0
+true_distance (20 stages),3,bestval,90000,d7,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,bestval,90000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+true_distance (20 stages),3,bestval,90000,d8,one_move,,optimal_move_rate,0.73
+true_distance (20 stages),3,bestval,90000,d8,greedy,,solve_rate,0.852
+true_distance (20 stages),3,bestval,90000,d8,greedy,,mean_length_solved,13.1338
+true_distance (20 stages),3,bestval,90000,d8,greedy,,mean_excess_over_exact,5.1338
+true_distance (20 stages),3,bestval,90000,d8,greedy,,mean_excess_over_kociemba,2.5951
+true_distance (20 stages),3,bestval,90000,d8,greedy,,unsolved_misplaced,14.8649
+true_distance (20 stages),3,bestval,90000,d8,greedy,,unsolved_misoriented,3.4189
+true_distance (20 stages),3,bestval,90000,d8,greedy,,unsolved_wrong_pieces,15.1149
+true_distance (20 stages),3,bestval,90000,d8,greedy,,unsolved_correct_stickers,21.3919
+true_distance (20 stages),3,bestval,90000,d8,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d8,beam,4096,mean_length_solved,8.0
+true_distance (20 stages),3,bestval,90000,d8,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),3,bestval,90000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+true_distance (20 stages),3,bestval,90000,d9,one_move,,optimal_move_rate,0.558
+true_distance (20 stages),3,bestval,90000,d9,greedy,,solve_rate,0.676
+true_distance (20 stages),3,bestval,90000,d9,greedy,,mean_length_solved,23.142
+true_distance (20 stages),3,bestval,90000,d9,greedy,,mean_excess_over_exact,14.142
+true_distance (20 stages),3,bestval,90000,d9,greedy,,mean_excess_over_kociemba,11.2914
+true_distance (20 stages),3,bestval,90000,d9,greedy,,unsolved_misplaced,14.9414
+true_distance (20 stages),3,bestval,90000,d9,greedy,,unsolved_misoriented,3.2469
+true_distance (20 stages),3,bestval,90000,d9,greedy,,unsolved_wrong_pieces,15.1698
+true_distance (20 stages),3,bestval,90000,d9,greedy,,unsolved_correct_stickers,21.284
+true_distance (20 stages),3,bestval,90000,d9,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d9,beam,4096,mean_length_solved,9.068
+true_distance (20 stages),3,bestval,90000,d9,beam,4096,mean_excess_over_exact,0.068
+true_distance (20 stages),3,bestval,90000,d9,beam,4096,mean_excess_over_kociemba,-2.715
+true_distance (20 stages),3,bestval,90000,d10,one_move,,optimal_move_rate,0.397
+true_distance (20 stages),3,bestval,90000,d10,greedy,,solve_rate,0.485
+true_distance (20 stages),3,bestval,90000,d10,greedy,,mean_length_solved,34.699
+true_distance (20 stages),3,bestval,90000,d10,greedy,,mean_excess_over_exact,24.699
+true_distance (20 stages),3,bestval,90000,d10,greedy,,mean_excess_over_kociemba,20.9546
+true_distance (20 stages),3,bestval,90000,d10,greedy,,unsolved_misplaced,14.9631
+true_distance (20 stages),3,bestval,90000,d10,greedy,,unsolved_misoriented,3.5553
+true_distance (20 stages),3,bestval,90000,d10,greedy,,unsolved_wrong_pieces,15.1825
+true_distance (20 stages),3,bestval,90000,d10,greedy,,unsolved_correct_stickers,20.8505
+true_distance (20 stages),3,bestval,90000,d10,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d10,beam,4096,mean_length_solved,10.348
+true_distance (20 stages),3,bestval,90000,d10,beam,4096,mean_excess_over_exact,0.348
+true_distance (20 stages),3,bestval,90000,d10,beam,4096,mean_excess_over_kociemba,-3.363
+true_distance (20 stages),3,bestval,90000,d11,one_move,,optimal_move_rate,0.281
+true_distance (20 stages),3,bestval,90000,d11,greedy,,solve_rate,0.373
+true_distance (20 stages),3,bestval,90000,d11,greedy,,mean_length_solved,47.2949
+true_distance (20 stages),3,bestval,90000,d11,greedy,,mean_excess_over_exact,36.2949
+true_distance (20 stages),3,bestval,90000,d11,greedy,,mean_excess_over_kociemba,31.1153
+true_distance (20 stages),3,bestval,90000,d11,greedy,,unsolved_misplaced,14.9123
+true_distance (20 stages),3,bestval,90000,d11,greedy,,unsolved_misoriented,3.7384
+true_distance (20 stages),3,bestval,90000,d11,greedy,,unsolved_wrong_pieces,15.1451
+true_distance (20 stages),3,bestval,90000,d11,greedy,,unsolved_correct_stickers,21.0526
+true_distance (20 stages),3,bestval,90000,d11,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d11,beam,4096,mean_length_solved,12.224
+true_distance (20 stages),3,bestval,90000,d11,beam,4096,mean_excess_over_exact,1.224
+true_distance (20 stages),3,bestval,90000,d11,beam,4096,mean_excess_over_kociemba,-4.15
+true_distance (20 stages),3,bestval,90000,d12,one_move,,optimal_move_rate,0.27
+true_distance (20 stages),3,bestval,90000,d12,greedy,,solve_rate,0.364
+true_distance (20 stages),3,bestval,90000,d12,greedy,,mean_length_solved,52.2775
+true_distance (20 stages),3,bestval,90000,d12,greedy,,mean_excess_over_exact,40.2775
+true_distance (20 stages),3,bestval,90000,d12,greedy,,mean_excess_over_kociemba,34.1868
+true_distance (20 stages),3,bestval,90000,d12,greedy,,unsolved_misplaced,15.2846
+true_distance (20 stages),3,bestval,90000,d12,greedy,,unsolved_misoriented,3.3664
+true_distance (20 stages),3,bestval,90000,d12,greedy,,unsolved_wrong_pieces,15.4843
+true_distance (20 stages),3,bestval,90000,d12,greedy,,unsolved_correct_stickers,20.5377
+true_distance (20 stages),3,bestval,90000,d12,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d12,beam,4096,mean_length_solved,14.747
+true_distance (20 stages),3,bestval,90000,d12,beam,4096,mean_excess_over_exact,2.747
+true_distance (20 stages),3,bestval,90000,d12,beam,4096,mean_excess_over_kociemba,-3.536
+true_distance (20 stages),3,bestval,90000,d13,one_move,,optimal_move_rate,0.186
+true_distance (20 stages),3,bestval,90000,d13,greedy,,solve_rate,0.304
+true_distance (20 stages),3,bestval,90000,d13,greedy,,mean_length_solved,60.9901
+true_distance (20 stages),3,bestval,90000,d13,greedy,,mean_excess_over_exact,47.9901
+true_distance (20 stages),3,bestval,90000,d13,greedy,,mean_excess_over_kociemba,41.8026
+true_distance (20 stages),3,bestval,90000,d13,greedy,,unsolved_misplaced,14.9856
+true_distance (20 stages),3,bestval,90000,d13,greedy,,unsolved_misoriented,3.1925
+true_distance (20 stages),3,bestval,90000,d13,greedy,,unsolved_wrong_pieces,15.1925
+true_distance (20 stages),3,bestval,90000,d13,greedy,,unsolved_correct_stickers,21.171
+true_distance (20 stages),3,bestval,90000,d13,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d13,beam,4096,mean_length_solved,17.656
+true_distance (20 stages),3,bestval,90000,d13,beam,4096,mean_excess_over_exact,4.656
+true_distance (20 stages),3,bestval,90000,d13,beam,4096,mean_excess_over_kociemba,-1.739
+true_distance (20 stages),3,bestval,90000,random,greedy,,solve_rate,0.31
+true_distance (20 stages),3,bestval,90000,random,greedy,,mean_length_solved,61.8645
+true_distance (20 stages),3,bestval,90000,random,greedy,,mean_excess_over_kociemba,41.0645
+true_distance (20 stages),3,bestval,90000,random,greedy,,unsolved_misplaced,15.1696
+true_distance (20 stages),3,bestval,90000,random,greedy,,unsolved_misoriented,3.5841
+true_distance (20 stages),3,bestval,90000,random,greedy,,unsolved_wrong_pieces,15.3971
+true_distance (20 stages),3,bestval,90000,random,greedy,,unsolved_correct_stickers,20.6638
+true_distance (20 stages),3,bestval,90000,random,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,random,beam,4096,mean_length_solved,21.968
+true_distance (20 stages),3,bestval,90000,random,beam,4096,mean_excess_over_kociemba,1.181
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,solve_rate,0.2727
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,mean_length_solved,44.6667
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,mean_excess_over_exact,24.6667
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,mean_excess_over_kociemba,23.6667
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,unsolved_misplaced,16.0
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,unsolved_misoriented,4.125
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,unsolved_wrong_pieces,16.375
+true_distance (20 stages),3,bestval,90000,d20_known,greedy,,unsolved_correct_stickers,17.375
+true_distance (20 stages),3,bestval,90000,d20_known,beam,4096,solve_rate,1.0
+true_distance (20 stages),3,bestval,90000,d20_known,beam,4096,mean_length_solved,23.4545
+true_distance (20 stages),3,bestval,90000,d20_known,beam,4096,mean_excess_over_exact,3.4545
+true_distance (20 stages),3,bestval,90000,d20_known,beam,4096,mean_excess_over_kociemba,1.9091
+true_distance (20 stages),4,bestval,90000,d1_4_all,one_move,,optimal_move_rate,1.0
+true_distance (20 stages),4,bestval,90000,d1_4_all,greedy,,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d1_4_all,greedy,,mean_length_solved,3.919
+true_distance (20 stages),4,bestval,90000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),4,bestval,90000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),4,bestval,90000,d1_4_all,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d1_4_all,beam,4096,mean_length_solved,3.919
+true_distance (20 stages),4,bestval,90000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,bestval,90000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),4,bestval,90000,holdout_d5,one_move,,optimal_move_rate,0.9998956340233084
+true_distance (20 stages),4,bestval,90000,holdout_d5,greedy,,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,holdout_d5,greedy,,mean_length_solved,5.0
+true_distance (20 stages),4,bestval,90000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),4,bestval,90000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),4,bestval,90000,holdout_d5,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,holdout_d5,beam,4096,mean_length_solved,5.0
+true_distance (20 stages),4,bestval,90000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,bestval,90000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),4,bestval,90000,holdout_d6,one_move,,optimal_move_rate,0.9898063120533862
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,solve_rate,0.996
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,mean_length_solved,6.1124
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,mean_excess_over_exact,0.1124
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.5241
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_misplaced,13.5
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_misoriented,4.25
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_wrong_pieces,14.0
+true_distance (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_correct_stickers,21.25
+true_distance (20 stages),4,bestval,90000,holdout_d6,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,holdout_d6,beam,4096,mean_length_solved,6.0
+true_distance (20 stages),4,bestval,90000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,bestval,90000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+true_distance (20 stages),4,bestval,90000,d7,one_move,,optimal_move_rate,0.908
+true_distance (20 stages),4,bestval,90000,d7,greedy,,solve_rate,0.972
+true_distance (20 stages),4,bestval,90000,d7,greedy,,mean_length_solved,8.0833
+true_distance (20 stages),4,bestval,90000,d7,greedy,,mean_excess_over_exact,1.0833
+true_distance (20 stages),4,bestval,90000,d7,greedy,,mean_excess_over_kociemba,-1.0689
+true_distance (20 stages),4,bestval,90000,d7,greedy,,unsolved_misplaced,15.25
+true_distance (20 stages),4,bestval,90000,d7,greedy,,unsolved_misoriented,2.9286
+true_distance (20 stages),4,bestval,90000,d7,greedy,,unsolved_wrong_pieces,15.3929
+true_distance (20 stages),4,bestval,90000,d7,greedy,,unsolved_correct_stickers,20.25
+true_distance (20 stages),4,bestval,90000,d7,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d7,beam,4096,mean_length_solved,7.0
+true_distance (20 stages),4,bestval,90000,d7,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,bestval,90000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+true_distance (20 stages),4,bestval,90000,d8,one_move,,optimal_move_rate,0.727
+true_distance (20 stages),4,bestval,90000,d8,greedy,,solve_rate,0.845
+true_distance (20 stages),4,bestval,90000,d8,greedy,,mean_length_solved,13.9136
+true_distance (20 stages),4,bestval,90000,d8,greedy,,mean_excess_over_exact,5.9136
+true_distance (20 stages),4,bestval,90000,d8,greedy,,mean_excess_over_kociemba,3.4071
+true_distance (20 stages),4,bestval,90000,d8,greedy,,unsolved_misplaced,15.1613
+true_distance (20 stages),4,bestval,90000,d8,greedy,,unsolved_misoriented,3.529
+true_distance (20 stages),4,bestval,90000,d8,greedy,,unsolved_wrong_pieces,15.3161
+true_distance (20 stages),4,bestval,90000,d8,greedy,,unsolved_correct_stickers,20.8839
+true_distance (20 stages),4,bestval,90000,d8,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d8,beam,4096,mean_length_solved,8.0
+true_distance (20 stages),4,bestval,90000,d8,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),4,bestval,90000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+true_distance (20 stages),4,bestval,90000,d9,one_move,,optimal_move_rate,0.539
+true_distance (20 stages),4,bestval,90000,d9,greedy,,solve_rate,0.662
+true_distance (20 stages),4,bestval,90000,d9,greedy,,mean_length_solved,23.3595
+true_distance (20 stages),4,bestval,90000,d9,greedy,,mean_excess_over_exact,14.3595
+true_distance (20 stages),4,bestval,90000,d9,greedy,,mean_excess_over_kociemba,11.4502
+true_distance (20 stages),4,bestval,90000,d9,greedy,,unsolved_misplaced,15.1272
+true_distance (20 stages),4,bestval,90000,d9,greedy,,unsolved_misoriented,3.4349
+true_distance (20 stages),4,bestval,90000,d9,greedy,,unsolved_wrong_pieces,15.3935
+true_distance (20 stages),4,bestval,90000,d9,greedy,,unsolved_correct_stickers,20.8669
+true_distance (20 stages),4,bestval,90000,d9,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d9,beam,4096,mean_length_solved,9.068
+true_distance (20 stages),4,bestval,90000,d9,beam,4096,mean_excess_over_exact,0.068
+true_distance (20 stages),4,bestval,90000,d9,beam,4096,mean_excess_over_kociemba,-2.715
+true_distance (20 stages),4,bestval,90000,d10,one_move,,optimal_move_rate,0.399
+true_distance (20 stages),4,bestval,90000,d10,greedy,,solve_rate,0.489
+true_distance (20 stages),4,bestval,90000,d10,greedy,,mean_length_solved,33.4192
+true_distance (20 stages),4,bestval,90000,d10,greedy,,mean_excess_over_exact,23.4192
+true_distance (20 stages),4,bestval,90000,d10,greedy,,mean_excess_over_kociemba,19.7137
+true_distance (20 stages),4,bestval,90000,d10,greedy,,unsolved_misplaced,15.2779
+true_distance (20 stages),4,bestval,90000,d10,greedy,,unsolved_misoriented,3.3699
+true_distance (20 stages),4,bestval,90000,d10,greedy,,unsolved_wrong_pieces,15.4462
+true_distance (20 stages),4,bestval,90000,d10,greedy,,unsolved_correct_stickers,20.6654
+true_distance (20 stages),4,bestval,90000,d10,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d10,beam,4096,mean_length_solved,10.335
+true_distance (20 stages),4,bestval,90000,d10,beam,4096,mean_excess_over_exact,0.335
+true_distance (20 stages),4,bestval,90000,d10,beam,4096,mean_excess_over_kociemba,-3.376
+true_distance (20 stages),4,bestval,90000,d11,one_move,,optimal_move_rate,0.299
+true_distance (20 stages),4,bestval,90000,d11,greedy,,solve_rate,0.389
+true_distance (20 stages),4,bestval,90000,d11,greedy,,mean_length_solved,45.491
+true_distance (20 stages),4,bestval,90000,d11,greedy,,mean_excess_over_exact,34.491
+true_distance (20 stages),4,bestval,90000,d11,greedy,,mean_excess_over_kociemba,29.1105
+true_distance (20 stages),4,bestval,90000,d11,greedy,,unsolved_misplaced,15.2979
+true_distance (20 stages),4,bestval,90000,d11,greedy,,unsolved_misoriented,3.3093
+true_distance (20 stages),4,bestval,90000,d11,greedy,,unsolved_wrong_pieces,15.4926
+true_distance (20 stages),4,bestval,90000,d11,greedy,,unsolved_correct_stickers,20.4763
+true_distance (20 stages),4,bestval,90000,d11,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d11,beam,4096,mean_length_solved,12.216
+true_distance (20 stages),4,bestval,90000,d11,beam,4096,mean_excess_over_exact,1.216
+true_distance (20 stages),4,bestval,90000,d11,beam,4096,mean_excess_over_kociemba,-4.158
+true_distance (20 stages),4,bestval,90000,d12,one_move,,optimal_move_rate,0.268
+true_distance (20 stages),4,bestval,90000,d12,greedy,,solve_rate,0.349
+true_distance (20 stages),4,bestval,90000,d12,greedy,,mean_length_solved,52.0401
+true_distance (20 stages),4,bestval,90000,d12,greedy,,mean_excess_over_exact,40.0401
+true_distance (20 stages),4,bestval,90000,d12,greedy,,mean_excess_over_kociemba,34.1089
+true_distance (20 stages),4,bestval,90000,d12,greedy,,unsolved_misplaced,15.2811
+true_distance (20 stages),4,bestval,90000,d12,greedy,,unsolved_misoriented,3.5023
+true_distance (20 stages),4,bestval,90000,d12,greedy,,unsolved_wrong_pieces,15.4777
+true_distance (20 stages),4,bestval,90000,d12,greedy,,unsolved_correct_stickers,20.4547
+true_distance (20 stages),4,bestval,90000,d12,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d12,beam,4096,mean_length_solved,14.635
+true_distance (20 stages),4,bestval,90000,d12,beam,4096,mean_excess_over_exact,2.635
+true_distance (20 stages),4,bestval,90000,d12,beam,4096,mean_excess_over_kociemba,-3.648
+true_distance (20 stages),4,bestval,90000,d13,one_move,,optimal_move_rate,0.192
+true_distance (20 stages),4,bestval,90000,d13,greedy,,solve_rate,0.313
+true_distance (20 stages),4,bestval,90000,d13,greedy,,mean_length_solved,57.8211
+true_distance (20 stages),4,bestval,90000,d13,greedy,,mean_excess_over_exact,44.8211
+true_distance (20 stages),4,bestval,90000,d13,greedy,,mean_excess_over_kociemba,38.6166
+true_distance (20 stages),4,bestval,90000,d13,greedy,,unsolved_misplaced,15.179
+true_distance (20 stages),4,bestval,90000,d13,greedy,,unsolved_misoriented,3.7773
+true_distance (20 stages),4,bestval,90000,d13,greedy,,unsolved_wrong_pieces,15.3828
+true_distance (20 stages),4,bestval,90000,d13,greedy,,unsolved_correct_stickers,20.7875
+true_distance (20 stages),4,bestval,90000,d13,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d13,beam,4096,mean_length_solved,17.621
+true_distance (20 stages),4,bestval,90000,d13,beam,4096,mean_excess_over_exact,4.621
+true_distance (20 stages),4,bestval,90000,d13,beam,4096,mean_excess_over_kociemba,-1.774
+true_distance (20 stages),4,bestval,90000,random,greedy,,solve_rate,0.282
+true_distance (20 stages),4,bestval,90000,random,greedy,,mean_length_solved,59.2376
+true_distance (20 stages),4,bestval,90000,random,greedy,,mean_excess_over_kociemba,38.4574
+true_distance (20 stages),4,bestval,90000,random,greedy,,unsolved_misplaced,15.3175
+true_distance (20 stages),4,bestval,90000,random,greedy,,unsolved_misoriented,3.7019
+true_distance (20 stages),4,bestval,90000,random,greedy,,unsolved_wrong_pieces,15.546
+true_distance (20 stages),4,bestval,90000,random,greedy,,unsolved_correct_stickers,20.2409
+true_distance (20 stages),4,bestval,90000,random,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,random,beam,4096,mean_length_solved,21.896
+true_distance (20 stages),4,bestval,90000,random,beam,4096,mean_excess_over_kociemba,1.109
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,solve_rate,0.1818
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,mean_length_solved,55.5
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,mean_excess_over_exact,35.5
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,mean_excess_over_kociemba,35.0
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_misplaced,16.8889
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_misoriented,3.3333
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_wrong_pieces,17.1111
+true_distance (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_correct_stickers,17.8889
+true_distance (20 stages),4,bestval,90000,d20_known,beam,4096,solve_rate,1.0
+true_distance (20 stages),4,bestval,90000,d20_known,beam,4096,mean_length_solved,22.2727
+true_distance (20 stages),4,bestval,90000,d20_known,beam,4096,mean_excess_over_exact,2.2727
+true_distance (20 stages),4,bestval,90000,d20_known,beam,4096,mean_excess_over_kociemba,0.7273
+true_distance (20 stages),5,bestval,90000,d1_4_all,one_move,,optimal_move_rate,1.0
+true_distance (20 stages),5,bestval,90000,d1_4_all,greedy,,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d1_4_all,greedy,,mean_length_solved,3.919
+true_distance (20 stages),5,bestval,90000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),5,bestval,90000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),5,bestval,90000,d1_4_all,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d1_4_all,beam,4096,mean_length_solved,3.919
+true_distance (20 stages),5,bestval,90000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,bestval,90000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+true_distance (20 stages),5,bestval,90000,holdout_d5,one_move,,optimal_move_rate,0.9999652113411028
+true_distance (20 stages),5,bestval,90000,holdout_d5,greedy,,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,holdout_d5,greedy,,mean_length_solved,5.0
+true_distance (20 stages),5,bestval,90000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+true_distance (20 stages),5,bestval,90000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),5,bestval,90000,holdout_d5,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,holdout_d5,beam,4096,mean_length_solved,5.0
+true_distance (20 stages),5,bestval,90000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,bestval,90000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+true_distance (20 stages),5,bestval,90000,holdout_d6,one_move,,optimal_move_rate,0.9904206110437307
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,solve_rate,0.998
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,mean_length_solved,6.0281
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,mean_excess_over_exact,0.0281
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.6122
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,unsolved_misplaced,13.0
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,unsolved_misoriented,1.0
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,unsolved_wrong_pieces,13.0
+true_distance (20 stages),5,bestval,90000,holdout_d6,greedy,,unsolved_correct_stickers,28.0
+true_distance (20 stages),5,bestval,90000,holdout_d6,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,holdout_d6,beam,4096,mean_length_solved,6.0
+true_distance (20 stages),5,bestval,90000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,bestval,90000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+true_distance (20 stages),5,bestval,90000,d7,one_move,,optimal_move_rate,0.917
+true_distance (20 stages),5,bestval,90000,d7,greedy,,solve_rate,0.974
+true_distance (20 stages),5,bestval,90000,d7,greedy,,mean_length_solved,8.0513
+true_distance (20 stages),5,bestval,90000,d7,greedy,,mean_excess_over_exact,1.0513
+true_distance (20 stages),5,bestval,90000,d7,greedy,,mean_excess_over_kociemba,-1.152
+true_distance (20 stages),5,bestval,90000,d7,greedy,,unsolved_misplaced,14.8077
+true_distance (20 stages),5,bestval,90000,d7,greedy,,unsolved_misoriented,2.6923
+true_distance (20 stages),5,bestval,90000,d7,greedy,,unsolved_wrong_pieces,15.0385
+true_distance (20 stages),5,bestval,90000,d7,greedy,,unsolved_correct_stickers,21.5385
+true_distance (20 stages),5,bestval,90000,d7,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d7,beam,4096,mean_length_solved,7.0
+true_distance (20 stages),5,bestval,90000,d7,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,bestval,90000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+true_distance (20 stages),5,bestval,90000,d8,one_move,,optimal_move_rate,0.728
+true_distance (20 stages),5,bestval,90000,d8,greedy,,solve_rate,0.84
+true_distance (20 stages),5,bestval,90000,d8,greedy,,mean_length_solved,13.4369
+true_distance (20 stages),5,bestval,90000,d8,greedy,,mean_excess_over_exact,5.4369
+true_distance (20 stages),5,bestval,90000,d8,greedy,,mean_excess_over_kociemba,2.9262
+true_distance (20 stages),5,bestval,90000,d8,greedy,,unsolved_misplaced,15.35
+true_distance (20 stages),5,bestval,90000,d8,greedy,,unsolved_misoriented,4.1188
+true_distance (20 stages),5,bestval,90000,d8,greedy,,unsolved_wrong_pieces,15.6062
+true_distance (20 stages),5,bestval,90000,d8,greedy,,unsolved_correct_stickers,20.3062
+true_distance (20 stages),5,bestval,90000,d8,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d8,beam,4096,mean_length_solved,8.0
+true_distance (20 stages),5,bestval,90000,d8,beam,4096,mean_excess_over_exact,0.0
+true_distance (20 stages),5,bestval,90000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+true_distance (20 stages),5,bestval,90000,d9,one_move,,optimal_move_rate,0.564
+true_distance (20 stages),5,bestval,90000,d9,greedy,,solve_rate,0.642
+true_distance (20 stages),5,bestval,90000,d9,greedy,,mean_length_solved,20.866
+true_distance (20 stages),5,bestval,90000,d9,greedy,,mean_excess_over_exact,11.866
+true_distance (20 stages),5,bestval,90000,d9,greedy,,mean_excess_over_kociemba,8.9408
+true_distance (20 stages),5,bestval,90000,d9,greedy,,unsolved_misplaced,14.6872
+true_distance (20 stages),5,bestval,90000,d9,greedy,,unsolved_misoriented,3.2933
+true_distance (20 stages),5,bestval,90000,d9,greedy,,unsolved_wrong_pieces,14.8994
+true_distance (20 stages),5,bestval,90000,d9,greedy,,unsolved_correct_stickers,21.7067
+true_distance (20 stages),5,bestval,90000,d9,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d9,beam,4096,mean_length_solved,9.074
+true_distance (20 stages),5,bestval,90000,d9,beam,4096,mean_excess_over_exact,0.074
+true_distance (20 stages),5,bestval,90000,d9,beam,4096,mean_excess_over_kociemba,-2.709
+true_distance (20 stages),5,bestval,90000,d10,one_move,,optimal_move_rate,0.381
+true_distance (20 stages),5,bestval,90000,d10,greedy,,solve_rate,0.456
+true_distance (20 stages),5,bestval,90000,d10,greedy,,mean_length_solved,33.7741
+true_distance (20 stages),5,bestval,90000,d10,greedy,,mean_excess_over_exact,23.7741
+true_distance (20 stages),5,bestval,90000,d10,greedy,,mean_excess_over_kociemba,19.9408
+true_distance (20 stages),5,bestval,90000,d10,greedy,,unsolved_misplaced,14.8934
+true_distance (20 stages),5,bestval,90000,d10,greedy,,unsolved_misoriented,3.7059
+true_distance (20 stages),5,bestval,90000,d10,greedy,,unsolved_wrong_pieces,15.0901
+true_distance (20 stages),5,bestval,90000,d10,greedy,,unsolved_correct_stickers,21.2426
+true_distance (20 stages),5,bestval,90000,d10,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d10,beam,4096,mean_length_solved,10.246
+true_distance (20 stages),5,bestval,90000,d10,beam,4096,mean_excess_over_exact,0.246
+true_distance (20 stages),5,bestval,90000,d10,beam,4096,mean_excess_over_kociemba,-3.465
+true_distance (20 stages),5,bestval,90000,d11,one_move,,optimal_move_rate,0.272
+true_distance (20 stages),5,bestval,90000,d11,greedy,,solve_rate,0.359
+true_distance (20 stages),5,bestval,90000,d11,greedy,,mean_length_solved,46.1309
+true_distance (20 stages),5,bestval,90000,d11,greedy,,mean_excess_over_exact,35.1309
+true_distance (20 stages),5,bestval,90000,d11,greedy,,mean_excess_over_kociemba,30.2145
+true_distance (20 stages),5,bestval,90000,d11,greedy,,unsolved_misplaced,15.1778
+true_distance (20 stages),5,bestval,90000,d11,greedy,,unsolved_misoriented,3.4914
+true_distance (20 stages),5,bestval,90000,d11,greedy,,unsolved_wrong_pieces,15.3807
+true_distance (20 stages),5,bestval,90000,d11,greedy,,unsolved_correct_stickers,20.6459
+true_distance (20 stages),5,bestval,90000,d11,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d11,beam,4096,mean_length_solved,12.128
+true_distance (20 stages),5,bestval,90000,d11,beam,4096,mean_excess_over_exact,1.128
+true_distance (20 stages),5,bestval,90000,d11,beam,4096,mean_excess_over_kociemba,-4.246
+true_distance (20 stages),5,bestval,90000,d12,one_move,,optimal_move_rate,0.248
+true_distance (20 stages),5,bestval,90000,d12,greedy,,solve_rate,0.338
+true_distance (20 stages),5,bestval,90000,d12,greedy,,mean_length_solved,53.2278
+true_distance (20 stages),5,bestval,90000,d12,greedy,,mean_excess_over_exact,41.2278
+true_distance (20 stages),5,bestval,90000,d12,greedy,,mean_excess_over_kociemba,35.2988
+true_distance (20 stages),5,bestval,90000,d12,greedy,,unsolved_misplaced,15.136
+true_distance (20 stages),5,bestval,90000,d12,greedy,,unsolved_misoriented,3.6254
+true_distance (20 stages),5,bestval,90000,d12,greedy,,unsolved_wrong_pieces,15.3565
+true_distance (20 stages),5,bestval,90000,d12,greedy,,unsolved_correct_stickers,20.5393
+true_distance (20 stages),5,bestval,90000,d12,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d12,beam,4096,mean_length_solved,14.776
+true_distance (20 stages),5,bestval,90000,d12,beam,4096,mean_excess_over_exact,2.776
+true_distance (20 stages),5,bestval,90000,d12,beam,4096,mean_excess_over_kociemba,-3.507
+true_distance (20 stages),5,bestval,90000,d13,one_move,,optimal_move_rate,0.18
+true_distance (20 stages),5,bestval,90000,d13,greedy,,solve_rate,0.307
+true_distance (20 stages),5,bestval,90000,d13,greedy,,mean_length_solved,59.8925
+true_distance (20 stages),5,bestval,90000,d13,greedy,,mean_excess_over_exact,46.8925
+true_distance (20 stages),5,bestval,90000,d13,greedy,,mean_excess_over_kociemba,40.8208
+true_distance (20 stages),5,bestval,90000,d13,greedy,,unsolved_misplaced,15.1414
+true_distance (20 stages),5,bestval,90000,d13,greedy,,unsolved_misoriented,3.6883
+true_distance (20 stages),5,bestval,90000,d13,greedy,,unsolved_wrong_pieces,15.3463
+true_distance (20 stages),5,bestval,90000,d13,greedy,,unsolved_correct_stickers,20.6753
+true_distance (20 stages),5,bestval,90000,d13,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d13,beam,4096,mean_length_solved,17.732
+true_distance (20 stages),5,bestval,90000,d13,beam,4096,mean_excess_over_exact,4.732
+true_distance (20 stages),5,bestval,90000,d13,beam,4096,mean_excess_over_kociemba,-1.663
+true_distance (20 stages),5,bestval,90000,random,greedy,,solve_rate,0.265
+true_distance (20 stages),5,bestval,90000,random,greedy,,mean_length_solved,60.5509
+true_distance (20 stages),5,bestval,90000,random,greedy,,mean_excess_over_kociemba,39.7736
+true_distance (20 stages),5,bestval,90000,random,greedy,,unsolved_misplaced,15.2517
+true_distance (20 stages),5,bestval,90000,random,greedy,,unsolved_misoriented,3.3565
+true_distance (20 stages),5,bestval,90000,random,greedy,,unsolved_wrong_pieces,15.4599
+true_distance (20 stages),5,bestval,90000,random,greedy,,unsolved_correct_stickers,20.6381
+true_distance (20 stages),5,bestval,90000,random,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,random,beam,4096,mean_length_solved,21.974
+true_distance (20 stages),5,bestval,90000,random,beam,4096,mean_excess_over_kociemba,1.187
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,solve_rate,0.4545
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,mean_length_solved,64.4
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,mean_excess_over_exact,44.4
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,mean_excess_over_kociemba,42.6
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,unsolved_misplaced,16.5
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,unsolved_misoriented,3.3333
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,unsolved_wrong_pieces,16.5
+true_distance (20 stages),5,bestval,90000,d20_known,greedy,,unsolved_correct_stickers,18.5
+true_distance (20 stages),5,bestval,90000,d20_known,beam,4096,solve_rate,1.0
+true_distance (20 stages),5,bestval,90000,d20_known,beam,4096,mean_length_solved,23.1818
+true_distance (20 stages),5,bestval,90000,d20_known,beam,4096,mean_excess_over_exact,3.1818
+true_distance (20 stages),5,bestval,90000,d20_known,beam,4096,mean_excess_over_kociemba,1.6364
 kociemba (20 stages),0,bestval,100000,d1_4_all,one_move,,optimal_move_rate,1.0
 kociemba (20 stages),0,bestval,100000,d1_4_all,greedy,,solve_rate,1.0
 kociemba (20 stages),0,bestval,100000,d1_4_all,greedy,,mean_length_solved,3.919
@@ -2143,6 +3867,438 @@ kociemba (20 stages),2,bestval,100000,d20_known,beam,4096,solve_rate,1.0
 kociemba (20 stages),2,bestval,100000,d20_known,beam,4096,mean_length_solved,23.2727
 kociemba (20 stages),2,bestval,100000,d20_known,beam,4096,mean_excess_over_exact,3.2727
 kociemba (20 stages),2,bestval,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.7273
+kociemba (20 stages),3,bestval,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+kociemba (20 stages),3,bestval,100000,d1_4_all,greedy,,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d1_4_all,greedy,,mean_length_solved,3.919
+kociemba (20 stages),3,bestval,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),3,bestval,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),3,bestval,100000,d1_4_all,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+kociemba (20 stages),3,bestval,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,bestval,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),3,bestval,100000,holdout_d5,one_move,,optimal_move_rate,0.9992346495042617
+kociemba (20 stages),3,bestval,100000,holdout_d5,greedy,,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,holdout_d5,greedy,,mean_length_solved,5.0
+kociemba (20 stages),3,bestval,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),3,bestval,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),3,bestval,100000,holdout_d5,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+kociemba (20 stages),3,bestval,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,bestval,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),3,bestval,100000,holdout_d6,one_move,,optimal_move_rate,0.9853198292563832
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,solve_rate,0.993
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,mean_length_solved,6.1057
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,mean_excess_over_exact,0.1057
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.5267
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,unsolved_misplaced,14.8571
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,unsolved_misoriented,4.4286
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,unsolved_wrong_pieces,15.2857
+kociemba (20 stages),3,bestval,100000,holdout_d6,greedy,,unsolved_correct_stickers,21.0
+kociemba (20 stages),3,bestval,100000,holdout_d6,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+kociemba (20 stages),3,bestval,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,bestval,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+kociemba (20 stages),3,bestval,100000,d7,one_move,,optimal_move_rate,0.9035
+kociemba (20 stages),3,bestval,100000,d7,greedy,,solve_rate,0.971
+kociemba (20 stages),3,bestval,100000,d7,greedy,,mean_length_solved,8.2008
+kociemba (20 stages),3,bestval,100000,d7,greedy,,mean_excess_over_exact,1.2008
+kociemba (20 stages),3,bestval,100000,d7,greedy,,mean_excess_over_kociemba,-0.9588
+kociemba (20 stages),3,bestval,100000,d7,greedy,,unsolved_misplaced,14.5862
+kociemba (20 stages),3,bestval,100000,d7,greedy,,unsolved_misoriented,3.8276
+kociemba (20 stages),3,bestval,100000,d7,greedy,,unsolved_wrong_pieces,14.8276
+kociemba (20 stages),3,bestval,100000,d7,greedy,,unsolved_correct_stickers,22.1379
+kociemba (20 stages),3,bestval,100000,d7,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d7,beam,4096,mean_length_solved,7.0
+kociemba (20 stages),3,bestval,100000,d7,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,bestval,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+kociemba (20 stages),3,bestval,100000,d8,one_move,,optimal_move_rate,0.719
+kociemba (20 stages),3,bestval,100000,d8,greedy,,solve_rate,0.83
+kociemba (20 stages),3,bestval,100000,d8,greedy,,mean_length_solved,14.0
+kociemba (20 stages),3,bestval,100000,d8,greedy,,mean_excess_over_exact,6.0
+kociemba (20 stages),3,bestval,100000,d8,greedy,,mean_excess_over_kociemba,3.553
+kociemba (20 stages),3,bestval,100000,d8,greedy,,unsolved_misplaced,15.3941
+kociemba (20 stages),3,bestval,100000,d8,greedy,,unsolved_misoriented,4.3882
+kociemba (20 stages),3,bestval,100000,d8,greedy,,unsolved_wrong_pieces,15.6353
+kociemba (20 stages),3,bestval,100000,d8,greedy,,unsolved_correct_stickers,20.2059
+kociemba (20 stages),3,bestval,100000,d8,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d8,beam,4096,mean_length_solved,8.0
+kociemba (20 stages),3,bestval,100000,d8,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),3,bestval,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+kociemba (20 stages),3,bestval,100000,d9,one_move,,optimal_move_rate,0.526
+kociemba (20 stages),3,bestval,100000,d9,greedy,,solve_rate,0.65
+kociemba (20 stages),3,bestval,100000,d9,greedy,,mean_length_solved,23.6
+kociemba (20 stages),3,bestval,100000,d9,greedy,,mean_excess_over_exact,14.6
+kociemba (20 stages),3,bestval,100000,d9,greedy,,mean_excess_over_kociemba,11.6677
+kociemba (20 stages),3,bestval,100000,d9,greedy,,unsolved_misplaced,15.1143
+kociemba (20 stages),3,bestval,100000,d9,greedy,,unsolved_misoriented,3.5343
+kociemba (20 stages),3,bestval,100000,d9,greedy,,unsolved_wrong_pieces,15.3314
+kociemba (20 stages),3,bestval,100000,d9,greedy,,unsolved_correct_stickers,20.5971
+kociemba (20 stages),3,bestval,100000,d9,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d9,beam,4096,mean_length_solved,9.034
+kociemba (20 stages),3,bestval,100000,d9,beam,4096,mean_excess_over_exact,0.034
+kociemba (20 stages),3,bestval,100000,d9,beam,4096,mean_excess_over_kociemba,-2.749
+kociemba (20 stages),3,bestval,100000,d10,one_move,,optimal_move_rate,0.4
+kociemba (20 stages),3,bestval,100000,d10,greedy,,solve_rate,0.493
+kociemba (20 stages),3,bestval,100000,d10,greedy,,mean_length_solved,34.5335
+kociemba (20 stages),3,bestval,100000,d10,greedy,,mean_excess_over_exact,24.5335
+kociemba (20 stages),3,bestval,100000,d10,greedy,,mean_excess_over_kociemba,20.9026
+kociemba (20 stages),3,bestval,100000,d10,greedy,,unsolved_misplaced,14.8521
+kociemba (20 stages),3,bestval,100000,d10,greedy,,unsolved_misoriented,3.6114
+kociemba (20 stages),3,bestval,100000,d10,greedy,,unsolved_wrong_pieces,15.071
+kociemba (20 stages),3,bestval,100000,d10,greedy,,unsolved_correct_stickers,21.2939
+kociemba (20 stages),3,bestval,100000,d10,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d10,beam,4096,mean_length_solved,10.227
+kociemba (20 stages),3,bestval,100000,d10,beam,4096,mean_excess_over_exact,0.227
+kociemba (20 stages),3,bestval,100000,d10,beam,4096,mean_excess_over_kociemba,-3.484
+kociemba (20 stages),3,bestval,100000,d11,one_move,,optimal_move_rate,0.294
+kociemba (20 stages),3,bestval,100000,d11,greedy,,solve_rate,0.393
+kociemba (20 stages),3,bestval,100000,d11,greedy,,mean_length_solved,47.1654
+kociemba (20 stages),3,bestval,100000,d11,greedy,,mean_excess_over_exact,36.1654
+kociemba (20 stages),3,bestval,100000,d11,greedy,,mean_excess_over_kociemba,31.112
+kociemba (20 stages),3,bestval,100000,d11,greedy,,unsolved_misplaced,14.8023
+kociemba (20 stages),3,bestval,100000,d11,greedy,,unsolved_misoriented,3.7974
+kociemba (20 stages),3,bestval,100000,d11,greedy,,unsolved_wrong_pieces,14.9918
+kociemba (20 stages),3,bestval,100000,d11,greedy,,unsolved_correct_stickers,21.5321
+kociemba (20 stages),3,bestval,100000,d11,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d11,beam,4096,mean_length_solved,12.143
+kociemba (20 stages),3,bestval,100000,d11,beam,4096,mean_excess_over_exact,1.143
+kociemba (20 stages),3,bestval,100000,d11,beam,4096,mean_excess_over_kociemba,-4.231
+kociemba (20 stages),3,bestval,100000,d12,one_move,,optimal_move_rate,0.252
+kociemba (20 stages),3,bestval,100000,d12,greedy,,solve_rate,0.369
+kociemba (20 stages),3,bestval,100000,d12,greedy,,mean_length_solved,51.2439
+kociemba (20 stages),3,bestval,100000,d12,greedy,,mean_excess_over_exact,39.2439
+kociemba (20 stages),3,bestval,100000,d12,greedy,,mean_excess_over_kociemba,33.3089
+kociemba (20 stages),3,bestval,100000,d12,greedy,,unsolved_misplaced,15.0095
+kociemba (20 stages),3,bestval,100000,d12,greedy,,unsolved_misoriented,3.5689
+kociemba (20 stages),3,bestval,100000,d12,greedy,,unsolved_wrong_pieces,15.1981
+kociemba (20 stages),3,bestval,100000,d12,greedy,,unsolved_correct_stickers,20.9683
+kociemba (20 stages),3,bestval,100000,d12,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d12,beam,4096,mean_length_solved,14.723
+kociemba (20 stages),3,bestval,100000,d12,beam,4096,mean_excess_over_exact,2.723
+kociemba (20 stages),3,bestval,100000,d12,beam,4096,mean_excess_over_kociemba,-3.56
+kociemba (20 stages),3,bestval,100000,d13,one_move,,optimal_move_rate,0.171
+kociemba (20 stages),3,bestval,100000,d13,greedy,,solve_rate,0.335
+kociemba (20 stages),3,bestval,100000,d13,greedy,,mean_length_solved,56.3313
+kociemba (20 stages),3,bestval,100000,d13,greedy,,mean_excess_over_exact,43.3313
+kociemba (20 stages),3,bestval,100000,d13,greedy,,mean_excess_over_kociemba,37.2507
+kociemba (20 stages),3,bestval,100000,d13,greedy,,unsolved_misplaced,15.018
+kociemba (20 stages),3,bestval,100000,d13,greedy,,unsolved_misoriented,3.8962
+kociemba (20 stages),3,bestval,100000,d13,greedy,,unsolved_wrong_pieces,15.2526
+kociemba (20 stages),3,bestval,100000,d13,greedy,,unsolved_correct_stickers,20.7684
+kociemba (20 stages),3,bestval,100000,d13,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d13,beam,4096,mean_length_solved,17.599
+kociemba (20 stages),3,bestval,100000,d13,beam,4096,mean_excess_over_exact,4.599
+kociemba (20 stages),3,bestval,100000,d13,beam,4096,mean_excess_over_kociemba,-1.796
+kociemba (20 stages),3,bestval,100000,random,greedy,,solve_rate,0.314
+kociemba (20 stages),3,bestval,100000,random,greedy,,mean_length_solved,60.5255
+kociemba (20 stages),3,bestval,100000,random,greedy,,mean_excess_over_kociemba,39.6911
+kociemba (20 stages),3,bestval,100000,random,greedy,,unsolved_misplaced,14.9373
+kociemba (20 stages),3,bestval,100000,random,greedy,,unsolved_misoriented,3.6603
+kociemba (20 stages),3,bestval,100000,random,greedy,,unsolved_wrong_pieces,15.191
+kociemba (20 stages),3,bestval,100000,random,greedy,,unsolved_correct_stickers,20.9621
+kociemba (20 stages),3,bestval,100000,random,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,random,beam,4096,mean_length_solved,21.927
+kociemba (20 stages),3,bestval,100000,random,beam,4096,mean_excess_over_kociemba,1.14
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,solve_rate,0.3636
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,mean_length_solved,58.0
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,mean_excess_over_exact,38.0
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,mean_excess_over_kociemba,36.5
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,unsolved_misplaced,12.8571
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,unsolved_misoriented,3.4286
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,unsolved_wrong_pieces,12.8571
+kociemba (20 stages),3,bestval,100000,d20_known,greedy,,unsolved_correct_stickers,24.5714
+kociemba (20 stages),3,bestval,100000,d20_known,beam,4096,solve_rate,1.0
+kociemba (20 stages),3,bestval,100000,d20_known,beam,4096,mean_length_solved,22.7273
+kociemba (20 stages),3,bestval,100000,d20_known,beam,4096,mean_excess_over_exact,2.7273
+kociemba (20 stages),3,bestval,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.1818
+kociemba (20 stages),4,bestval,90000,d1_4_all,one_move,,optimal_move_rate,1.0
+kociemba (20 stages),4,bestval,90000,d1_4_all,greedy,,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d1_4_all,greedy,,mean_length_solved,3.919
+kociemba (20 stages),4,bestval,90000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),4,bestval,90000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),4,bestval,90000,d1_4_all,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d1_4_all,beam,4096,mean_length_solved,3.919
+kociemba (20 stages),4,bestval,90000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,bestval,90000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),4,bestval,90000,holdout_d5,one_move,,optimal_move_rate,0.999478170116542
+kociemba (20 stages),4,bestval,90000,holdout_d5,greedy,,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,holdout_d5,greedy,,mean_length_solved,5.0
+kociemba (20 stages),4,bestval,90000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),4,bestval,90000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),4,bestval,90000,holdout_d5,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,holdout_d5,beam,4096,mean_length_solved,5.0
+kociemba (20 stages),4,bestval,90000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,bestval,90000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),4,bestval,90000,holdout_d6,one_move,,optimal_move_rate,0.9850993116701057
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,solve_rate,0.998
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,mean_length_solved,6.2285
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,mean_excess_over_exact,0.2285
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.4038
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_misplaced,18.5
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_misoriented,5.0
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_wrong_pieces,19.0
+kociemba (20 stages),4,bestval,90000,holdout_d6,greedy,,unsolved_correct_stickers,15.0
+kociemba (20 stages),4,bestval,90000,holdout_d6,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,holdout_d6,beam,4096,mean_length_solved,6.0
+kociemba (20 stages),4,bestval,90000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,bestval,90000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+kociemba (20 stages),4,bestval,90000,d7,one_move,,optimal_move_rate,0.8995
+kociemba (20 stages),4,bestval,90000,d7,greedy,,solve_rate,0.971
+kociemba (20 stages),4,bestval,90000,d7,greedy,,mean_length_solved,8.2214
+kociemba (20 stages),4,bestval,90000,d7,greedy,,mean_excess_over_exact,1.2214
+kociemba (20 stages),4,bestval,90000,d7,greedy,,mean_excess_over_kociemba,-0.9526
+kociemba (20 stages),4,bestval,90000,d7,greedy,,unsolved_misplaced,14.5862
+kociemba (20 stages),4,bestval,90000,d7,greedy,,unsolved_misoriented,3.7241
+kociemba (20 stages),4,bestval,90000,d7,greedy,,unsolved_wrong_pieces,14.7241
+kociemba (20 stages),4,bestval,90000,d7,greedy,,unsolved_correct_stickers,22.4138
+kociemba (20 stages),4,bestval,90000,d7,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d7,beam,4096,mean_length_solved,7.0
+kociemba (20 stages),4,bestval,90000,d7,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,bestval,90000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+kociemba (20 stages),4,bestval,90000,d8,one_move,,optimal_move_rate,0.706
+kociemba (20 stages),4,bestval,90000,d8,greedy,,solve_rate,0.848
+kociemba (20 stages),4,bestval,90000,d8,greedy,,mean_length_solved,14.0094
+kociemba (20 stages),4,bestval,90000,d8,greedy,,mean_excess_over_exact,6.0094
+kociemba (20 stages),4,bestval,90000,d8,greedy,,mean_excess_over_kociemba,3.487
+kociemba (20 stages),4,bestval,90000,d8,greedy,,unsolved_misplaced,15.5658
+kociemba (20 stages),4,bestval,90000,d8,greedy,,unsolved_misoriented,4.1711
+kociemba (20 stages),4,bestval,90000,d8,greedy,,unsolved_wrong_pieces,15.8553
+kociemba (20 stages),4,bestval,90000,d8,greedy,,unsolved_correct_stickers,19.4474
+kociemba (20 stages),4,bestval,90000,d8,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d8,beam,4096,mean_length_solved,8.0
+kociemba (20 stages),4,bestval,90000,d8,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),4,bestval,90000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+kociemba (20 stages),4,bestval,90000,d9,one_move,,optimal_move_rate,0.527
+kociemba (20 stages),4,bestval,90000,d9,greedy,,solve_rate,0.675
+kociemba (20 stages),4,bestval,90000,d9,greedy,,mean_length_solved,24.7393
+kociemba (20 stages),4,bestval,90000,d9,greedy,,mean_excess_over_exact,15.7393
+kociemba (20 stages),4,bestval,90000,d9,greedy,,mean_excess_over_kociemba,12.8385
+kociemba (20 stages),4,bestval,90000,d9,greedy,,unsolved_misplaced,15.0585
+kociemba (20 stages),4,bestval,90000,d9,greedy,,unsolved_misoriented,3.7231
+kociemba (20 stages),4,bestval,90000,d9,greedy,,unsolved_wrong_pieces,15.2585
+kociemba (20 stages),4,bestval,90000,d9,greedy,,unsolved_correct_stickers,20.9169
+kociemba (20 stages),4,bestval,90000,d9,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d9,beam,4096,mean_length_solved,9.051
+kociemba (20 stages),4,bestval,90000,d9,beam,4096,mean_excess_over_exact,0.051
+kociemba (20 stages),4,bestval,90000,d9,beam,4096,mean_excess_over_kociemba,-2.732
+kociemba (20 stages),4,bestval,90000,d10,one_move,,optimal_move_rate,0.399
+kociemba (20 stages),4,bestval,90000,d10,greedy,,solve_rate,0.5
+kociemba (20 stages),4,bestval,90000,d10,greedy,,mean_length_solved,34.336
+kociemba (20 stages),4,bestval,90000,d10,greedy,,mean_excess_over_exact,24.336
+kociemba (20 stages),4,bestval,90000,d10,greedy,,mean_excess_over_kociemba,20.65
+kociemba (20 stages),4,bestval,90000,d10,greedy,,unsolved_misplaced,14.794
+kociemba (20 stages),4,bestval,90000,d10,greedy,,unsolved_misoriented,3.756
+kociemba (20 stages),4,bestval,90000,d10,greedy,,unsolved_wrong_pieces,15.016
+kociemba (20 stages),4,bestval,90000,d10,greedy,,unsolved_correct_stickers,21.124
+kociemba (20 stages),4,bestval,90000,d10,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d10,beam,4096,mean_length_solved,10.226
+kociemba (20 stages),4,bestval,90000,d10,beam,4096,mean_excess_over_exact,0.226
+kociemba (20 stages),4,bestval,90000,d10,beam,4096,mean_excess_over_kociemba,-3.485
+kociemba (20 stages),4,bestval,90000,d11,one_move,,optimal_move_rate,0.286
+kociemba (20 stages),4,bestval,90000,d11,greedy,,solve_rate,0.408
+kociemba (20 stages),4,bestval,90000,d11,greedy,,mean_length_solved,47.0417
+kociemba (20 stages),4,bestval,90000,d11,greedy,,mean_excess_over_exact,36.0417
+kociemba (20 stages),4,bestval,90000,d11,greedy,,mean_excess_over_kociemba,30.9559
+kociemba (20 stages),4,bestval,90000,d11,greedy,,unsolved_misplaced,15.0101
+kociemba (20 stages),4,bestval,90000,d11,greedy,,unsolved_misoriented,3.5659
+kociemba (20 stages),4,bestval,90000,d11,greedy,,unsolved_wrong_pieces,15.2568
+kociemba (20 stages),4,bestval,90000,d11,greedy,,unsolved_correct_stickers,20.8345
+kociemba (20 stages),4,bestval,90000,d11,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d11,beam,4096,mean_length_solved,12.09
+kociemba (20 stages),4,bestval,90000,d11,beam,4096,mean_excess_over_exact,1.09
+kociemba (20 stages),4,bestval,90000,d11,beam,4096,mean_excess_over_kociemba,-4.284
+kociemba (20 stages),4,bestval,90000,d12,one_move,,optimal_move_rate,0.262
+kociemba (20 stages),4,bestval,90000,d12,greedy,,solve_rate,0.409
+kociemba (20 stages),4,bestval,90000,d12,greedy,,mean_length_solved,52.9315
+kociemba (20 stages),4,bestval,90000,d12,greedy,,mean_excess_over_exact,40.9315
+kociemba (20 stages),4,bestval,90000,d12,greedy,,mean_excess_over_kociemba,34.9144
+kociemba (20 stages),4,bestval,90000,d12,greedy,,unsolved_misplaced,15.1489
+kociemba (20 stages),4,bestval,90000,d12,greedy,,unsolved_misoriented,3.775
+kociemba (20 stages),4,bestval,90000,d12,greedy,,unsolved_wrong_pieces,15.3604
+kociemba (20 stages),4,bestval,90000,d12,greedy,,unsolved_correct_stickers,20.4924
+kociemba (20 stages),4,bestval,90000,d12,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d12,beam,4096,mean_length_solved,14.899
+kociemba (20 stages),4,bestval,90000,d12,beam,4096,mean_excess_over_exact,2.899
+kociemba (20 stages),4,bestval,90000,d12,beam,4096,mean_excess_over_kociemba,-3.384
+kociemba (20 stages),4,bestval,90000,d13,one_move,,optimal_move_rate,0.204
+kociemba (20 stages),4,bestval,90000,d13,greedy,,solve_rate,0.353
+kociemba (20 stages),4,bestval,90000,d13,greedy,,mean_length_solved,57.6402
+kociemba (20 stages),4,bestval,90000,d13,greedy,,mean_excess_over_exact,44.6402
+kociemba (20 stages),4,bestval,90000,d13,greedy,,mean_excess_over_kociemba,38.238
+kociemba (20 stages),4,bestval,90000,d13,greedy,,unsolved_misplaced,15.3184
+kociemba (20 stages),4,bestval,90000,d13,greedy,,unsolved_misoriented,3.8454
+kociemba (20 stages),4,bestval,90000,d13,greedy,,unsolved_wrong_pieces,15.541
+kociemba (20 stages),4,bestval,90000,d13,greedy,,unsolved_correct_stickers,20.3369
+kociemba (20 stages),4,bestval,90000,d13,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d13,beam,4096,mean_length_solved,18.01
+kociemba (20 stages),4,bestval,90000,d13,beam,4096,mean_excess_over_exact,5.01
+kociemba (20 stages),4,bestval,90000,d13,beam,4096,mean_excess_over_kociemba,-1.385
+kociemba (20 stages),4,bestval,90000,random,greedy,,solve_rate,0.367
+kociemba (20 stages),4,bestval,90000,random,greedy,,mean_length_solved,58.9401
+kociemba (20 stages),4,bestval,90000,random,greedy,,mean_excess_over_kociemba,38.1935
+kociemba (20 stages),4,bestval,90000,random,greedy,,unsolved_misplaced,15.278
+kociemba (20 stages),4,bestval,90000,random,greedy,,unsolved_misoriented,3.7551
+kociemba (20 stages),4,bestval,90000,random,greedy,,unsolved_wrong_pieces,15.4866
+kociemba (20 stages),4,bestval,90000,random,greedy,,unsolved_correct_stickers,20.4408
+kociemba (20 stages),4,bestval,90000,random,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,random,beam,4096,mean_length_solved,22.011
+kociemba (20 stages),4,bestval,90000,random,beam,4096,mean_excess_over_kociemba,1.224
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,solve_rate,0.3636
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,mean_length_solved,71.25
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,mean_excess_over_exact,51.25
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,mean_excess_over_kociemba,50.0
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_misplaced,11.7143
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_misoriented,4.7143
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_wrong_pieces,12.1429
+kociemba (20 stages),4,bestval,90000,d20_known,greedy,,unsolved_correct_stickers,26.5714
+kociemba (20 stages),4,bestval,90000,d20_known,beam,4096,solve_rate,1.0
+kociemba (20 stages),4,bestval,90000,d20_known,beam,4096,mean_length_solved,23.2727
+kociemba (20 stages),4,bestval,90000,d20_known,beam,4096,mean_excess_over_exact,3.2727
+kociemba (20 stages),4,bestval,90000,d20_known,beam,4096,mean_excess_over_kociemba,1.7273
+kociemba (20 stages),5,bestval,100000,d1_4_all,one_move,,optimal_move_rate,1.0
+kociemba (20 stages),5,bestval,100000,d1_4_all,greedy,,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d1_4_all,greedy,,mean_length_solved,3.919
+kociemba (20 stages),5,bestval,100000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),5,bestval,100000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),5,bestval,100000,d1_4_all,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d1_4_all,beam,4096,mean_length_solved,3.919
+kociemba (20 stages),5,bestval,100000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,bestval,100000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+kociemba (20 stages),5,bestval,100000,holdout_d5,one_move,,optimal_move_rate,0.999652113411028
+kociemba (20 stages),5,bestval,100000,holdout_d5,greedy,,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,holdout_d5,greedy,,mean_length_solved,5.0
+kociemba (20 stages),5,bestval,100000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+kociemba (20 stages),5,bestval,100000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),5,bestval,100000,holdout_d5,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,holdout_d5,beam,4096,mean_length_solved,5.0
+kociemba (20 stages),5,bestval,100000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,bestval,100000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+kociemba (20 stages),5,bestval,100000,holdout_d6,one_move,,optimal_move_rate,0.9853670830248712
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,solve_rate,0.996
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,mean_length_solved,6.0141
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,mean_excess_over_exact,0.0141
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.6255
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,unsolved_misplaced,13.0
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,unsolved_misoriented,1.75
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,unsolved_wrong_pieces,13.25
+kociemba (20 stages),5,bestval,100000,holdout_d6,greedy,,unsolved_correct_stickers,23.25
+kociemba (20 stages),5,bestval,100000,holdout_d6,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,holdout_d6,beam,4096,mean_length_solved,6.0
+kociemba (20 stages),5,bestval,100000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,bestval,100000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+kociemba (20 stages),5,bestval,100000,d7,one_move,,optimal_move_rate,0.8965
+kociemba (20 stages),5,bestval,100000,d7,greedy,,solve_rate,0.965
+kociemba (20 stages),5,bestval,100000,d7,greedy,,mean_length_solved,8.1316
+kociemba (20 stages),5,bestval,100000,d7,greedy,,mean_excess_over_exact,1.1316
+kociemba (20 stages),5,bestval,100000,d7,greedy,,mean_excess_over_kociemba,-1.0435
+kociemba (20 stages),5,bestval,100000,d7,greedy,,unsolved_misplaced,14.7143
+kociemba (20 stages),5,bestval,100000,d7,greedy,,unsolved_misoriented,3.2
+kociemba (20 stages),5,bestval,100000,d7,greedy,,unsolved_wrong_pieces,14.8286
+kociemba (20 stages),5,bestval,100000,d7,greedy,,unsolved_correct_stickers,22.4571
+kociemba (20 stages),5,bestval,100000,d7,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d7,beam,4096,mean_length_solved,7.0
+kociemba (20 stages),5,bestval,100000,d7,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,bestval,100000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+kociemba (20 stages),5,bestval,100000,d8,one_move,,optimal_move_rate,0.715
+kociemba (20 stages),5,bestval,100000,d8,greedy,,solve_rate,0.835
+kociemba (20 stages),5,bestval,100000,d8,greedy,,mean_length_solved,13.8994
+kociemba (20 stages),5,bestval,100000,d8,greedy,,mean_excess_over_exact,5.8994
+kociemba (20 stages),5,bestval,100000,d8,greedy,,mean_excess_over_kociemba,3.3617
+kociemba (20 stages),5,bestval,100000,d8,greedy,,unsolved_misplaced,15.0364
+kociemba (20 stages),5,bestval,100000,d8,greedy,,unsolved_misoriented,3.4303
+kociemba (20 stages),5,bestval,100000,d8,greedy,,unsolved_wrong_pieces,15.2485
+kociemba (20 stages),5,bestval,100000,d8,greedy,,unsolved_correct_stickers,20.8
+kociemba (20 stages),5,bestval,100000,d8,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d8,beam,4096,mean_length_solved,8.0
+kociemba (20 stages),5,bestval,100000,d8,beam,4096,mean_excess_over_exact,0.0
+kociemba (20 stages),5,bestval,100000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+kociemba (20 stages),5,bestval,100000,d9,one_move,,optimal_move_rate,0.547
+kociemba (20 stages),5,bestval,100000,d9,greedy,,solve_rate,0.653
+kociemba (20 stages),5,bestval,100000,d9,greedy,,mean_length_solved,24.2251
+kociemba (20 stages),5,bestval,100000,d9,greedy,,mean_excess_over_exact,15.2251
+kociemba (20 stages),5,bestval,100000,d9,greedy,,mean_excess_over_kociemba,12.3476
+kociemba (20 stages),5,bestval,100000,d9,greedy,,unsolved_misplaced,15.147
+kociemba (20 stages),5,bestval,100000,d9,greedy,,unsolved_misoriented,3.7349
+kociemba (20 stages),5,bestval,100000,d9,greedy,,unsolved_wrong_pieces,15.3372
+kociemba (20 stages),5,bestval,100000,d9,greedy,,unsolved_correct_stickers,20.8818
+kociemba (20 stages),5,bestval,100000,d9,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d9,beam,4096,mean_length_solved,9.059
+kociemba (20 stages),5,bestval,100000,d9,beam,4096,mean_excess_over_exact,0.059
+kociemba (20 stages),5,bestval,100000,d9,beam,4096,mean_excess_over_kociemba,-2.724
+kociemba (20 stages),5,bestval,100000,d10,one_move,,optimal_move_rate,0.397
+kociemba (20 stages),5,bestval,100000,d10,greedy,,solve_rate,0.517
+kociemba (20 stages),5,bestval,100000,d10,greedy,,mean_length_solved,36.1934
+kociemba (20 stages),5,bestval,100000,d10,greedy,,mean_excess_over_exact,26.1934
+kociemba (20 stages),5,bestval,100000,d10,greedy,,mean_excess_over_kociemba,22.5822
+kociemba (20 stages),5,bestval,100000,d10,greedy,,unsolved_misplaced,14.9545
+kociemba (20 stages),5,bestval,100000,d10,greedy,,unsolved_misoriented,3.6398
+kociemba (20 stages),5,bestval,100000,d10,greedy,,unsolved_wrong_pieces,15.1491
+kociemba (20 stages),5,bestval,100000,d10,greedy,,unsolved_correct_stickers,21.354
+kociemba (20 stages),5,bestval,100000,d10,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d10,beam,4096,mean_length_solved,10.193
+kociemba (20 stages),5,bestval,100000,d10,beam,4096,mean_excess_over_exact,0.193
+kociemba (20 stages),5,bestval,100000,d10,beam,4096,mean_excess_over_kociemba,-3.518
+kociemba (20 stages),5,bestval,100000,d11,one_move,,optimal_move_rate,0.261
+kociemba (20 stages),5,bestval,100000,d11,greedy,,solve_rate,0.434
+kociemba (20 stages),5,bestval,100000,d11,greedy,,mean_length_solved,49.576
+kociemba (20 stages),5,bestval,100000,d11,greedy,,mean_excess_over_exact,38.576
+kociemba (20 stages),5,bestval,100000,d11,greedy,,mean_excess_over_kociemba,33.5968
+kociemba (20 stages),5,bestval,100000,d11,greedy,,unsolved_misplaced,15.1254
+kociemba (20 stages),5,bestval,100000,d11,greedy,,unsolved_misoriented,3.5018
+kociemba (20 stages),5,bestval,100000,d11,greedy,,unsolved_wrong_pieces,15.2845
+kociemba (20 stages),5,bestval,100000,d11,greedy,,unsolved_correct_stickers,21.0848
+kociemba (20 stages),5,bestval,100000,d11,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d11,beam,4096,mean_length_solved,12.019
+kociemba (20 stages),5,bestval,100000,d11,beam,4096,mean_excess_over_exact,1.019
+kociemba (20 stages),5,bestval,100000,d11,beam,4096,mean_excess_over_kociemba,-4.355
+kociemba (20 stages),5,bestval,100000,d12,one_move,,optimal_move_rate,0.255
+kociemba (20 stages),5,bestval,100000,d12,greedy,,solve_rate,0.386
+kociemba (20 stages),5,bestval,100000,d12,greedy,,mean_length_solved,54.5596
+kociemba (20 stages),5,bestval,100000,d12,greedy,,mean_excess_over_exact,42.5596
+kociemba (20 stages),5,bestval,100000,d12,greedy,,mean_excess_over_kociemba,36.3938
+kociemba (20 stages),5,bestval,100000,d12,greedy,,unsolved_misplaced,15.1743
+kociemba (20 stages),5,bestval,100000,d12,greedy,,unsolved_misoriented,3.7606
+kociemba (20 stages),5,bestval,100000,d12,greedy,,unsolved_wrong_pieces,15.3632
+kociemba (20 stages),5,bestval,100000,d12,greedy,,unsolved_correct_stickers,20.7541
+kociemba (20 stages),5,bestval,100000,d12,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d12,beam,4096,mean_length_solved,14.683
+kociemba (20 stages),5,bestval,100000,d12,beam,4096,mean_excess_over_exact,2.683
+kociemba (20 stages),5,bestval,100000,d12,beam,4096,mean_excess_over_kociemba,-3.6
+kociemba (20 stages),5,bestval,100000,d13,one_move,,optimal_move_rate,0.189
+kociemba (20 stages),5,bestval,100000,d13,greedy,,solve_rate,0.373
+kociemba (20 stages),5,bestval,100000,d13,greedy,,mean_length_solved,57.8472
+kociemba (20 stages),5,bestval,100000,d13,greedy,,mean_excess_over_exact,44.8472
+kociemba (20 stages),5,bestval,100000,d13,greedy,,mean_excess_over_kociemba,38.63
+kociemba (20 stages),5,bestval,100000,d13,greedy,,unsolved_misplaced,15.2823
+kociemba (20 stages),5,bestval,100000,d13,greedy,,unsolved_misoriented,3.9888
+kociemba (20 stages),5,bestval,100000,d13,greedy,,unsolved_wrong_pieces,15.4641
+kociemba (20 stages),5,bestval,100000,d13,greedy,,unsolved_correct_stickers,20.6539
+kociemba (20 stages),5,bestval,100000,d13,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d13,beam,4096,mean_length_solved,17.822
+kociemba (20 stages),5,bestval,100000,d13,beam,4096,mean_excess_over_exact,4.822
+kociemba (20 stages),5,bestval,100000,d13,beam,4096,mean_excess_over_kociemba,-1.573
+kociemba (20 stages),5,bestval,100000,random,greedy,,solve_rate,0.366
+kociemba (20 stages),5,bestval,100000,random,greedy,,mean_length_solved,62.7814
+kociemba (20 stages),5,bestval,100000,random,greedy,,mean_excess_over_kociemba,42.0219
+kociemba (20 stages),5,bestval,100000,random,greedy,,unsolved_misplaced,14.7508
+kociemba (20 stages),5,bestval,100000,random,greedy,,unsolved_misoriented,3.7208
+kociemba (20 stages),5,bestval,100000,random,greedy,,unsolved_wrong_pieces,14.9464
+kociemba (20 stages),5,bestval,100000,random,greedy,,unsolved_correct_stickers,21.6751
+kociemba (20 stages),5,bestval,100000,random,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,random,beam,4096,mean_length_solved,21.937
+kociemba (20 stages),5,bestval,100000,random,beam,4096,mean_excess_over_kociemba,1.15
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,solve_rate,0.2727
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,mean_length_solved,68.0
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,mean_excess_over_exact,48.0
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,mean_excess_over_kociemba,46.3333
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,unsolved_misplaced,14.625
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,unsolved_misoriented,4.0
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,unsolved_wrong_pieces,14.75
+kociemba (20 stages),5,bestval,100000,d20_known,greedy,,unsolved_correct_stickers,20.875
+kociemba (20 stages),5,bestval,100000,d20_known,beam,4096,solve_rate,1.0
+kociemba (20 stages),5,bestval,100000,d20_known,beam,4096,mean_length_solved,23.2727
+kociemba (20 stages),5,bestval,100000,d20_known,beam,4096,mean_excess_over_exact,3.2727
+kociemba (20 stages),5,bestval,100000,d20_known,beam,4096,mean_excess_over_kociemba,1.7273
 mixed,0,bestval,50000,d1_4_all,one_move,,optimal_move_rate,0.999828840393667
 mixed,0,bestval,50000,d1_4_all,greedy,,solve_rate,1.0
 mixed,0,bestval,50000,d1_4_all,greedy,,mean_length_solved,3.967
@@ -2567,3 +4723,427 @@ mixed,2,bestval,40000,d20_known,beam,4096,solve_rate,1.0
 mixed,2,bestval,40000,d20_known,beam,4096,mean_length_solved,21.8182
 mixed,2,bestval,40000,d20_known,beam,4096,mean_excess_over_exact,1.8182
 mixed,2,bestval,40000,d20_known,beam,4096,mean_excess_over_kociemba,0.2727
+mixed,3,bestval,40000,d1_4_all,one_move,,optimal_move_rate,0.9996362858365426
+mixed,3,bestval,40000,d1_4_all,greedy,,solve_rate,1.0
+mixed,3,bestval,40000,d1_4_all,greedy,,mean_length_solved,3.919
+mixed,3,bestval,40000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+mixed,3,bestval,40000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+mixed,3,bestval,40000,d1_4_all,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d1_4_all,beam,4096,mean_length_solved,3.919
+mixed,3,bestval,40000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+mixed,3,bestval,40000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+mixed,3,bestval,40000,holdout_d5,one_move,,optimal_move_rate,0.998956340233084
+mixed,3,bestval,40000,holdout_d5,greedy,,solve_rate,1.0
+mixed,3,bestval,40000,holdout_d5,greedy,,mean_length_solved,5.001
+mixed,3,bestval,40000,holdout_d5,greedy,,mean_excess_over_exact,0.001
+mixed,3,bestval,40000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.194
+mixed,3,bestval,40000,holdout_d5,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,holdout_d5,beam,4096,mean_length_solved,5.0
+mixed,3,bestval,40000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+mixed,3,bestval,40000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+mixed,3,bestval,40000,holdout_d6,one_move,,optimal_move_rate,0.9864539197000961
+mixed,3,bestval,40000,holdout_d6,greedy,,solve_rate,0.998
+mixed,3,bestval,40000,holdout_d6,greedy,,mean_length_solved,6.1303
+mixed,3,bestval,40000,holdout_d6,greedy,,mean_excess_over_exact,0.1303
+mixed,3,bestval,40000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.51
+mixed,3,bestval,40000,holdout_d6,greedy,,unsolved_misplaced,17.0
+mixed,3,bestval,40000,holdout_d6,greedy,,unsolved_misoriented,0.0
+mixed,3,bestval,40000,holdout_d6,greedy,,unsolved_wrong_pieces,17.0
+mixed,3,bestval,40000,holdout_d6,greedy,,unsolved_correct_stickers,21.5
+mixed,3,bestval,40000,holdout_d6,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,holdout_d6,beam,4096,mean_length_solved,6.0
+mixed,3,bestval,40000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+mixed,3,bestval,40000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+mixed,3,bestval,40000,d7,one_move,,optimal_move_rate,0.915
+mixed,3,bestval,40000,d7,greedy,,solve_rate,0.987
+mixed,3,bestval,40000,d7,greedy,,mean_length_solved,8.2675
+mixed,3,bestval,40000,d7,greedy,,mean_excess_over_exact,1.2675
+mixed,3,bestval,40000,d7,greedy,,mean_excess_over_kociemba,-0.9078
+mixed,3,bestval,40000,d7,greedy,,unsolved_misplaced,14.3077
+mixed,3,bestval,40000,d7,greedy,,unsolved_misoriented,3.0769
+mixed,3,bestval,40000,d7,greedy,,unsolved_wrong_pieces,14.3077
+mixed,3,bestval,40000,d7,greedy,,unsolved_correct_stickers,23.3846
+mixed,3,bestval,40000,d7,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d7,beam,4096,mean_length_solved,7.0
+mixed,3,bestval,40000,d7,beam,4096,mean_excess_over_exact,0.0
+mixed,3,bestval,40000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+mixed,3,bestval,40000,d8,one_move,,optimal_move_rate,0.737
+mixed,3,bestval,40000,d8,greedy,,solve_rate,0.939
+mixed,3,bestval,40000,d8,greedy,,mean_length_solved,14.8403
+mixed,3,bestval,40000,d8,greedy,,mean_excess_over_exact,6.8403
+mixed,3,bestval,40000,d8,greedy,,mean_excess_over_kociemba,4.3237
+mixed,3,bestval,40000,d8,greedy,,unsolved_misplaced,15.918
+mixed,3,bestval,40000,d8,greedy,,unsolved_misoriented,4.3115
+mixed,3,bestval,40000,d8,greedy,,unsolved_wrong_pieces,16.1148
+mixed,3,bestval,40000,d8,greedy,,unsolved_correct_stickers,19.0164
+mixed,3,bestval,40000,d8,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d8,beam,4096,mean_length_solved,8.0
+mixed,3,bestval,40000,d8,beam,4096,mean_excess_over_exact,0.0
+mixed,3,bestval,40000,d8,beam,4096,mean_excess_over_kociemba,-2.489
+mixed,3,bestval,40000,d9,one_move,,optimal_move_rate,0.584
+mixed,3,bestval,40000,d9,greedy,,solve_rate,0.829
+mixed,3,bestval,40000,d9,greedy,,mean_length_solved,22.877
+mixed,3,bestval,40000,d9,greedy,,mean_excess_over_exact,13.877
+mixed,3,bestval,40000,d9,greedy,,mean_excess_over_kociemba,11.1086
+mixed,3,bestval,40000,d9,greedy,,unsolved_misplaced,15.4094
+mixed,3,bestval,40000,d9,greedy,,unsolved_misoriented,4.6491
+mixed,3,bestval,40000,d9,greedy,,unsolved_wrong_pieces,15.538
+mixed,3,bestval,40000,d9,greedy,,unsolved_correct_stickers,20.6316
+mixed,3,bestval,40000,d9,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d9,beam,4096,mean_length_solved,9.038
+mixed,3,bestval,40000,d9,beam,4096,mean_excess_over_exact,0.038
+mixed,3,bestval,40000,d9,beam,4096,mean_excess_over_kociemba,-2.745
+mixed,3,bestval,40000,d10,one_move,,optimal_move_rate,0.379
+mixed,3,bestval,40000,d10,greedy,,solve_rate,0.758
+mixed,3,bestval,40000,d10,greedy,,mean_length_solved,32.4934
+mixed,3,bestval,40000,d10,greedy,,mean_excess_over_exact,22.4934
+mixed,3,bestval,40000,d10,greedy,,mean_excess_over_kociemba,18.7744
+mixed,3,bestval,40000,d10,greedy,,unsolved_misplaced,15.7355
+mixed,3,bestval,40000,d10,greedy,,unsolved_misoriented,4.6322
+mixed,3,bestval,40000,d10,greedy,,unsolved_wrong_pieces,15.8719
+mixed,3,bestval,40000,d10,greedy,,unsolved_correct_stickers,20.3058
+mixed,3,bestval,40000,d10,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d10,beam,4096,mean_length_solved,10.329
+mixed,3,bestval,40000,d10,beam,4096,mean_excess_over_exact,0.329
+mixed,3,bestval,40000,d10,beam,4096,mean_excess_over_kociemba,-3.382
+mixed,3,bestval,40000,d11,one_move,,optimal_move_rate,0.298
+mixed,3,bestval,40000,d11,greedy,,solve_rate,0.706
+mixed,3,bestval,40000,d11,greedy,,mean_length_solved,36.9632
+mixed,3,bestval,40000,d11,greedy,,mean_excess_over_exact,25.9632
+mixed,3,bestval,40000,d11,greedy,,mean_excess_over_kociemba,20.6133
+mixed,3,bestval,40000,d11,greedy,,unsolved_misplaced,15.2891
+mixed,3,bestval,40000,d11,greedy,,unsolved_misoriented,4.4252
+mixed,3,bestval,40000,d11,greedy,,unsolved_wrong_pieces,15.4354
+mixed,3,bestval,40000,d11,greedy,,unsolved_correct_stickers,20.8163
+mixed,3,bestval,40000,d11,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d11,beam,4096,mean_length_solved,12.137
+mixed,3,bestval,40000,d11,beam,4096,mean_excess_over_exact,1.137
+mixed,3,bestval,40000,d11,beam,4096,mean_excess_over_kociemba,-4.237
+mixed,3,bestval,40000,d12,one_move,,optimal_move_rate,0.257
+mixed,3,bestval,40000,d12,greedy,,solve_rate,0.688
+mixed,3,bestval,40000,d12,greedy,,mean_length_solved,40.109
+mixed,3,bestval,40000,d12,greedy,,mean_excess_over_exact,28.109
+mixed,3,bestval,40000,d12,greedy,,mean_excess_over_kociemba,21.9695
+mixed,3,bestval,40000,d12,greedy,,unsolved_misplaced,15.6763
+mixed,3,bestval,40000,d12,greedy,,unsolved_misoriented,4.5128
+mixed,3,bestval,40000,d12,greedy,,unsolved_wrong_pieces,15.8205
+mixed,3,bestval,40000,d12,greedy,,unsolved_correct_stickers,19.9071
+mixed,3,bestval,40000,d12,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d12,beam,4096,mean_length_solved,14.913
+mixed,3,bestval,40000,d12,beam,4096,mean_excess_over_exact,2.913
+mixed,3,bestval,40000,d12,beam,4096,mean_excess_over_kociemba,-3.37
+mixed,3,bestval,40000,d13,one_move,,optimal_move_rate,0.184
+mixed,3,bestval,40000,d13,greedy,,solve_rate,0.689
+mixed,3,bestval,40000,d13,greedy,,mean_length_solved,41.6938
+mixed,3,bestval,40000,d13,greedy,,mean_excess_over_exact,28.6938
+mixed,3,bestval,40000,d13,greedy,,mean_excess_over_kociemba,22.3295
+mixed,3,bestval,40000,d13,greedy,,unsolved_misplaced,15.7846
+mixed,3,bestval,40000,d13,greedy,,unsolved_misoriented,4.3633
+mixed,3,bestval,40000,d13,greedy,,unsolved_wrong_pieces,15.9293
+mixed,3,bestval,40000,d13,greedy,,unsolved_correct_stickers,19.8264
+mixed,3,bestval,40000,d13,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d13,beam,4096,mean_length_solved,17.442
+mixed,3,bestval,40000,d13,beam,4096,mean_excess_over_exact,4.442
+mixed,3,bestval,40000,d13,beam,4096,mean_excess_over_kociemba,-1.953
+mixed,3,bestval,40000,random,greedy,,solve_rate,0.626
+mixed,3,bestval,40000,random,greedy,,mean_length_solved,44.3131
+mixed,3,bestval,40000,random,greedy,,mean_excess_over_kociemba,23.5224
+mixed,3,bestval,40000,random,greedy,,unsolved_misplaced,15.6257
+mixed,3,bestval,40000,random,greedy,,unsolved_misoriented,4.1444
+mixed,3,bestval,40000,random,greedy,,unsolved_wrong_pieces,15.7914
+mixed,3,bestval,40000,random,greedy,,unsolved_correct_stickers,20.1738
+mixed,3,bestval,40000,random,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,random,beam,4096,mean_length_solved,21.165
+mixed,3,bestval,40000,random,beam,4096,mean_excess_over_kociemba,0.378
+mixed,3,bestval,40000,d20_known,greedy,,solve_rate,0.7273
+mixed,3,bestval,40000,d20_known,greedy,,mean_length_solved,44.5
+mixed,3,bestval,40000,d20_known,greedy,,mean_excess_over_exact,24.5
+mixed,3,bestval,40000,d20_known,greedy,,mean_excess_over_kociemba,23.125
+mixed,3,bestval,40000,d20_known,greedy,,unsolved_misplaced,17.0
+mixed,3,bestval,40000,d20_known,greedy,,unsolved_misoriented,8.3333
+mixed,3,bestval,40000,d20_known,greedy,,unsolved_wrong_pieces,18.0
+mixed,3,bestval,40000,d20_known,greedy,,unsolved_correct_stickers,14.3333
+mixed,3,bestval,40000,d20_known,beam,4096,solve_rate,1.0
+mixed,3,bestval,40000,d20_known,beam,4096,mean_length_solved,21.8182
+mixed,3,bestval,40000,d20_known,beam,4096,mean_excess_over_exact,1.8182
+mixed,3,bestval,40000,d20_known,beam,4096,mean_excess_over_kociemba,0.2727
+mixed,4,bestval,40000,d1_4_all,one_move,,optimal_move_rate,0.999893025246042
+mixed,4,bestval,40000,d1_4_all,greedy,,solve_rate,1.0
+mixed,4,bestval,40000,d1_4_all,greedy,,mean_length_solved,3.919
+mixed,4,bestval,40000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+mixed,4,bestval,40000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+mixed,4,bestval,40000,d1_4_all,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d1_4_all,beam,4096,mean_length_solved,3.919
+mixed,4,bestval,40000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+mixed,4,bestval,40000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+mixed,4,bestval,40000,holdout_d5,one_move,,optimal_move_rate,0.9994433814576448
+mixed,4,bestval,40000,holdout_d5,greedy,,solve_rate,1.0
+mixed,4,bestval,40000,holdout_d5,greedy,,mean_length_solved,5.0
+mixed,4,bestval,40000,holdout_d5,greedy,,mean_excess_over_exact,0.0
+mixed,4,bestval,40000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.195
+mixed,4,bestval,40000,holdout_d5,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,holdout_d5,beam,4096,mean_length_solved,5.0
+mixed,4,bestval,40000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+mixed,4,bestval,40000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+mixed,4,bestval,40000,holdout_d6,one_move,,optimal_move_rate,0.9869264573849764
+mixed,4,bestval,40000,holdout_d6,greedy,,solve_rate,1.0
+mixed,4,bestval,40000,holdout_d6,greedy,,mean_length_solved,6.263
+mixed,4,bestval,40000,holdout_d6,greedy,,mean_excess_over_exact,0.263
+mixed,4,bestval,40000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.374
+mixed,4,bestval,40000,holdout_d6,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,holdout_d6,beam,4096,mean_length_solved,6.0
+mixed,4,bestval,40000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+mixed,4,bestval,40000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+mixed,4,bestval,40000,d7,one_move,,optimal_move_rate,0.9155
+mixed,4,bestval,40000,d7,greedy,,solve_rate,0.988
+mixed,4,bestval,40000,d7,greedy,,mean_length_solved,8.4362
+mixed,4,bestval,40000,d7,greedy,,mean_excess_over_exact,1.4362
+mixed,4,bestval,40000,d7,greedy,,mean_excess_over_kociemba,-0.747
+mixed,4,bestval,40000,d7,greedy,,unsolved_misplaced,13.3333
+mixed,4,bestval,40000,d7,greedy,,unsolved_misoriented,3.5
+mixed,4,bestval,40000,d7,greedy,,unsolved_wrong_pieces,13.5
+mixed,4,bestval,40000,d7,greedy,,unsolved_correct_stickers,24.4167
+mixed,4,bestval,40000,d7,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d7,beam,4096,mean_length_solved,7.0
+mixed,4,bestval,40000,d7,beam,4096,mean_excess_over_exact,0.0
+mixed,4,bestval,40000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+mixed,4,bestval,40000,d8,one_move,,optimal_move_rate,0.74
+mixed,4,bestval,40000,d8,greedy,,solve_rate,0.932
+mixed,4,bestval,40000,d8,greedy,,mean_length_solved,14.9013
+mixed,4,bestval,40000,d8,greedy,,mean_excess_over_exact,6.9013
+mixed,4,bestval,40000,d8,greedy,,mean_excess_over_kociemba,4.4281
+mixed,4,bestval,40000,d8,greedy,,unsolved_misplaced,15.1765
+mixed,4,bestval,40000,d8,greedy,,unsolved_misoriented,4.9118
+mixed,4,bestval,40000,d8,greedy,,unsolved_wrong_pieces,15.3676
+mixed,4,bestval,40000,d8,greedy,,unsolved_correct_stickers,20.6029
+mixed,4,bestval,40000,d8,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d8,beam,4096,mean_length_solved,8.007
+mixed,4,bestval,40000,d8,beam,4096,mean_excess_over_exact,0.007
+mixed,4,bestval,40000,d8,beam,4096,mean_excess_over_kociemba,-2.482
+mixed,4,bestval,40000,d9,one_move,,optimal_move_rate,0.555
+mixed,4,bestval,40000,d9,greedy,,solve_rate,0.874
+mixed,4,bestval,40000,d9,greedy,,mean_length_solved,25.9291
+mixed,4,bestval,40000,d9,greedy,,mean_excess_over_exact,16.9291
+mixed,4,bestval,40000,d9,greedy,,mean_excess_over_kociemba,14.1499
+mixed,4,bestval,40000,d9,greedy,,unsolved_misplaced,14.6746
+mixed,4,bestval,40000,d9,greedy,,unsolved_misoriented,4.1905
+mixed,4,bestval,40000,d9,greedy,,unsolved_wrong_pieces,14.7857
+mixed,4,bestval,40000,d9,greedy,,unsolved_correct_stickers,22.246
+mixed,4,bestval,40000,d9,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d9,beam,4096,mean_length_solved,9.037
+mixed,4,bestval,40000,d9,beam,4096,mean_excess_over_exact,0.037
+mixed,4,bestval,40000,d9,beam,4096,mean_excess_over_kociemba,-2.746
+mixed,4,bestval,40000,d10,one_move,,optimal_move_rate,0.401
+mixed,4,bestval,40000,d10,greedy,,solve_rate,0.808
+mixed,4,bestval,40000,d10,greedy,,mean_length_solved,33.7228
+mixed,4,bestval,40000,d10,greedy,,mean_excess_over_exact,23.7228
+mixed,4,bestval,40000,d10,greedy,,mean_excess_over_kociemba,19.9369
+mixed,4,bestval,40000,d10,greedy,,unsolved_misplaced,14.5312
+mixed,4,bestval,40000,d10,greedy,,unsolved_misoriented,4.4271
+mixed,4,bestval,40000,d10,greedy,,unsolved_wrong_pieces,14.6615
+mixed,4,bestval,40000,d10,greedy,,unsolved_correct_stickers,22.7031
+mixed,4,bestval,40000,d10,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d10,beam,4096,mean_length_solved,10.221
+mixed,4,bestval,40000,d10,beam,4096,mean_excess_over_exact,0.221
+mixed,4,bestval,40000,d10,beam,4096,mean_excess_over_kociemba,-3.49
+mixed,4,bestval,40000,d11,one_move,,optimal_move_rate,0.283
+mixed,4,bestval,40000,d11,greedy,,solve_rate,0.752
+mixed,4,bestval,40000,d11,greedy,,mean_length_solved,40.1995
+mixed,4,bestval,40000,d11,greedy,,mean_excess_over_exact,29.1995
+mixed,4,bestval,40000,d11,greedy,,mean_excess_over_kociemba,23.9827
+mixed,4,bestval,40000,d11,greedy,,unsolved_misplaced,14.5806
+mixed,4,bestval,40000,d11,greedy,,unsolved_misoriented,5.2944
+mixed,4,bestval,40000,d11,greedy,,unsolved_wrong_pieces,14.7339
+mixed,4,bestval,40000,d11,greedy,,unsolved_correct_stickers,22.0
+mixed,4,bestval,40000,d11,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d11,beam,4096,mean_length_solved,12.36
+mixed,4,bestval,40000,d11,beam,4096,mean_excess_over_exact,1.36
+mixed,4,bestval,40000,d11,beam,4096,mean_excess_over_kociemba,-4.014
+mixed,4,bestval,40000,d12,one_move,,optimal_move_rate,0.231
+mixed,4,bestval,40000,d12,greedy,,solve_rate,0.754
+mixed,4,bestval,40000,d12,greedy,,mean_length_solved,42.9602
+mixed,4,bestval,40000,d12,greedy,,mean_excess_over_exact,30.9602
+mixed,4,bestval,40000,d12,greedy,,mean_excess_over_kociemba,24.7082
+mixed,4,bestval,40000,d12,greedy,,unsolved_misplaced,14.4756
+mixed,4,bestval,40000,d12,greedy,,unsolved_misoriented,4.9065
+mixed,4,bestval,40000,d12,greedy,,unsolved_wrong_pieces,14.622
+mixed,4,bestval,40000,d12,greedy,,unsolved_correct_stickers,22.5163
+mixed,4,bestval,40000,d12,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d12,beam,4096,mean_length_solved,14.897
+mixed,4,bestval,40000,d12,beam,4096,mean_excess_over_exact,2.897
+mixed,4,bestval,40000,d12,beam,4096,mean_excess_over_kociemba,-3.386
+mixed,4,bestval,40000,d13,one_move,,optimal_move_rate,0.179
+mixed,4,bestval,40000,d13,greedy,,solve_rate,0.753
+mixed,4,bestval,40000,d13,greedy,,mean_length_solved,44.4475
+mixed,4,bestval,40000,d13,greedy,,mean_excess_over_exact,31.4475
+mixed,4,bestval,40000,d13,greedy,,mean_excess_over_kociemba,25.0186
+mixed,4,bestval,40000,d13,greedy,,unsolved_misplaced,14.7692
+mixed,4,bestval,40000,d13,greedy,,unsolved_misoriented,4.7773
+mixed,4,bestval,40000,d13,greedy,,unsolved_wrong_pieces,14.8947
+mixed,4,bestval,40000,d13,greedy,,unsolved_correct_stickers,21.8664
+mixed,4,bestval,40000,d13,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d13,beam,4096,mean_length_solved,17.561
+mixed,4,bestval,40000,d13,beam,4096,mean_excess_over_exact,4.561
+mixed,4,bestval,40000,d13,beam,4096,mean_excess_over_kociemba,-1.834
+mixed,4,bestval,40000,random,greedy,,solve_rate,0.726
+mixed,4,bestval,40000,random,greedy,,mean_length_solved,44.4669
+mixed,4,bestval,40000,random,greedy,,mean_excess_over_kociemba,23.7107
+mixed,4,bestval,40000,random,greedy,,unsolved_misplaced,14.5693
+mixed,4,bestval,40000,random,greedy,,unsolved_misoriented,4.6168
+mixed,4,bestval,40000,random,greedy,,unsolved_wrong_pieces,14.7007
+mixed,4,bestval,40000,random,greedy,,unsolved_correct_stickers,22.281
+mixed,4,bestval,40000,random,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,random,beam,4096,mean_length_solved,21.164
+mixed,4,bestval,40000,random,beam,4096,mean_excess_over_kociemba,0.377
+mixed,4,bestval,40000,d20_known,greedy,,solve_rate,0.8182
+mixed,4,bestval,40000,d20_known,greedy,,mean_length_solved,47.4444
+mixed,4,bestval,40000,d20_known,greedy,,mean_excess_over_exact,27.4444
+mixed,4,bestval,40000,d20_known,greedy,,mean_excess_over_kociemba,26.0
+mixed,4,bestval,40000,d20_known,greedy,,unsolved_misplaced,15.0
+mixed,4,bestval,40000,d20_known,greedy,,unsolved_misoriented,10.5
+mixed,4,bestval,40000,d20_known,greedy,,unsolved_wrong_pieces,15.5
+mixed,4,bestval,40000,d20_known,greedy,,unsolved_correct_stickers,19.5
+mixed,4,bestval,40000,d20_known,beam,4096,solve_rate,1.0
+mixed,4,bestval,40000,d20_known,beam,4096,mean_length_solved,21.7273
+mixed,4,bestval,40000,d20_known,beam,4096,mean_excess_over_exact,1.7273
+mixed,4,bestval,40000,d20_known,beam,4096,mean_excess_over_kociemba,0.1818
+mixed,5,bestval,50000,d1_4_all,one_move,,optimal_move_rate,0.9998502353444587
+mixed,5,bestval,50000,d1_4_all,greedy,,solve_rate,1.0
+mixed,5,bestval,50000,d1_4_all,greedy,,mean_length_solved,3.919
+mixed,5,bestval,50000,d1_4_all,greedy,,mean_excess_over_exact,0.0
+mixed,5,bestval,50000,d1_4_all,greedy,,mean_excess_over_kociemba,-0.932
+mixed,5,bestval,50000,d1_4_all,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d1_4_all,beam,4096,mean_length_solved,3.919
+mixed,5,bestval,50000,d1_4_all,beam,4096,mean_excess_over_exact,0.0
+mixed,5,bestval,50000,d1_4_all,beam,4096,mean_excess_over_kociemba,-0.932
+mixed,5,bestval,50000,holdout_d5,one_move,,optimal_move_rate,0.9990259175508784
+mixed,5,bestval,50000,holdout_d5,greedy,,solve_rate,1.0
+mixed,5,bestval,50000,holdout_d5,greedy,,mean_length_solved,5.002
+mixed,5,bestval,50000,holdout_d5,greedy,,mean_excess_over_exact,0.002
+mixed,5,bestval,50000,holdout_d5,greedy,,mean_excess_over_kociemba,-1.193
+mixed,5,bestval,50000,holdout_d5,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,holdout_d5,beam,4096,mean_length_solved,5.0
+mixed,5,bestval,50000,holdout_d5,beam,4096,mean_excess_over_exact,0.0
+mixed,5,bestval,50000,holdout_d5,beam,4096,mean_excess_over_kociemba,-1.195
+mixed,5,bestval,50000,holdout_d6,one_move,,optimal_move_rate,0.9876667664246224
+mixed,5,bestval,50000,holdout_d6,greedy,,solve_rate,1.0
+mixed,5,bestval,50000,holdout_d6,greedy,,mean_length_solved,6.141
+mixed,5,bestval,50000,holdout_d6,greedy,,mean_excess_over_exact,0.141
+mixed,5,bestval,50000,holdout_d6,greedy,,mean_excess_over_kociemba,-1.496
+mixed,5,bestval,50000,holdout_d6,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,holdout_d6,beam,4096,mean_length_solved,6.0
+mixed,5,bestval,50000,holdout_d6,beam,4096,mean_excess_over_exact,0.0
+mixed,5,bestval,50000,holdout_d6,beam,4096,mean_excess_over_kociemba,-1.637
+mixed,5,bestval,50000,d7,one_move,,optimal_move_rate,0.909
+mixed,5,bestval,50000,d7,greedy,,solve_rate,0.988
+mixed,5,bestval,50000,d7,greedy,,mean_length_solved,8.0617
+mixed,5,bestval,50000,d7,greedy,,mean_excess_over_exact,1.0617
+mixed,5,bestval,50000,d7,greedy,,mean_excess_over_kociemba,-1.1285
+mixed,5,bestval,50000,d7,greedy,,unsolved_misplaced,14.5
+mixed,5,bestval,50000,d7,greedy,,unsolved_misoriented,3.3333
+mixed,5,bestval,50000,d7,greedy,,unsolved_wrong_pieces,14.5833
+mixed,5,bestval,50000,d7,greedy,,unsolved_correct_stickers,22.25
+mixed,5,bestval,50000,d7,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d7,beam,4096,mean_length_solved,7.0
+mixed,5,bestval,50000,d7,beam,4096,mean_excess_over_exact,0.0
+mixed,5,bestval,50000,d7,beam,4096,mean_excess_over_kociemba,-2.164
+mixed,5,bestval,50000,d8,one_move,,optimal_move_rate,0.735
+mixed,5,bestval,50000,d8,greedy,,solve_rate,0.934
+mixed,5,bestval,50000,d8,greedy,,mean_length_solved,15.0
+mixed,5,bestval,50000,d8,greedy,,mean_excess_over_exact,7.0
+mixed,5,bestval,50000,d8,greedy,,mean_excess_over_kociemba,4.4561
+mixed,5,bestval,50000,d8,greedy,,unsolved_misplaced,14.6515
+mixed,5,bestval,50000,d8,greedy,,unsolved_misoriented,3.0606
+mixed,5,bestval,50000,d8,greedy,,unsolved_wrong_pieces,14.7424
+mixed,5,bestval,50000,d8,greedy,,unsolved_correct_stickers,22.2424
+mixed,5,bestval,50000,d8,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d8,beam,4096,mean_length_solved,8.007
+mixed,5,bestval,50000,d8,beam,4096,mean_excess_over_exact,0.007
+mixed,5,bestval,50000,d8,beam,4096,mean_excess_over_kociemba,-2.482
+mixed,5,bestval,50000,d9,one_move,,optimal_move_rate,0.542
+mixed,5,bestval,50000,d9,greedy,,solve_rate,0.857
+mixed,5,bestval,50000,d9,greedy,,mean_length_solved,24.72
+mixed,5,bestval,50000,d9,greedy,,mean_excess_over_exact,15.72
+mixed,5,bestval,50000,d9,greedy,,mean_excess_over_kociemba,12.902
+mixed,5,bestval,50000,d9,greedy,,unsolved_misplaced,14.9021
+mixed,5,bestval,50000,d9,greedy,,unsolved_misoriented,2.7343
+mixed,5,bestval,50000,d9,greedy,,unsolved_wrong_pieces,15.0
+mixed,5,bestval,50000,d9,greedy,,unsolved_correct_stickers,21.5105
+mixed,5,bestval,50000,d9,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d9,beam,4096,mean_length_solved,9.048
+mixed,5,bestval,50000,d9,beam,4096,mean_excess_over_exact,0.048
+mixed,5,bestval,50000,d9,beam,4096,mean_excess_over_kociemba,-2.735
+mixed,5,bestval,50000,d10,one_move,,optimal_move_rate,0.379
+mixed,5,bestval,50000,d10,greedy,,solve_rate,0.808
+mixed,5,bestval,50000,d10,greedy,,mean_length_solved,34.1139
+mixed,5,bestval,50000,d10,greedy,,mean_excess_over_exact,24.1139
+mixed,5,bestval,50000,d10,greedy,,mean_excess_over_kociemba,20.4505
+mixed,5,bestval,50000,d10,greedy,,unsolved_misplaced,14.7083
+mixed,5,bestval,50000,d10,greedy,,unsolved_misoriented,2.5833
+mixed,5,bestval,50000,d10,greedy,,unsolved_wrong_pieces,14.8021
+mixed,5,bestval,50000,d10,greedy,,unsolved_correct_stickers,21.9583
+mixed,5,bestval,50000,d10,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d10,beam,4096,mean_length_solved,10.44
+mixed,5,bestval,50000,d10,beam,4096,mean_excess_over_exact,0.44
+mixed,5,bestval,50000,d10,beam,4096,mean_excess_over_kociemba,-3.271
+mixed,5,bestval,50000,d11,one_move,,optimal_move_rate,0.264
+mixed,5,bestval,50000,d11,greedy,,solve_rate,0.774
+mixed,5,bestval,50000,d11,greedy,,mean_length_solved,39.0013
+mixed,5,bestval,50000,d11,greedy,,mean_excess_over_exact,28.0013
+mixed,5,bestval,50000,d11,greedy,,mean_excess_over_kociemba,22.7261
+mixed,5,bestval,50000,d11,greedy,,unsolved_misplaced,14.7743
+mixed,5,bestval,50000,d11,greedy,,unsolved_misoriented,3.1106
+mixed,5,bestval,50000,d11,greedy,,unsolved_wrong_pieces,14.8982
+mixed,5,bestval,50000,d11,greedy,,unsolved_correct_stickers,21.6858
+mixed,5,bestval,50000,d11,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d11,beam,4096,mean_length_solved,12.756
+mixed,5,bestval,50000,d11,beam,4096,mean_excess_over_exact,1.756
+mixed,5,bestval,50000,d11,beam,4096,mean_excess_over_kociemba,-3.618
+mixed,5,bestval,50000,d12,one_move,,optimal_move_rate,0.254
+mixed,5,bestval,50000,d12,greedy,,solve_rate,0.736
+mixed,5,bestval,50000,d12,greedy,,mean_length_solved,42.0815
+mixed,5,bestval,50000,d12,greedy,,mean_excess_over_exact,30.0815
+mixed,5,bestval,50000,d12,greedy,,mean_excess_over_kociemba,23.9171
+mixed,5,bestval,50000,d12,greedy,,unsolved_misplaced,14.0417
+mixed,5,bestval,50000,d12,greedy,,unsolved_misoriented,2.7197
+mixed,5,bestval,50000,d12,greedy,,unsolved_wrong_pieces,14.1591
+mixed,5,bestval,50000,d12,greedy,,unsolved_correct_stickers,23.1098
+mixed,5,bestval,50000,d12,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d12,beam,4096,mean_length_solved,15.328
+mixed,5,bestval,50000,d12,beam,4096,mean_excess_over_exact,3.328
+mixed,5,bestval,50000,d12,beam,4096,mean_excess_over_kociemba,-2.955
+mixed,5,bestval,50000,d13,one_move,,optimal_move_rate,0.165
+mixed,5,bestval,50000,d13,greedy,,solve_rate,0.743
+mixed,5,bestval,50000,d13,greedy,,mean_length_solved,41.9489
+mixed,5,bestval,50000,d13,greedy,,mean_excess_over_exact,28.9489
+mixed,5,bestval,50000,d13,greedy,,mean_excess_over_kociemba,22.6783
+mixed,5,bestval,50000,d13,greedy,,unsolved_misplaced,14.4903
+mixed,5,bestval,50000,d13,greedy,,unsolved_misoriented,2.9339
+mixed,5,bestval,50000,d13,greedy,,unsolved_wrong_pieces,14.6109
+mixed,5,bestval,50000,d13,greedy,,unsolved_correct_stickers,21.9883
+mixed,5,bestval,50000,d13,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d13,beam,4096,mean_length_solved,18.059
+mixed,5,bestval,50000,d13,beam,4096,mean_excess_over_exact,5.059
+mixed,5,bestval,50000,d13,beam,4096,mean_excess_over_kociemba,-1.336
+mixed,5,bestval,50000,random,greedy,,solve_rate,0.732
+mixed,5,bestval,50000,random,greedy,,mean_length_solved,44.877
+mixed,5,bestval,50000,random,greedy,,mean_excess_over_kociemba,24.0765
+mixed,5,bestval,50000,random,greedy,,unsolved_misplaced,14.6306
+mixed,5,bestval,50000,random,greedy,,unsolved_misoriented,3.3396
+mixed,5,bestval,50000,random,greedy,,unsolved_wrong_pieces,14.8396
+mixed,5,bestval,50000,random,greedy,,unsolved_correct_stickers,21.7015
+mixed,5,bestval,50000,random,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,random,beam,4096,mean_length_solved,21.296
+mixed,5,bestval,50000,random,beam,4096,mean_excess_over_kociemba,0.509
+mixed,5,bestval,50000,d20_known,greedy,,solve_rate,0.8182
+mixed,5,bestval,50000,d20_known,greedy,,mean_length_solved,36.6667
+mixed,5,bestval,50000,d20_known,greedy,,mean_excess_over_exact,16.6667
+mixed,5,bestval,50000,d20_known,greedy,,mean_excess_over_kociemba,15.2222
+mixed,5,bestval,50000,d20_known,greedy,,unsolved_misplaced,13.0
+mixed,5,bestval,50000,d20_known,greedy,,unsolved_misoriented,2.0
+mixed,5,bestval,50000,d20_known,greedy,,unsolved_wrong_pieces,13.5
+mixed,5,bestval,50000,d20_known,greedy,,unsolved_correct_stickers,24.0
+mixed,5,bestval,50000,d20_known,beam,4096,solve_rate,1.0
+mixed,5,bestval,50000,d20_known,beam,4096,mean_length_solved,21.9091
+mixed,5,bestval,50000,d20_known,beam,4096,mean_excess_over_exact,1.9091
+mixed,5,bestval,50000,d20_known,beam,4096,mean_excess_over_kociemba,0.3636

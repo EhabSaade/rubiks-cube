@@ -1,4 +1,4 @@
-# Project context (handoff, 2026-11-03)
+# Project context (handoff, 2026-11-04)
 
 Everything a new session needs to continue. The detailed record of every decision and measurement is [docs/decisions.md](docs/decisions.md); this file is the overview and the current state.
 
@@ -11,7 +11,7 @@ Solo project, planned for 4 to 8 weeks (about 6), first code commit 2026-11-02. 
   - **true_distance:** curriculum ordered by exact distance.
   - **kociemba:** curriculum ordered by Kociemba solution length.
   - **mixed:** no curriculum; the whole pool from the start.
-- 3 seeds per arm, so 9 runs. Results are reported descriptively, with no pass or fail rule.
+- 3 seeds per arm, so 9 runs (6 seeds, 18 runs since 2026-11-04, user decision). Results are reported descriptively, with no pass or fail rule.
 - Solving is reported with greedy rollouts and beam search:
   - 100-move cap.
   - States already visited are forbidden; the next-best move is taken instead.
@@ -25,8 +25,8 @@ Solo project, planned for 4 to 8 weeks (about 6), first code commit 2026-11-02. 
 | 2 | Exact table to depth 6, hold-out, Kociemba wrapper, speed test; Gates A and B | Done |
 | 3 | Frozen test sets, rollouts, progress measures, baselines | Done |
 | 4 | Model, training loop, pool, pilot; Gate C | Done (GPU machine, 2026-11-03) |
-| 5 | 9 full runs, then evaluate all on the frozen test sets | Done (2026-11-03) |
-| 6 | Charts by depth per arm with all seeds, report, single rerun command | **Next** |
+| 5 | 9 full runs, then evaluate all on the frozen test sets | Done (2026-11-03); 3 more seeds per arm (18 runs) done 2026-11-04 |
+| 6 | Charts by depth per arm with all seeds, report, single rerun command | In progress: rerun command `scripts/reproduce_all.sh` done; 2-stage curricula and beam-width sweep running; report being written |
 
 ## Gates and decisions so far
 - **Gate A (speed test):**
@@ -87,8 +87,9 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
   - It still underfits.
   - On the laptop it runs at 4.6 steps/s, against 25 for the default model.
 - Logs for all pilot runs are in `results/pilot/`. The format is one JSON line per 200 steps; validation every 2,000 steps.
-- **Final runs** (9, wide model; logs in `results/final/`): validation hit at step 100,000 is 67.2 to 67.8% for both curricula and 71.1 to 71.9% for mixed; mixed overfits (training hit 96%, validation best about 73% at steps 40,000 to 50,000).
-- **Final evaluation** (`results/final_eval/summary.md`): beam 4096 solves every test cube for every run, including random and distance-20 cubes. Greedy: mixed solves far more deep cubes (d13 about 79% against 30 to 36%). Curricula have slightly higher optimal-move rates on deep exact cubes than step-100,000 mixed and give shorter beam solutions at d10 to d13; best-validation mixed is close to them there and shortest on random cubes. Clean solve times: beam 4096 about 0.01 s per cube at depth 1 to 4 up to about 0.25 s on random cubes; greedy about 0.002 s per cube in batches of 200. Full tables in `docs/decisions.md` and `results/final_eval/summary.md`.
+- **Final runs** (18, wide model, seeds 0 to 5; logs in `results/final/`): validation hit at step 100,000 is 66.7 to 67.8% for both curricula and 71.1 to 71.9% for mixed; mixed overfits (training hit 96%, validation best about 73% at steps 40,000 to 50,000).
+- **Final evaluation** (all tables in `results/summary.md`, every number in `results/eval_tidy.csv`, made by `scripts/summarize_eval.py`; means over 6 seeds): beam 4096 solves every test cube for every run, including random and distance-20 cubes. Greedy: mixed solves far more deep cubes (d13 78.2% against 30.7% true_distance and 35.8% kociemba; 95% Welch interval for mixed minus kociemba +39.7 to +45.0 points). Kociemba beats true_distance on greedy solve rate by 3 to 5 points (d13 +2.2 to +8.0), with the same optimal-move rate and slightly longer beam solutions at d13 (+0.23 moves). Curricula have 4 points higher optimal-move rates on deep exact cubes than step-100,000 mixed and give shorter beam solutions at d10 to d13; best-validation mixed is close to them there and shortest on random cubes. Clean solve times: beam 4096 about 0.01 s per cube at depth 1 to 4 up to about 0.25 s on random cubes; greedy about 0.002 s per cube in batches of 200.
+- **Report:** a Claude Docs document, https://claude.ai/artifact/7jNVkCjFya6VJHWaKxVsGx (method parts written; results, discussion and abstract still to fill).
 
 ## Open decisions (the user decides; bring evidence and a recommendation)
 1. **Gate C** and **the metric list**: decided on 2026-11-03 (see "Gates and decisions so far" and `docs/decisions.md`).
@@ -96,11 +97,12 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
 3. **Solve time:** re-measured cleanly (one process per GPU, `scripts/time_eval.py`, `results/final_eval/timing/`); the seconds per cube in the per-run evaluation files were measured with GPUs shared and are superseded.
 
 ## Next steps
-Steps 1 to 5 are done (setup, data, Gate C, 9 final runs, final evaluation). Next is Step 6: charts by depth per arm with all seeds, the written report and a single rerun command. Open question for the user: how to present the primary and secondary checkpoints in the report.
+Steps 1 to 5 are done (setup, data, Gate C, 18 final runs, final evaluation). Step 6: the 2-stage curriculum runs (`stages2_*`, 12) and the beam-width sweep (`scripts/beam_sweep.py`, results in `results/beam_sweep/`) run via `$RUBIK_STORAGE/runs/phase2b.sh`; then `python scripts/summarize_eval.py`, the remaining report sections and charts. Open question for the user: how to present the primary and secondary checkpoints in the report.
 
 ## Known engineering lessons
 - **Kociemba workers run as plain subprocesses** (`python -m rubik.koc_worker`), never `multiprocessing`. On Windows, spawn re-imports torch in every worker and exhausted memory twice.
 - **Kociemba with max_depth below what a cube needs can hang** (superflip at 18). Always use 24.
 - **Laptop memory:** run only one heavy torch process at a time on the 6 GB GPU. On the GPU machine, run one training run per GPU.
 - **`HoldoutFilter.contains` is not chunked:** pass chunks of at most about 500k cubes.
+- **Resuming a run from `last.pt`** failed until 2026-11-04 (random-generator states loaded onto the GPU); fixed in `scripts/train.py` and `rubik/pool.py`.
 - **The editor once saved a stray "ok" into `rubik/scramble.py`.** If imports fail with a SyntaxError, check `git diff` first.

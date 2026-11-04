@@ -99,7 +99,7 @@ def main():
     if last.exists():
         ck = torch.load(last, map_location=DEV)
         model.load_state_dict(ck["model"]); opt.load_state_dict(ck["opt"]); sched.load_state_dict(ck["sched"])
-        sampler.load_state_dict(ck["sampler"]); torch.set_rng_state(ck["rng_cpu"]); torch.cuda.set_rng_state(ck["rng_cuda"])
+        sampler.load_state_dict(ck["sampler"]); torch.set_rng_state(ck["rng_cpu"].cpu()); torch.cuda.set_rng_state(ck["rng_cuda"].cpu())
         step = ck["step"]
         print(f"resumed at step {step}", flush=True)
 

@@ -116,7 +116,7 @@ class CurriculumSampler:
         return {"g": self.g.get_state()}
 
     def load_state_dict(self, d):
-        self.g.set_state(d["g"])
+        self.g.set_state(d["g"].cpu())  # checkpoints are loaded with map_location=cuda
 
 
 def soft_targets(mask):

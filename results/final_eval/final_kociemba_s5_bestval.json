@@ -1,0 +1,7 @@
+{
+ "run": "final_kociemba_s5",
+ "checkpoint": "best_val",
+ "step": 100000,
+ "val_target_hit": 0.6730499863624573,
+ "same_as_final": "final_kociemba_s5.json"
+}

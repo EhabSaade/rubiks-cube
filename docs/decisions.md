@@ -152,3 +152,39 @@ User decisions:
   Widths 2 and 4 were added after a test of the script on one checkpoint (mixed seed 0, step 100,000) solved every d8 and d20_known cube already at width 16, so smaller widths are needed to see where search starts to matter; no sweep result had been produced otherwise.
 - **Working without the user** (user instruction, 2026-11-04 night): the jobs run on a schedule and the user is not notified; decisions inside what the user has already decided (for example rerunning a failed job) are taken and logged here; any method change is only proposed, not run.
 - The summary tables moved to `results/summary.md` (all groups, 6 seeds, 2-stage curricula, beam sweep), with every number also in `results/eval_tidy.csv`; key comparisons use a 95% Welch t-interval over seeds (each seed one observation; the same test cubes for every run). A percentile bootstrap was tried first and dropped: with 3 seeds it gives intervals that are too narrow (kociemba minus true_distance, greedy d13: bootstrap +2.1 to +8.3 points, Welch -1.2 to +11.6).
+
+**Seeds 3 to 5 trained and evaluated** (Gate C configuration; training 00:14 to 01:16, 2 runs per GPU and 3 on one (44 and 62 minutes); evaluation 00:58 to 02:30, one evaluation per GPU at a time, both checkpoints; logs in `results/final/`, per-run files in `results/final_eval/`). Validation share, step 100,000:
+
+| Arm | Seed | Val hit | Optimal move, exact cubes | Depth 8-9 | Depth 10-12 | Depth 13+ | Train hit | Best kept checkpoint |
+|---|---|---|---|---|---|---|---|---|
+| true_distance | 3 | 67.3% | 88.3% | 70.0% | 64.8% | 44.2% | 77.5% | 67.3% (90k) |
+| true_distance | 4 | 67.2% | 88.1% | 69.2% | 65.5% | 43.8% | 77.5% | 67.3% (90k) |
+| true_distance | 5 | 66.7% | 87.8% | 68.0% | 65.4% | 43.1% | 77.7% | 66.8% (90k) |
+| kociemba | 3 | 67.4% | 87.9% | 70.0% | 65.5% | 44.6% | 78.9% | 67.4% (100k) |
+| kociemba | 4 | 67.4% | 88.1% | 71.2% | 65.8% | 44.1% | 79.0% | 67.4% (90k) |
+| kociemba | 5 | 67.3% | 88.1% | 71.6% | 65.1% | 44.1% | 78.8% | 67.3% (100k) |
+| mixed | 3 | 71.4% | 90.4% | 78.4% | 69.3% | 50.0% | 95.9% | 72.8% (40k) |
+| mixed | 4 | 71.5% | 90.2% | 77.5% | 68.3% | 51.0% | 95.6% | 72.8% (40k) |
+| mixed | 5 | 71.4% | 90.1% | 77.6% | 67.9% | 50.9% | 95.6% | 72.6% (50k) |
+
+- The new seeds repeat seeds 0 to 2 within about 1 point on validation; mixed again overfits (train hit 96% against validation 71%) and peaks at step 40,000 to 50,000. Best-validation checkpoints: true_distance seeds 3 to 5 at step 90,000 and kociemba seed 4 at step 90,000 (each 0.0 to 0.1 points above step 100,000), mixed at 40,000, 40,000, 50,000.
+
+Test sets, means over all 6 seeds (seeds 0 to 2 | seeds 3 to 5 in brackets); primary = step 100,000, secondary (best-validation) value after the slash:
+
+| | true_distance | kociemba | mixed |
+|---|---|---|---|
+| Beam mean excess over exact distance, d13 | 4.51 [4.43, 4.59] / 4.55 | 4.74 [4.73, 4.75] / 4.79 | 7.38 [7.39, 7.37] / 4.70 |
+| Beam mean length, random | 21.89 [21.89, 21.89] / 21.92 | 21.95 [21.96, 21.94] / 21.97 | 22.71 [22.70, 22.71] / 21.20 |
+| Beam mean length, d20_known | 23.02 [23.00, 23.03] / 22.98 | 23.02 [23.03, 23.00] / 23.11 | 23.53 [23.55, 23.52] / 21.88 |
+| Greedy solve rate, d10 | 48.1% [47.9, 48.3] / 47.8% | 51.0% [50.5, 51.4] / 50.6% | 82.5% [81.8, 83.2] / 79.9% |
+| Greedy solve rate, d13 | 30.7% [30.3, 31.1] / 30.5% | 35.8% [35.5, 36.2] / 35.6% | 78.2% [78.6, 77.8] / 74.1% |
+| Greedy solve rate, random | 29.7% [28.5, 31.0] / 28.5% | 33.2% [32.0, 34.5] / 33.7% | 75.0% [74.4, 75.5] / 71.4% |
+| Optimal-move rate, d7 | 90.8% [90.7, 91.0] / 90.9% | 90.0% [90.0, 90.0] / 89.9% | 90.8% [91.1, 90.5] / 91.3% |
+| Optimal-move rate, d10 | 39.5% [39.6, 39.5] / 39.4% | 39.6% [39.4, 39.9] / 39.6% | 35.0% [34.1, 36.0] / 38.6% |
+| Optimal-move rate, d13 | 19.4% [19.8, 19.0] / 19.2% | 18.9% [19.0, 18.9] / 18.9% | 15.3% [15.3, 15.3] / 17.9% |
+
+- Beam 4096 again solves every test cube for every run. Every 3-seed conclusion holds, and no 6-seed mean moved by more than 1.2 points or 0.08 moves.
+- 95% Welch intervals over 6 seeds (primary checkpoints; all in `results/summary.md`): mixed minus kociemba, greedy d13 +42.4 points (+39.7 to +45.0); mixed minus true_distance +47.5 (+45.2 to +49.8).
+- Kociemba against true_distance, the comparison the extra seeds were for: kociemba's greedy solve rate is higher, d10 +2.9 points (+1.0 to +4.8), d13 +5.1 (+2.2 to +8.0; 3 seeds: -1.2 to +11.6), random +3.5 (+0.5 to +6.5); the same at the best-validation checkpoints. Its optimal-move rate is the same (d10 +0.1, -0.9 to +1.1; d13 -0.5, -1.9 to +0.9), and its beam solutions are slightly longer at d13 (excess +0.23 moves, +0.10 to +0.35), with no difference on distance-20 cubes (+0.00, -0.39 to +0.39). These intervals are not corrected for the several comparisons made; the greedy difference is small next to the mixed effect (about a tenth of it) and comes with near-identical training data (90% of the pool has the same key in both arms, see above).
+
+**GPU node lost overnight; 2-stage runs resumed on a new node.** The Slurm job on galileo4 ended at about 03:08 and killed every process: the 12 two-stage runs had reached steps 84,000 to 88,000 (60,000 to 62,800 for the 3 runs started last), and no evaluation or sweep had started. Nothing ran from 03:08 to 10:50. The work continues in a new job on nlp-h200-1 (4x H200 NVL, same shared home folder, so data, runs and checkpoints are unchanged). Every run resumes from its `last.pt` (saved every 2,000 steps, with model, optimizer, schedule, sampler and random-generator states), so at most 1,800 steps per run are repeated. Each `log.jsonl` was first cut back to the resume step so that no step is logged twice; the uncut logs are kept in `$RUBIK_STORAGE/runs/stages2_logs_before_resume/`. Resuming had never been used before and failed at first: the checkpoint is loaded onto the GPU, and the random-generator states must be on the CPU (`TypeError: RNG state must be a torch.ByteTensor`). Fixed with `.cpu()` in `scripts/train.py` and `rubik/pool.py`, checked on a real checkpoint (the restored generator gives the same draws), and the queue was restarted (`$RUBIK_STORAGE/runs/phase2b.sh`: training, then the same task queue as before).
