@@ -26,7 +26,7 @@ Solo project, planned for 4 to 8 weeks (about 6), first code commit 2026-11-02. 
 | 3 | Frozen test sets, rollouts, progress measures, baselines | Done |
 | 4 | Model, training loop, pool, pilot; Gate C | Done (GPU machine, 2026-11-03) |
 | 5 | 9 full runs, then evaluate all on the frozen test sets | Done (2026-11-03); 3 more seeds per arm (18 runs) done 2026-11-04 |
-| 6 | Charts by depth per arm with all seeds, report, single rerun command | In progress: rerun command `scripts/reproduce_all.sh` done; 2-stage curricula and beam-width sweep running; report being written |
+| 6 | Charts by depth per arm with all seeds, report, single rerun command | Done 2026-11-04: `scripts/reproduce_all.sh`, 2-stage curricula (12 runs), beam-width sweep (seeds 0 to 2 only, machine released), report |
 
 ## Gates and decisions so far
 - **Gate A (speed test):**
@@ -89,7 +89,8 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
 - Logs for all pilot runs are in `results/pilot/`. The format is one JSON line per 200 steps; validation every 2,000 steps.
 - **Final runs** (18, wide model, seeds 0 to 5; logs in `results/final/`): validation hit at step 100,000 is 66.7 to 67.8% for both curricula and 71.1 to 71.9% for mixed; mixed overfits (training hit 96%, validation best about 73% at steps 40,000 to 50,000).
 - **Final evaluation** (all tables in `results/summary.md`, every number in `results/eval_tidy.csv`, made by `scripts/summarize_eval.py`; means over 6 seeds): beam 4096 solves every test cube for every run, including random and distance-20 cubes. Greedy: mixed solves far more deep cubes (d13 78.2% against 30.7% true_distance and 35.8% kociemba; 95% Welch interval for mixed minus kociemba +39.7 to +45.0 points). Kociemba beats true_distance on greedy solve rate by 3 to 5 points (d13 +2.2 to +8.0), with the same optimal-move rate and slightly longer beam solutions at d13 (+0.23 moves). Curricula have 4 points higher optimal-move rates on deep exact cubes than step-100,000 mixed and give shorter beam solutions at d10 to d13; best-validation mixed is close to them there and shortest on random cubes. Clean solve times: beam 4096 about 0.01 s per cube at depth 1 to 4 up to about 0.25 s on random cubes; greedy about 0.002 s per cube in batches of 200.
-- **Report:** a Claude Docs document, https://claude.ai/artifact/7jNVkCjFya6VJHWaKxVsGx (method parts written; results, discussion and abstract still to fill).
+- **2-stage curricula** (`results/stages2/`, `results/stages2_eval/`): greedy d13 69.8% (true_distance) and 70.1% (kociemba) against 30.7% and 35.8% with 20 stages and 78.2% for mixed; most of the curricula's deficit goes with how rarely 20 stages show the hardest cubes (0.7 to 2.9 draws per cube against 6.8 with 2 stages and 13.6 for mixed).
+- **Report:** a Claude Docs document, https://claude.ai/artifact/7jNVkCjFya6VJHWaKxVsGx.
 
 ## Open decisions (the user decides; bring evidence and a recommendation)
 1. **Gate C** and **the metric list**: decided on 2026-11-03 (see "Gates and decisions so far" and `docs/decisions.md`).
@@ -97,7 +98,7 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
 3. **Solve time:** re-measured cleanly (one process per GPU, `scripts/time_eval.py`, `results/final_eval/timing/`); the seconds per cube in the per-run evaluation files were measured with GPUs shared and are superseded.
 
 ## Next steps
-Steps 1 to 5 are done (setup, data, Gate C, 18 final runs, final evaluation). Step 6: the 2-stage curriculum runs (`stages2_*`, 12) and the beam-width sweep (`scripts/beam_sweep.py`, results in `results/beam_sweep/`) run via `$RUBIK_STORAGE/runs/phase2b.sh`; then `python scripts/summarize_eval.py`, the remaining report sections and charts. Open question for the user: how to present the primary and secondary checkpoints in the report.
+All steps are done (2026-11-04). The GPU node was released after the 2-stage curricula and a beam-width sweep of seeds 0 to 2; the rest of the sweep (seeds 3 to 5, best-validation and 2-stage checkpoints) was not run and can be run with `scripts/beam_sweep.py` (or `scripts/reproduce_all.sh`) if wanted. Checkpoints (100 GB) and data (2.4 GB) stay in `~/rubiks-cube` on the cluster's shared home folder. Open question for the user: how to present the primary and secondary checkpoints in the report.
 
 ## Known engineering lessons
 - **Kociemba workers run as plain subprocesses** (`python -m rubik.koc_worker`), never `multiprocessing`. On Windows, spawn re-imports torch in every worker and exhausted memory twice.
