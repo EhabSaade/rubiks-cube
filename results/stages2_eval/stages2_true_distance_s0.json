@@ -1,0 +1,444 @@
+{
+ "run": "stages2_true_distance_s0",
+ "step": 100000,
+ "arm": "true_distance",
+ "seed": 0,
+ "width": 2048,
+ "blocks": 8,
+ "n_stages": 2,
+ "total_steps": 100000,
+ "beam_width": 4096,
+ "max_moves": 100,
+ "sets": {
+  "d1_4_all": {
+   "n": 46740,
+   "optimal_move_rate": 1.0,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 3.919,
+    "mean_excess_over_exact": 0.0,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -0.932,
+    "seconds_per_cube": 0.0002,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null,
+    "by_distance": {
+     "1": {
+      "n": 1,
+      "solve_rate": 1.0,
+      "mean_length_solved": 1.0
+     },
+     "2": {
+      "n": 4,
+      "solve_rate": 1.0,
+      "mean_length_solved": 2.0
+     },
+     "3": {
+      "n": 70,
+      "solve_rate": 1.0,
+      "mean_length_solved": 3.0
+     },
+     "4": {
+      "n": 925,
+      "solve_rate": 1.0,
+      "mean_length_solved": 4.0
+     }
+    }
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 3.919,
+    "mean_excess_over_exact": 0.0,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -0.932,
+    "seconds_per_cube": 0.023,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null,
+    "by_distance": {
+     "1": {
+      "n": 1,
+      "solve_rate": 1.0,
+      "mean_length_solved": 1.0
+     },
+     "2": {
+      "n": 4,
+      "solve_rate": 1.0,
+      "mean_length_solved": 2.0
+     },
+     "3": {
+      "n": 70,
+      "solve_rate": 1.0,
+      "mean_length_solved": 3.0
+     },
+     "4": {
+      "n": 925,
+      "solve_rate": 1.0,
+      "mean_length_solved": 4.0
+     }
+    }
+   }
+  },
+  "holdout_d5": {
+   "n": 28745,
+   "optimal_move_rate": 0.9997564793877196,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 5.0,
+    "mean_excess_over_exact": 0.0,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -1.195,
+    "seconds_per_cube": 0.0001,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 5.0,
+    "mean_excess_over_exact": 0.0,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -1.195,
+    "seconds_per_cube": 0.0488,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "holdout_d6": {
+   "n": 380922,
+   "optimal_move_rate": 0.9909430277064596,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.998,
+    "mean_length_solved": 6.1192,
+    "mean_excess_over_exact": 0.1192,
+    "n_solved_with_exact": 998,
+    "mean_excess_over_kociemba": -1.513,
+    "seconds_per_cube": 0.0016,
+    "n_unsolved": 2,
+    "unsolved_misplaced": 18.5,
+    "unsolved_misoriented": 5.0,
+    "unsolved_wrong_pieces": 18.5,
+    "unsolved_correct_stickers": 15.0
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 6.0,
+    "mean_excess_over_exact": 0.0,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -1.637,
+    "seconds_per_cube": 0.073,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d7": {
+   "n": 2000,
+   "optimal_move_rate": 0.919,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.987,
+    "mean_length_solved": 8.308,
+    "mean_excess_over_exact": 1.308,
+    "n_solved_with_exact": 987,
+    "mean_excess_over_kociemba": -0.8582,
+    "seconds_per_cube": 0.0015,
+    "n_unsolved": 13,
+    "unsolved_misplaced": 15.9231,
+    "unsolved_misoriented": 4.9231,
+    "unsolved_wrong_pieces": 16.0769,
+    "unsolved_correct_stickers": 19.3846
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 7.0,
+    "mean_excess_over_exact": 0.0,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -2.164,
+    "seconds_per_cube": 0.1,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d8": {
+   "n": 1000,
+   "optimal_move_rate": 0.719,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.928,
+    "mean_length_solved": 15.9763,
+    "mean_excess_over_exact": 7.9763,
+    "n_solved_with_exact": 928,
+    "mean_excess_over_kociemba": 5.4709,
+    "seconds_per_cube": 0.0015,
+    "n_unsolved": 72,
+    "unsolved_misplaced": 14.6389,
+    "unsolved_misoriented": 3.7917,
+    "unsolved_wrong_pieces": 14.7778,
+    "unsolved_correct_stickers": 21.3333
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 8.012,
+    "mean_excess_over_exact": 0.012,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -2.477,
+    "seconds_per_cube": 0.1236,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d9": {
+   "n": 1000,
+   "optimal_move_rate": 0.527,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.856,
+    "mean_length_solved": 29.7068,
+    "mean_excess_over_exact": 20.7068,
+    "n_solved_with_exact": 856,
+    "mean_excess_over_kociemba": 17.8762,
+    "seconds_per_cube": 0.0016,
+    "n_unsolved": 144,
+    "unsolved_misplaced": 14.6042,
+    "unsolved_misoriented": 4.0347,
+    "unsolved_wrong_pieces": 14.8125,
+    "unsolved_correct_stickers": 22.1528
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 9.196,
+    "mean_excess_over_exact": 0.196,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -2.587,
+    "seconds_per_cube": 0.156,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d10": {
+   "n": 1000,
+   "optimal_move_rate": 0.389,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.792,
+    "mean_length_solved": 40.8485,
+    "mean_excess_over_exact": 30.8485,
+    "n_solved_with_exact": 792,
+    "mean_excess_over_kociemba": 27.2664,
+    "seconds_per_cube": 0.0017,
+    "n_unsolved": 208,
+    "unsolved_misplaced": 15.2019,
+    "unsolved_misoriented": 3.6442,
+    "unsolved_wrong_pieces": 15.3846,
+    "unsolved_correct_stickers": 20.7644
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 10.593,
+    "mean_excess_over_exact": 0.593,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -3.118,
+    "seconds_per_cube": 0.1911,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d11": {
+   "n": 1000,
+   "optimal_move_rate": 0.293,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.762,
+    "mean_length_solved": 48.8556,
+    "mean_excess_over_exact": 37.8556,
+    "n_solved_with_exact": 762,
+    "mean_excess_over_kociemba": 32.5722,
+    "seconds_per_cube": 0.0023,
+    "n_unsolved": 238,
+    "unsolved_misplaced": 15.0672,
+    "unsolved_misoriented": 3.6218,
+    "unsolved_wrong_pieces": 15.2059,
+    "unsolved_correct_stickers": 21.2815
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 12.587,
+    "mean_excess_over_exact": 1.587,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -3.787,
+    "seconds_per_cube": 0.2743,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d12": {
+   "n": 1000,
+   "optimal_move_rate": 0.262,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.742,
+    "mean_length_solved": 50.9313,
+    "mean_excess_over_exact": 38.9313,
+    "n_solved_with_exact": 742,
+    "mean_excess_over_kociemba": 32.7615,
+    "seconds_per_cube": 0.0025,
+    "n_unsolved": 258,
+    "unsolved_misplaced": 14.5969,
+    "unsolved_misoriented": 3.907,
+    "unsolved_wrong_pieces": 14.7442,
+    "unsolved_correct_stickers": 21.876
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 15.256,
+    "mean_excess_over_exact": 3.256,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -3.027,
+    "seconds_per_cube": 0.351,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d13": {
+   "n": 1000,
+   "optimal_move_rate": 0.176,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.732,
+    "mean_length_solved": 53.0301,
+    "mean_excess_over_exact": 40.0301,
+    "n_solved_with_exact": 732,
+    "mean_excess_over_kociemba": 33.7199,
+    "seconds_per_cube": 0.0029,
+    "n_unsolved": 268,
+    "unsolved_misplaced": 14.8918,
+    "unsolved_misoriented": 3.6754,
+    "unsolved_wrong_pieces": 15.0522,
+    "unsolved_correct_stickers": 21.4963
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 17.912,
+    "mean_excess_over_exact": 4.912,
+    "n_solved_with_exact": 1000,
+    "mean_excess_over_kociemba": -1.483,
+    "seconds_per_cube": 0.423,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "random": {
+   "n": 1000,
+   "optimal_move_rate": null,
+   "greedy": {
+    "n": 1000,
+    "solve_rate": 0.734,
+    "mean_length_solved": 54.4864,
+    "mean_excess_over_exact": null,
+    "n_solved_with_exact": 0,
+    "mean_excess_over_kociemba": 33.7016,
+    "seconds_per_cube": 0.0028,
+    "n_unsolved": 266,
+    "unsolved_misplaced": 14.9248,
+    "unsolved_misoriented": 4.015,
+    "unsolved_wrong_pieces": 15.1015,
+    "unsolved_correct_stickers": 21.6955
+   },
+   "beam": {
+    "n": 1000,
+    "solve_rate": 1.0,
+    "mean_length_solved": 21.466,
+    "mean_excess_over_exact": null,
+    "n_solved_with_exact": 0,
+    "mean_excess_over_kociemba": 0.679,
+    "seconds_per_cube": 0.5258,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  },
+  "d20_known": {
+   "n": 11,
+   "optimal_move_rate": null,
+   "greedy": {
+    "n": 11,
+    "solve_rate": 0.4545,
+    "mean_length_solved": 52.2,
+    "mean_excess_over_exact": 32.2,
+    "n_solved_with_exact": 5,
+    "mean_excess_over_kociemba": 30.6,
+    "seconds_per_cube": 0.2091,
+    "n_unsolved": 6,
+    "unsolved_misplaced": 16.5,
+    "unsolved_misoriented": 3.3333,
+    "unsolved_wrong_pieces": 16.6667,
+    "unsolved_correct_stickers": 18.5
+   },
+   "beam": {
+    "n": 11,
+    "solve_rate": 1.0,
+    "mean_length_solved": 22.8182,
+    "mean_excess_over_exact": 2.8182,
+    "n_solved_with_exact": 11,
+    "mean_excess_over_kociemba": 1.2727,
+    "seconds_per_cube": 0.6351,
+    "n_unsolved": 0,
+    "unsolved_misplaced": null,
+    "unsolved_misoriented": null,
+    "unsolved_wrong_pieces": null,
+    "unsolved_correct_stickers": null
+   }
+  }
+ },
+ "checkpoint": "final",
+ "eval_seconds": 2325
+}
