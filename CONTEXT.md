@@ -98,7 +98,7 @@ All large files live under the storage folder: `D:\rubiks-cube` on the laptop, o
 3. **Solve time:** re-measured cleanly (one process per GPU, `scripts/time_eval.py`, `results/final_eval/timing/`); the seconds per cube in the per-run evaluation files were measured with GPUs shared and are superseded.
 
 ## Next steps
-All steps are done (2026-11-04). The GPU node was released after the 2-stage curricula and a beam-width sweep of seeds 0 to 2; the rest of the sweep (seeds 3 to 5, best-validation and 2-stage checkpoints) was not run and can be run with `scripts/beam_sweep.py` (or `scripts/reproduce_all.sh`) if wanted. Checkpoints (100 GB) and data (2.4 GB) stay in `~/rubiks-cube` on the cluster's shared home folder. Open question for the user: how to present the primary and secondary checkpoints in the report.
+All steps are done (2026-11-04). The GPU node was released after the 2-stage curricula and a beam-width sweep of seeds 0 to 2; the rest of the sweep (seeds 3 to 5, best-validation and 2-stage checkpoints) was not run and can be run with `scripts/beam_sweep.py` (or `scripts/reproduce_all.sh`) if wanted. Checkpoints (100 GB) and data (2.4 GB) stay in `~/rubiks-cube` on the cluster's shared home folder. Checkpoints in the report decided 2026-11-04: step 100,000 is the headline, best-validation secondary (see `docs/decisions.md`).
 
 ## Known engineering lessons
 - **Kociemba workers run as plain subprocesses** (`python -m rubik.koc_worker`), never `multiprocessing`. On Windows, spawn re-imports torch in every worker and exhausted memory twice.
